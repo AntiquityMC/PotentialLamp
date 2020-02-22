@@ -5,7 +5,6 @@ FIELD	com/mojang/rubydung/HitResult	I	o	field_2
 FIELD	com/mojang/rubydung/HitResult	I	x	field_3
 FIELD	com/mojang/rubydung/HitResult	I	y	field_4
 FIELD	com/mojang/rubydung/HitResult	I	z	field_5
-METHOD	com/mojang/rubydung/HitResult	(IIIII)V	<init>	method_1
 CLASS	com/mojang/rubydung/Player	com/mojang/minecraft/class_2
 FIELD	com/mojang/rubydung/Player	Lcom/mojang/rubydung/phys/AABB;	bb	field_6
 FIELD	com/mojang/rubydung/Player	Lcom/mojang/rubydung/level/Level;	level	field_7
@@ -21,13 +20,12 @@ FIELD	com/mojang/rubydung/Player	F	yo	field_16
 FIELD	com/mojang/rubydung/Player	F	z	field_17
 FIELD	com/mojang/rubydung/Player	F	zd	field_18
 FIELD	com/mojang/rubydung/Player	F	zo	field_19
-METHOD	com/mojang/rubydung/Player	(Lcom/mojang/rubydung/level/Level;)V	<init>	method_2
-METHOD	com/mojang/rubydung/Player	(FFF)V	move	method_3
-METHOD	com/mojang/rubydung/Player	(FFF)V	moveRelative	method_4
-METHOD	com/mojang/rubydung/Player	()V	resetPos	method_5
-METHOD	com/mojang/rubydung/Player	(FFF)V	setPos	method_6
-METHOD	com/mojang/rubydung/Player	()V	tick	method_7
-METHOD	com/mojang/rubydung/Player	(FF)V	turn	method_8
+METHOD	com/mojang/rubydung/Player	(FFF)V	move	method_1
+METHOD	com/mojang/rubydung/Player	(FFF)V	moveRelative	method_2
+METHOD	com/mojang/rubydung/Player	()V	resetPos	method_3
+METHOD	com/mojang/rubydung/Player	(FFF)V	setPos	method_4
+METHOD	com/mojang/rubydung/Player	()V	tick	method_5
+METHOD	com/mojang/rubydung/Player	(FF)V	turn	method_6
 CLASS	com/mojang/rubydung/RubyDung	com/mojang/minecraft/Minecraft
 FIELD	com/mojang/rubydung/RubyDung	Z	FULLSCREEN_MODE	field_20
 FIELD	com/mojang/rubydung/RubyDung	Ljava/nio/FloatBuffer;	fogColor	field_21
@@ -40,25 +38,22 @@ FIELD	com/mojang/rubydung/RubyDung	Ljava/nio/IntBuffer;	selectBuffer	field_27
 FIELD	com/mojang/rubydung/RubyDung	Lcom/mojang/rubydung/Timer;	timer	field_28
 FIELD	com/mojang/rubydung/RubyDung	Ljava/nio/IntBuffer;	viewportBuffer	field_29
 FIELD	com/mojang/rubydung/RubyDung	I	width	field_30
-METHOD	com/mojang/rubydung/RubyDung	()V	<init>	method_9
-METHOD	com/mojang/rubydung/RubyDung	()V	checkError	method_10
-METHOD	com/mojang/rubydung/RubyDung	()V	destroy	method_11
-METHOD	com/mojang/rubydung/RubyDung	()V	init	method_12
+METHOD	com/mojang/rubydung/RubyDung	()V	checkError	method_7
+METHOD	com/mojang/rubydung/RubyDung	()V	destroy	method_8
+METHOD	com/mojang/rubydung/RubyDung	()V	init	method_9
 METHOD	com/mojang/rubydung/RubyDung	([Ljava/lang/String;)V	main	main
-METHOD	com/mojang/rubydung/RubyDung	(F)V	moveCameraToPlayer	method_13
-METHOD	com/mojang/rubydung/RubyDung	(F)V	pick	method_14
-METHOD	com/mojang/rubydung/RubyDung	(F)V	render	method_15
-METHOD	com/mojang/rubydung/RubyDung	()V	run	method_16
-METHOD	com/mojang/rubydung/RubyDung	(F)V	setupCamera	method_17
-METHOD	com/mojang/rubydung/RubyDung	(FII)V	setupPickCamera	method_18
-METHOD	com/mojang/rubydung/RubyDung	()V	tick	method_19
+METHOD	com/mojang/rubydung/RubyDung	(F)V	moveCameraToPlayer	method_10
+METHOD	com/mojang/rubydung/RubyDung	(F)V	pick	method_11
+METHOD	com/mojang/rubydung/RubyDung	(F)V	render	method_12
+METHOD	com/mojang/rubydung/RubyDung	()V	run	method_13
+METHOD	com/mojang/rubydung/RubyDung	(F)V	setupCamera	method_14
+METHOD	com/mojang/rubydung/RubyDung	(FII)V	setupPickCamera	method_15
+METHOD	com/mojang/rubydung/RubyDung	()V	tick	method_16
 CLASS	com/mojang/rubydung/Textures	com/mojang/minecraft/class_3
 FIELD	com/mojang/rubydung/Textures	Ljava/util/HashMap;	idMap	field_31
 FIELD	com/mojang/rubydung/Textures	I	lastId	field_32
-METHOD	com/mojang/rubydung/Textures	()V	<clinit>	method_20
-METHOD	com/mojang/rubydung/Textures	()V	<init>	method_21
-METHOD	com/mojang/rubydung/Textures	(I)V	bind	method_22
-METHOD	com/mojang/rubydung/Textures	(Ljava/lang/String;I)I	loadTexture	method_23
+METHOD	com/mojang/rubydung/Textures	(I)V	bind	method_17
+METHOD	com/mojang/rubydung/Textures	(Ljava/lang/String;I)I	loadTexture	method_18
 CLASS	com/mojang/rubydung/Timer	com/mojang/minecraft/class_4
 FIELD	com/mojang/rubydung/Timer	J	MAX_NS_PER_UPDATE	field_33
 FIELD	com/mojang/rubydung/Timer	I	MAX_TICKS_PER_UPDATE	field_34
@@ -70,8 +65,7 @@ FIELD	com/mojang/rubydung/Timer	F	passedTime	field_39
 FIELD	com/mojang/rubydung/Timer	I	ticks	field_40
 FIELD	com/mojang/rubydung/Timer	F	ticksPerSecond	field_41
 FIELD	com/mojang/rubydung/Timer	F	timeScale	field_42
-METHOD	com/mojang/rubydung/Timer	(F)V	<init>	method_24
-METHOD	com/mojang/rubydung/Timer	()V	advanceTime	method_25
+METHOD	com/mojang/rubydung/Timer	()V	advanceTime	method_19
 CLASS	com/mojang/rubydung/level/Chunk	com/mojang/minecraft/class_5
 FIELD	com/mojang/rubydung/level/Chunk	Lcom/mojang/rubydung/phys/AABB;	aabb	field_43
 FIELD	com/mojang/rubydung/level/Chunk	Z	dirty	field_44
@@ -87,11 +81,9 @@ FIELD	com/mojang/rubydung/level/Chunk	I	y0	field_53
 FIELD	com/mojang/rubydung/level/Chunk	I	y1	field_54
 FIELD	com/mojang/rubydung/level/Chunk	I	z0	field_55
 FIELD	com/mojang/rubydung/level/Chunk	I	z1	field_56
-METHOD	com/mojang/rubydung/level/Chunk	()V	<clinit>	method_26
-METHOD	com/mojang/rubydung/level/Chunk	(Lcom/mojang/rubydung/level/Level;IIIIII)V	<init>	method_27
-METHOD	com/mojang/rubydung/level/Chunk	(I)V	rebuild	method_28
-METHOD	com/mojang/rubydung/level/Chunk	(I)V	render	method_29
-METHOD	com/mojang/rubydung/level/Chunk	()V	setDirty	method_30
+METHOD	com/mojang/rubydung/level/Chunk	(I)V	rebuild	method_20
+METHOD	com/mojang/rubydung/level/Chunk	(I)V	render	method_21
+METHOD	com/mojang/rubydung/level/Chunk	()V	setDirty	method_22
 CLASS	com/mojang/rubydung/level/Frustum	com/mojang/minecraft/class_6
 FIELD	com/mojang/rubydung/level/Frustum	I	A	field_57
 FIELD	com/mojang/rubydung/level/Frustum	I	BACK	field_58
@@ -111,16 +103,14 @@ FIELD	com/mojang/rubydung/level/Frustum	Lcom/mojang/rubydung/level/Frustum;	frus
 FIELD	com/mojang/rubydung/level/Frustum	[[F	m_Frustum	field_72
 FIELD	com/mojang/rubydung/level/Frustum	[F	modl	field_73
 FIELD	com/mojang/rubydung/level/Frustum	[F	proj	field_74
-METHOD	com/mojang/rubydung/level/Frustum	()V	<clinit>	method_31
-METHOD	com/mojang/rubydung/level/Frustum	()V	<init>	method_32
-METHOD	com/mojang/rubydung/level/Frustum	()V	calculateFrustum	method_33
-METHOD	com/mojang/rubydung/level/Frustum	(FFFFFF)Z	cubeFullyInFrustum	method_34
-METHOD	com/mojang/rubydung/level/Frustum	(FFFFFF)Z	cubeInFrustum	method_35
-METHOD	com/mojang/rubydung/level/Frustum	(Lcom/mojang/rubydung/phys/AABB;)Z	cubeInFrustum	method_36
-METHOD	com/mojang/rubydung/level/Frustum	()Lcom/mojang/rubydung/level/Frustum;	getFrustum	method_37
-METHOD	com/mojang/rubydung/level/Frustum	([[FI)V	normalizePlane	method_38
-METHOD	com/mojang/rubydung/level/Frustum	(FFF)Z	pointInFrustum	method_39
-METHOD	com/mojang/rubydung/level/Frustum	(FFFF)Z	sphereInFrustum	method_40
+METHOD	com/mojang/rubydung/level/Frustum	()V	calculateFrustum	method_23
+METHOD	com/mojang/rubydung/level/Frustum	(FFFFFF)Z	cubeFullyInFrustum	method_24
+METHOD	com/mojang/rubydung/level/Frustum	(FFFFFF)Z	cubeInFrustum	method_25
+METHOD	com/mojang/rubydung/level/Frustum	(Lcom/mojang/rubydung/phys/AABB;)Z	cubeInFrustum	method_26
+METHOD	com/mojang/rubydung/level/Frustum	()Lcom/mojang/rubydung/level/Frustum;	getFrustum	method_27
+METHOD	com/mojang/rubydung/level/Frustum	([[FI)V	normalizePlane	method_28
+METHOD	com/mojang/rubydung/level/Frustum	(FFF)Z	pointInFrustum	method_29
+METHOD	com/mojang/rubydung/level/Frustum	(FFFF)Z	sphereInFrustum	method_30
 CLASS	com/mojang/rubydung/level/Level	com/mojang/minecraft/class_7
 FIELD	com/mojang/rubydung/level/Level	[B	blocks	field_75
 FIELD	com/mojang/rubydung/level/Level	I	depth	field_76
@@ -128,22 +118,21 @@ FIELD	com/mojang/rubydung/level/Level	I	height	field_77
 FIELD	com/mojang/rubydung/level/Level	Ljava/util/ArrayList;	levelListeners	field_78
 FIELD	com/mojang/rubydung/level/Level	[I	lightDepths	field_79
 FIELD	com/mojang/rubydung/level/Level	I	width	field_80
-METHOD	com/mojang/rubydung/level/Level	(III)V	<init>	method_41
-METHOD	com/mojang/rubydung/level/Level	(Lcom/mojang/rubydung/level/LevelListener;)V	addListener	method_42
-METHOD	com/mojang/rubydung/level/Level	(IIII)V	calcLightDepths	method_43
-METHOD	com/mojang/rubydung/level/Level	(III)F	getBrightness	method_44
-METHOD	com/mojang/rubydung/level/Level	(Lcom/mojang/rubydung/phys/AABB;)Ljava/util/ArrayList;	getCubes	method_45
-METHOD	com/mojang/rubydung/level/Level	(III)Z	isLightBlocker	method_46
-METHOD	com/mojang/rubydung/level/Level	(III)Z	isSolidTile	method_47
-METHOD	com/mojang/rubydung/level/Level	(III)Z	isTile	method_48
-METHOD	com/mojang/rubydung/level/Level	()V	load	method_49
-METHOD	com/mojang/rubydung/level/Level	(Lcom/mojang/rubydung/level/LevelListener;)V	removeListener	method_50
-METHOD	com/mojang/rubydung/level/Level	()V	save	method_51
-METHOD	com/mojang/rubydung/level/Level	(IIII)V	setTile	method_52
+METHOD	com/mojang/rubydung/level/Level	(Lcom/mojang/rubydung/level/LevelListener;)V	addListener	method_31
+METHOD	com/mojang/rubydung/level/Level	(IIII)V	calcLightDepths	method_32
+METHOD	com/mojang/rubydung/level/Level	(III)F	getBrightness	method_33
+METHOD	com/mojang/rubydung/level/Level	(Lcom/mojang/rubydung/phys/AABB;)Ljava/util/ArrayList;	getCubes	method_34
+METHOD	com/mojang/rubydung/level/Level	(III)Z	isLightBlocker	method_35
+METHOD	com/mojang/rubydung/level/Level	(III)Z	isSolidTile	method_36
+METHOD	com/mojang/rubydung/level/Level	(III)Z	isTile	method_37
+METHOD	com/mojang/rubydung/level/Level	()V	load	method_38
+METHOD	com/mojang/rubydung/level/Level	(Lcom/mojang/rubydung/level/LevelListener;)V	removeListener	method_39
+METHOD	com/mojang/rubydung/level/Level	()V	save	method_40
+METHOD	com/mojang/rubydung/level/Level	(IIII)V	setTile	method_41
 CLASS	com/mojang/rubydung/level/LevelListener	com/mojang/minecraft/class_8
-METHOD	com/mojang/rubydung/level/LevelListener	()V	allChanged	method_53
-METHOD	com/mojang/rubydung/level/LevelListener	(IIII)V	lightColumnChanged	method_54
-METHOD	com/mojang/rubydung/level/LevelListener	(III)V	tileChanged	method_55
+METHOD	com/mojang/rubydung/level/LevelListener	()V	allChanged	method_42
+METHOD	com/mojang/rubydung/level/LevelListener	(IIII)V	lightColumnChanged	method_43
+METHOD	com/mojang/rubydung/level/LevelListener	(III)V	tileChanged	method_44
 CLASS	com/mojang/rubydung/level/LevelRenderer	com/mojang/minecraft/class_9
 FIELD	com/mojang/rubydung/level/LevelRenderer	I	CHUNK_SIZE	field_81
 FIELD	com/mojang/rubydung/level/LevelRenderer	[Lcom/mojang/rubydung/level/Chunk;	chunks	field_82
@@ -152,14 +141,13 @@ FIELD	com/mojang/rubydung/level/LevelRenderer	Lcom/mojang/rubydung/level/Tessela
 FIELD	com/mojang/rubydung/level/LevelRenderer	I	xChunks	field_85
 FIELD	com/mojang/rubydung/level/LevelRenderer	I	yChunks	field_86
 FIELD	com/mojang/rubydung/level/LevelRenderer	I	zChunks	field_87
-METHOD	com/mojang/rubydung/level/LevelRenderer	(Lcom/mojang/rubydung/level/Level;)V	<init>	method_56
-METHOD	com/mojang/rubydung/level/LevelRenderer	()V	allChanged	method_53
-METHOD	com/mojang/rubydung/level/LevelRenderer	(IIII)V	lightColumnChanged	method_54
-METHOD	com/mojang/rubydung/level/LevelRenderer	(Lcom/mojang/rubydung/Player;)V	pick	method_57
-METHOD	com/mojang/rubydung/level/LevelRenderer	(Lcom/mojang/rubydung/Player;I)V	render	method_58
-METHOD	com/mojang/rubydung/level/LevelRenderer	(Lcom/mojang/rubydung/HitResult;)V	renderHit	method_59
-METHOD	com/mojang/rubydung/level/LevelRenderer	(IIIIII)V	setDirty	method_60
-METHOD	com/mojang/rubydung/level/LevelRenderer	(III)V	tileChanged	method_55
+METHOD	com/mojang/rubydung/level/LevelRenderer	()V	allChanged	method_42
+METHOD	com/mojang/rubydung/level/LevelRenderer	(IIII)V	lightColumnChanged	method_43
+METHOD	com/mojang/rubydung/level/LevelRenderer	(Lcom/mojang/rubydung/Player;)V	pick	method_45
+METHOD	com/mojang/rubydung/level/LevelRenderer	(Lcom/mojang/rubydung/Player;I)V	render	method_46
+METHOD	com/mojang/rubydung/level/LevelRenderer	(Lcom/mojang/rubydung/HitResult;)V	renderHit	method_47
+METHOD	com/mojang/rubydung/level/LevelRenderer	(IIIIII)V	setDirty	method_48
+METHOD	com/mojang/rubydung/level/LevelRenderer	(III)V	tileChanged	method_44
 CLASS	com/mojang/rubydung/level/Tesselator	com/mojang/minecraft/class_10
 FIELD	com/mojang/rubydung/level/Tesselator	I	MAX_VERTICES	field_88
 FIELD	com/mojang/rubydung/level/Tesselator	F	b	field_89
@@ -173,21 +161,18 @@ FIELD	com/mojang/rubydung/level/Tesselator	F	u	field_96
 FIELD	com/mojang/rubydung/level/Tesselator	F	v	field_97
 FIELD	com/mojang/rubydung/level/Tesselator	Ljava/nio/FloatBuffer;	vertexBuffer	field_98
 FIELD	com/mojang/rubydung/level/Tesselator	I	vertices	field_99
-METHOD	com/mojang/rubydung/level/Tesselator	()V	<init>	method_61
-METHOD	com/mojang/rubydung/level/Tesselator	()V	clear	method_62
-METHOD	com/mojang/rubydung/level/Tesselator	(FFF)V	color	method_63
-METHOD	com/mojang/rubydung/level/Tesselator	()V	flush	method_64
-METHOD	com/mojang/rubydung/level/Tesselator	()V	init	method_65
-METHOD	com/mojang/rubydung/level/Tesselator	(FF)V	tex	method_66
-METHOD	com/mojang/rubydung/level/Tesselator	(FFF)V	vertex	method_67
+METHOD	com/mojang/rubydung/level/Tesselator	()V	clear	method_49
+METHOD	com/mojang/rubydung/level/Tesselator	(FFF)V	color	method_50
+METHOD	com/mojang/rubydung/level/Tesselator	()V	flush	method_51
+METHOD	com/mojang/rubydung/level/Tesselator	()V	init	method_52
+METHOD	com/mojang/rubydung/level/Tesselator	(FF)V	tex	method_53
+METHOD	com/mojang/rubydung/level/Tesselator	(FFF)V	vertex	method_54
 CLASS	com/mojang/rubydung/level/Tile	com/mojang/minecraft/class_11
 FIELD	com/mojang/rubydung/level/Tile	Lcom/mojang/rubydung/level/Tile;	grass	field_100
 FIELD	com/mojang/rubydung/level/Tile	Lcom/mojang/rubydung/level/Tile;	rock	field_101
 FIELD	com/mojang/rubydung/level/Tile	I	tex	field_102
-METHOD	com/mojang/rubydung/level/Tile	()V	<clinit>	method_68
-METHOD	com/mojang/rubydung/level/Tile	(I)V	<init>	method_69
-METHOD	com/mojang/rubydung/level/Tile	(Lcom/mojang/rubydung/level/Tesselator;Lcom/mojang/rubydung/level/Level;IIII)V	render	method_70
-METHOD	com/mojang/rubydung/level/Tile	(Lcom/mojang/rubydung/level/Tesselator;IIII)V	renderFace	method_71
+METHOD	com/mojang/rubydung/level/Tile	(Lcom/mojang/rubydung/level/Tesselator;Lcom/mojang/rubydung/level/Level;IIII)V	render	method_55
+METHOD	com/mojang/rubydung/level/Tile	(Lcom/mojang/rubydung/level/Tesselator;IIII)V	renderFace	method_56
 CLASS	com/mojang/rubydung/phys/AABB	com/mojang/minecraft/class_12
 FIELD	com/mojang/rubydung/phys/AABB	F	epsilon	field_103
 FIELD	com/mojang/rubydung/phys/AABB	F	x0	field_104
@@ -196,14 +181,13 @@ FIELD	com/mojang/rubydung/phys/AABB	F	y0	field_106
 FIELD	com/mojang/rubydung/phys/AABB	F	y1	field_107
 FIELD	com/mojang/rubydung/phys/AABB	F	z0	field_108
 FIELD	com/mojang/rubydung/phys/AABB	F	z1	field_109
-METHOD	com/mojang/rubydung/phys/AABB	(FFFFFF)V	<init>	method_72
-METHOD	com/mojang/rubydung/phys/AABB	(Lcom/mojang/rubydung/phys/AABB;F)F	clipXCollide	method_73
-METHOD	com/mojang/rubydung/phys/AABB	(Lcom/mojang/rubydung/phys/AABB;F)F	clipYCollide	method_74
-METHOD	com/mojang/rubydung/phys/AABB	(Lcom/mojang/rubydung/phys/AABB;F)F	clipZCollide	method_75
-METHOD	com/mojang/rubydung/phys/AABB	(FFF)Lcom/mojang/rubydung/phys/AABB;	expand	method_76
-METHOD	com/mojang/rubydung/phys/AABB	(FFF)Lcom/mojang/rubydung/phys/AABB;	grow	method_77
-METHOD	com/mojang/rubydung/phys/AABB	(Lcom/mojang/rubydung/phys/AABB;)Z	intersects	method_78
-METHOD	com/mojang/rubydung/phys/AABB	(FFF)V	move	method_79
+METHOD	com/mojang/rubydung/phys/AABB	(Lcom/mojang/rubydung/phys/AABB;F)F	clipXCollide	method_57
+METHOD	com/mojang/rubydung/phys/AABB	(Lcom/mojang/rubydung/phys/AABB;F)F	clipYCollide	method_58
+METHOD	com/mojang/rubydung/phys/AABB	(Lcom/mojang/rubydung/phys/AABB;F)F	clipZCollide	method_59
+METHOD	com/mojang/rubydung/phys/AABB	(FFF)Lcom/mojang/rubydung/phys/AABB;	expand	method_60
+METHOD	com/mojang/rubydung/phys/AABB	(FFF)Lcom/mojang/rubydung/phys/AABB;	grow	method_61
+METHOD	com/mojang/rubydung/phys/AABB	(Lcom/mojang/rubydung/phys/AABB;)Z	intersects	method_62
+METHOD	com/mojang/rubydung/phys/AABB	(FFF)V	move	method_63
 # INTERMEDIARY-COUNTER field 110
-# INTERMEDIARY-COUNTER method 80
+# INTERMEDIARY-COUNTER method 64
 # INTERMEDIARY-COUNTER class 13
