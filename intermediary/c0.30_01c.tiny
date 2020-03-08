@@ -96,7 +96,6 @@ METHOD	com/mojang/minecraft/Entity	(Lcom/mojang/minecraft/a/c;)Z	shouldRender	me
 METHOD	com/mojang/minecraft/Entity	(F)Z	shouldRenderAtSqrDistance	method_251
 METHOD	com/mojang/minecraft/Entity	()V	tick	method_5
 METHOD	com/mojang/minecraft/Entity	(FF)V	turn	method_68
-CLASS	com/mojang/minecraft/Minecraft	com/mojang/minecraft/Minecraft
 CLASS	com/mojang/minecraft/Minecraft$OS	com/mojang/minecraft/Minecraft$class_55
 FIELD	com/mojang/minecraft/Minecraft$OS	[Lcom/mojang/minecraft/Minecraft$OS;	a	field_371
 FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	linux	field_372
