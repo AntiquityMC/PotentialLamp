@@ -1,0 +1,29 @@
+CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
+	FIELD field_100 grass Lcom/mojang/minecraft/class_11;
+	FIELD field_101 rock Lcom/mojang/minecraft/class_11;
+	FIELD field_102 tex I
+	FIELD field_195 dirt Lcom/mojang/minecraft/class_11;
+	FIELD field_197 id I
+	FIELD field_198 stoneBrick Lcom/mojang/minecraft/class_11;
+	FIELD field_199 tiles [Lcom/mojang/minecraft/class_11;
+	FIELD field_200 wood Lcom/mojang/minecraft/class_11;
+	FIELD field_211 bush Lcom/mojang/minecraft/class_11;
+	FIELD field_330 calmLava Lcom/mojang/minecraft/class_11;
+	FIELD field_331 calmWater Lcom/mojang/minecraft/class_11;
+	FIELD field_332 lava Lcom/mojang/minecraft/class_11;
+	FIELD field_334 unbreakable Lcom/mojang/minecraft/class_11;
+	FIELD field_335 water Lcom/mojang/minecraft/class_11;
+	FIELD field_734 soundGroup Lcom/mojang/minecraft/class_11$class_125;
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 tex
+	METHOD method_104 isSolid ()Z
+	METHOD method_212 mayPick ()Z
+	METHOD method_215 setShape (FFFFFF)V
+	METHOD method_421 (Lcom/mojang/minecraft/class_10;IIIII)V
+		ARG 1 tesselator
+	METHOD method_425 (Lcom/mojang/minecraft/class_11$class_125;FFF)Lcom/mojang/minecraft/class_11;
+		ARG 1 soundGroup
+	CLASS class_125 SoundGroup

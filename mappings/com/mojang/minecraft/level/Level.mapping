@@ -1,0 +1,2 @@
+CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
+	FIELD field_687 serialVersionUID J

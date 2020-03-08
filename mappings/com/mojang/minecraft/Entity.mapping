@@ -1,0 +1,21 @@
+CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
+	FIELD field_110 bb Lcom/mojang/minecraft/class_12;
+	FIELD field_111 heightOffset F
+	FIELD field_112 level Lcom/mojang/minecraft/class_7;
+	FIELD field_113 onGround Z
+	FIELD field_114 x F
+	FIELD field_115 xRot F
+	FIELD field_116 xd F
+	FIELD field_117 xo F
+	FIELD field_118 y F
+	FIELD field_119 yRot F
+	FIELD field_120 yd F
+	FIELD field_121 yo F
+	FIELD field_122 z F
+	FIELD field_123 zd F
+	FIELD field_124 zo F
+	FIELD field_360 serialVersionUID J
+	METHOD <init> (Lcom/mojang/minecraft/class_7;)V
+		ARG 1 level
+	METHOD method_66 resetPos ()V
+	METHOD method_67 setPos (FFF)V

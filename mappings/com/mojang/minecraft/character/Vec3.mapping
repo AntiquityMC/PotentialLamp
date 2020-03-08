@@ -1,0 +1,8 @@
+CLASS com/mojang/minecraft/class_16 com/mojang/minecraft/character/Vec3
+	FIELD field_138 x F
+	FIELD field_139 y F
+	FIELD field_140 z F
+	METHOD <init> (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
