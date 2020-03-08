@@ -905,8 +905,7 @@ FIELD	com/mojang/minecraft/level/d	I	c	field_692
 FIELD	com/mojang/minecraft/level/d	I	d	field_693
 FIELD	com/mojang/minecraft/level/d	I	e	field_694
 CLASS	com/mojang/minecraft/level/e	com/mojang/minecraft/class_123
-CLASS	com/mojang/minecraft/level/tile/Tile	com/mojang/minecraft/class_124
-CLASS	com/mojang/minecraft/level/tile/Tile$SoundType	com/mojang/minecraft/class_124$class_125
+CLASS	com/mojang/minecraft/level/tile/Tile$SoundType	com/mojang/minecraft/class_11$class_125
 FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	[Lcom/mojang/minecraft/level/tile/Tile$SoundType;	a	field_695
 FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	cloth	field_696
 FIELD	com/mojang/minecraft/level/tile/Tile$SoundType	Lcom/mojang/minecraft/level/tile/Tile$SoundType;	grass	field_697
