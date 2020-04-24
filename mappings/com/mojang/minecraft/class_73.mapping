@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/class_73
+	FIELD field_464 m_Frustum [[F
+	FIELD field_465 proj [F
+	FIELD field_466 modl [F
+	FIELD field_467 clip [F

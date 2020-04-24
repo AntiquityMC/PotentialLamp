@@ -1,0 +1,9 @@
+CLASS com/mojang/minecraft/class_6 com/mojang/minecraft/renderer/Frustum
+	FIELD field_67 _clip Ljava/nio/FloatBuffer;
+	FIELD field_68 _modl Ljava/nio/FloatBuffer;
+	FIELD field_69 _proj Ljava/nio/FloatBuffer;
+	FIELD field_71 frustum Lcom/mojang/minecraft/class_6;
+	METHOD method_23 getFrustum ()Lcom/mojang/minecraft/class_73;
+	METHOD method_28 normalizePlane ([[FI)V
+		ARG 0 frustum
+		ARG 1 side

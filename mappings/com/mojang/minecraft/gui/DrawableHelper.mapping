@@ -1,0 +1,34 @@
+CLASS com/mojang/minecraft/class_99 com/mojang/minecraft/gui/DrawableHelper
+	FIELD field_540 blitOffset F
+	METHOD method_315 fill (IIIII)V
+		ARG 0 x0
+		ARG 1 y0
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 col
+	METHOD method_316 fillGradient (IIIIII)V
+		ARG 0 x0
+		ARG 1 y0
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 col1
+		ARG 5 col2
+	METHOD method_317 drawCenteredString (Lcom/mojang/minecraft/class_32;Ljava/lang/String;III)V
+		ARG 0 font
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color
+	METHOD method_318 blit (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 u
+		ARG 4 v
+		ARG 5 width
+		ARG 6 height
+	METHOD method_319 drawString (Lcom/mojang/minecraft/class_32;Ljava/lang/String;III)V
+		ARG 0 font
+		ARG 1 str
+		ARG 2 x
+		ARG 3 y
+		ARG 4 color

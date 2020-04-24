@@ -13,17 +13,71 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 	FIELD field_332 lava Lcom/mojang/minecraft/class_11;
 	FIELD field_334 unbreakable Lcom/mojang/minecraft/class_11;
 	FIELD field_335 water Lcom/mojang/minecraft/class_11;
+	FIELD field_706 yellowCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_707 chartreuseCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_708 greenCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_709 springGreenCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_710 cyanCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_711 capriCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_712 ultramarineCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_713 violetCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_714 purpleCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_715 magentaCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_716 roseCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_717 darkGrayCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_718 lightGrayCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_719 whiteCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_720 dandelion Lcom/mojang/minecraft/class_11;
+	FIELD field_721 rose Lcom/mojang/minecraft/class_11;
+	FIELD field_722 brownMushroom Lcom/mojang/minecraft/class_11;
+	FIELD field_723 redMushroom Lcom/mojang/minecraft/class_11;
+	FIELD field_724 goldBlock Lcom/mojang/minecraft/class_11;
+	FIELD field_725 ironBlock Lcom/mojang/minecraft/class_11;
+	FIELD field_726 doubleSlab Lcom/mojang/minecraft/class_11;
+	FIELD field_727 slab Lcom/mojang/minecraft/class_11;
+	FIELD field_728 bricks Lcom/mojang/minecraft/class_11;
+	FIELD field_729 tnt Lcom/mojang/minecraft/class_11;
+	FIELD field_730 bookshelf Lcom/mojang/minecraft/class_11;
+	FIELD field_731 mossyCobblestone Lcom/mojang/minecraft/class_11;
+	FIELD field_733 obsidian Lcom/mojang/minecraft/class_11;
 	FIELD field_734 soundGroup Lcom/mojang/minecraft/class_11$class_125;
+	FIELD field_742 sand Lcom/mojang/minecraft/class_11;
+	FIELD field_743 gravel Lcom/mojang/minecraft/class_11;
+	FIELD field_744 goldOre Lcom/mojang/minecraft/class_11;
+	FIELD field_745 ironOre Lcom/mojang/minecraft/class_11;
+	FIELD field_746 coalOre Lcom/mojang/minecraft/class_11;
+	FIELD field_747 log Lcom/mojang/minecraft/class_11;
+	FIELD field_748 leaves Lcom/mojang/minecraft/class_11;
+	FIELD field_749 sponge Lcom/mojang/minecraft/class_11;
+	FIELD field_750 glass Lcom/mojang/minecraft/class_11;
+	FIELD field_751 redCloth Lcom/mojang/minecraft/class_11;
+	FIELD field_752 orangeCloth Lcom/mojang/minecraft/class_11;
 	METHOD <init> (I)V
 		ARG 1 id
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 tex
+	METHOD method_100 tick (Lcom/mojang/minecraft/class_7;IIILjava/util/Random;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD method_101 blocksLight ()Z
+	METHOD method_103 getAABB (III)Lcom/mojang/minecraft/class_12;
 	METHOD method_104 isSolid ()Z
+	METHOD method_105 renderFace (Lcom/mojang/minecraft/class_10;IIII)V
+	METHOD method_106 shouldRenderFace (Lcom/mojang/minecraft/class_7;IIII)Z
+		ARG 1 level
+	METHOD method_209 neighborChanged (Lcom/mojang/minecraft/class_7;IIII)V
+		ARG 1 level
 	METHOD method_212 mayPick ()Z
+	METHOD method_214 renderBackFace (Lcom/mojang/minecraft/class_10;IIII)V
 	METHOD method_215 setShape (FFFFFF)V
 	METHOD method_421 (Lcom/mojang/minecraft/class_10;IIIII)V
 		ARG 1 tesselator
 	METHOD method_425 (Lcom/mojang/minecraft/class_11$class_125;FFF)Lcom/mojang/minecraft/class_11;
 		ARG 1 soundGroup
+	METHOD method_55 render (Lcom/mojang/minecraft/class_7;IIILcom/mojang/minecraft/class_10;)Z
+		ARG 1 level
 	CLASS class_125 SoundGroup

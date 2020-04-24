@@ -1,0 +1,4 @@
+CLASS com/mojang/minecraft/class_50 com/mojang/minecraft/level/levelgen/synth/Synth
+	METHOD method_203 getValue (DD)D
+		ARG 1 x
+		ARG 3 z

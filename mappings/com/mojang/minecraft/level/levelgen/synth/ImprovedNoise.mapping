@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/class_46 com/mojang/minecraft/level/levelgen/synth/ImprovedNoise
+	FIELD field_313 p [I
+	METHOD method_204 fade (D)D
+	METHOD method_205 grad (IDDD)D
+	METHOD method_206 lerp (DDD)D

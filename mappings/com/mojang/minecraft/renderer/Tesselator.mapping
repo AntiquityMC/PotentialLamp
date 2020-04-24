@@ -1,2 +1,6 @@
 CLASS com/mojang/minecraft/class_10 com/mojang/minecraft/renderer/Tesselator
+	FIELD field_192 instance Lcom/mojang/minecraft/class_10;
+	METHOD method_51 end ()V
+	METHOD method_52 begin ()V
+	METHOD method_54 vertex (FFF)V
 	METHOD method_98 vertexUV (FFFFF)V

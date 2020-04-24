@@ -1,2 +1,8 @@
 CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
+	FIELD field_292 createTime J
+	FIELD field_293 creator Ljava/lang/String;
+	FIELD field_295 name Ljava/lang/String;
 	FIELD field_687 serialVersionUID J
+	METHOD method_184 setData (III[B)V
+	METHOD method_41 setTile (IIII)Z
+	METHOD method_93 getTile (III)I
