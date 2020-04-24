@@ -1,0 +1,8 @@
+CLASS com/mojang/minecraft/class_111 com/mojang/minecraft/entity/ItemEntity
+	FIELD field_589 item I
+	METHOD <init> (Lcom/mojang/minecraft/class_7;FFFI)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 item

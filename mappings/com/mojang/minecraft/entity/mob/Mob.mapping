@@ -1,0 +1,3 @@
+CLASS com/mojang/minecraft/class_142 com/mojang/minecraft/entity/mob/Mob
+	FIELD field_780 name Ljava/lang/String;
+	FIELD field_789 texture Ljava/lang/String;

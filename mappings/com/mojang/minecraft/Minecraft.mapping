@@ -1,0 +1,3 @@
+CLASS com/mojang/minecraft/Minecraft
+	FIELD field_632 options Lcom/mojang/minecraft/class_116;
+	METHOD method_162 openScreen (Lcom/mojang/minecraft/class_39;)V
