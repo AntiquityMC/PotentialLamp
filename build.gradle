@@ -7,8 +7,8 @@ buildscript {
 		}
 	}
 	dependencies {
-		classpath "cuchaz:enigma:0.14.3.148"
-		classpath "net.fabricmc:stitch:0.4.3.71"
+		classpath "cuchaz:enigma:0.15.3+build.168"
+		classpath "net.fabricmc:stitch:0.4.6+build.74"
 		classpath "commons-io:commons-io:2.6"
 		classpath "com.google.guava:guava:28.0-jre"
 		classpath 'de.undercouch:gradle-download-task:4.0.2'
@@ -49,9 +49,8 @@ configurations {
 }
 
 dependencies {
-	enigmaRuntime "net.fabricmc:stitch:0.4.3.71"
-	//enigmaRuntime files("tools/stitch-0.4.3-always-intermediary.jar")
-	enigmaRuntime "cuchaz:enigma:0.14.3-div0"
+	enigmaRuntime "net.fabricmc:stitch:0.4.6+build.74"
+	enigmaRuntime "cuchaz:enigma:0.15.3+build.168"
 }
 
 def setupGroup = "jar setup"
