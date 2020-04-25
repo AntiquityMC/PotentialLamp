@@ -1,4 +1,4 @@
-v1	official	intermediary
+v1	client	intermediary
 CLASS	com/mojang/rubydung/HitResult	com/mojang/minecraft/class_1
 FIELD	com/mojang/rubydung/HitResult	I	f	field_1
 FIELD	com/mojang/rubydung/HitResult	I	o	field_2

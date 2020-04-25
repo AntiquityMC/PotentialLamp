@@ -1,4 +1,4 @@
-v1	official	intermediary
+v1	client	intermediary
 CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/class_26
 FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/c;	a	field_228
 FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	b	field_229

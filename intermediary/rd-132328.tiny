@@ -1,4 +1,4 @@
-v1	official	intermediary
+v1	client	intermediary
 CLASS	com/mojang/rubydung/Entity	com/mojang/minecraft/class_13
 FIELD	com/mojang/rubydung/Entity	Lcom/mojang/rubydung/phys/AABB;	bb	field_110
 FIELD	com/mojang/rubydung/Entity	F	heightOffset	field_111

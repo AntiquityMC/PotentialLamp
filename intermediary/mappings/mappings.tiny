@@ -1,4 +1,4 @@
-v1	client	intermediary
+v1	official	intermediary
 CLASS	a/a	com/mojang/minecraft/class_53
 FIELD	a/a	[F	a	field_342
 METHOD	a/a	(F)F	a	method_219
