@@ -1,9 +1,179 @@
 CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
+	FIELD field_181 random Ljava/util/Random;
+	FIELD field_182 unprocessed I
 	FIELD field_292 createTime J
 	FIELD field_293 creator Ljava/lang/String;
 	FIELD field_295 name Ljava/lang/String;
+	FIELD field_665 blockMap Lcom/mojang/minecraft/class_117;
+	FIELD field_666 cloudColor I
+	FIELD field_667 creativeMode Z
+	FIELD field_668 tickNextTick Ljava/util/ArrayList;
+	FIELD field_669 fogColor I
+	FIELD field_670 font Ljava/lang/Object;
+	FIELD field_671 growTrees Z
+	FIELD field_672 networkMode Z
+	FIELD field_673 particleEngine Lcom/mojang/minecraft/class_25;
+	FIELD field_674 player Lcom/mojang/minecraft/class_13;
+	FIELD field_675 rendererContext Lcom/mojang/minecraft/Minecraft;
+	FIELD field_676 rotSpawn F
+	FIELD field_677 skyColor I
+	FIELD field_678 tickCount I
+	FIELD field_679 waterLevel I
+	FIELD field_680 xSpawn I
+	FIELD field_681 ySpawn I
+	FIELD field_682 zSpawn I
 	FIELD field_687 serialVersionUID J
+	FIELD field_75 blocks [B
+	FIELD field_76 depth I
+	FIELD field_77 height I
+	FIELD field_78 listeners Ljava/util/ArrayList;
+	FIELD field_80 width I
+	METHOD method_180 containsAnyLiquid (Lcom/mojang/minecraft/class_12;)Z
+		ARG 1 bb
+	METHOD method_181 containsLiquid (Lcom/mojang/minecraft/class_12;Lcom/mojang/minecraft/class_120;)Z
+		ARG 1 bb
+		ARG 2 liquid
+	METHOD method_182 getGroundLevel ()F
+	METHOD method_183 (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
 	METHOD method_184 setData (III[B)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 depth
+		ARG 4 blocks
+	METHOD method_185 setTileNoUpdate (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD method_31 addListener (Lcom/mojang/minecraft/class_9;)V
+		ARG 1 listener
+	METHOD method_32 calcLightDepths (IIII)V
+	METHOD method_34 getCubes (Lcom/mojang/minecraft/class_12;)Ljava/util/ArrayList;
+		ARG 1 bb
+	METHOD method_35 isLightBlocker (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_36 isSolidTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_368 isSolid (FFF)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_37 isLit (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_370 addEntity (Lcom/mojang/minecraft/class_13;)V
+		ARG 1 entity
+	METHOD method_371 addToTickNextTick (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD method_372 clip (Lcom/mojang/minecraft/class_16;Lcom/mojang/minecraft/class_16;)Lcom/mojang/minecraft/class_1;
+	METHOD method_373 copyBlocks ()[B
+	METHOD method_374 countInstanceOf (Ljava/lang/Class;)I
+		ARG 1 entityClass
+	METHOD method_375 explode (Lcom/mojang/minecraft/class_13;FFFF)V
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 size
+	METHOD method_376 finalize ()V
+	METHOD method_377 findEntities (Lcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_12;)Ljava/util/List;
+		ARG 2 bb
+	METHOD method_378 findSpawn ()V
+	METHOD method_379 findSubclassOf (Ljava/lang/Class;)Lcom/mojang/minecraft/class_13;
+		ARG 1 entityClass
+	METHOD method_380 getBrightness (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_381 getCaveness (FFFF)F
+	METHOD method_382 getCaveness (Lcom/mojang/minecraft/class_13;)F
+		ARG 1 entity
+	METHOD method_383 getHighestTile (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD method_384 getLiquid (III)Lcom/mojang/minecraft/class_120;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_385 getPlayer ()Lcom/mojang/minecraft/class_13;
+	METHOD method_386 getWaterLevel ()F
+	METHOD method_387 initTransient ()V
+	METHOD method_388 isFree (Lcom/mojang/minecraft/class_12;)Z
+		ARG 1 bb
+	METHOD method_389 isSolid (FFFF)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 size
+	METHOD method_39 removeListener (Lcom/mojang/minecraft/class_9;)V
+		ARG 1 listener
+	METHOD method_390 isWater (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_391 maybeGrowTree (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_392 netSetTile (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD method_393 netSetTileNoNeighborChange (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD method_394 playSound (Ljava/lang/String;FFFFF)V
+	METHOD method_395 playSound (Ljava/lang/String;Lcom/mojang/minecraft/class_13;FF)V
+	METHOD method_396 removeAllNonCreativeModeEntities ()V
+	METHOD method_397 removeEntity (Lcom/mojang/minecraft/class_13;)V
+		ARG 1 entity
+	METHOD method_398 setNetworkMode (Z)V
+		ARG 1 networkMode
+	METHOD method_399 setSpawnPos (IIIF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 rot
+	METHOD method_400 setTileNoNeighborChange (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
 	METHOD method_401 moveTile (IIIIII)V
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
+	METHOD method_402 tickEntities ()V
+	METHOD method_403 updateNeighborsAt (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
 	METHOD method_41 setTile (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
 	METHOD method_93 getTile (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_94 tick ()V
