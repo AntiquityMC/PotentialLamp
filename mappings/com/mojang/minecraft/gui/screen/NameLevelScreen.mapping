@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/class_93 com/mojang/minecraft/gui/screen/NameLevelScreen
+	FIELD field_523 parent Lcom/mojang/minecraft/class_39;
+	FIELD field_524 title Ljava/lang/String;
+	METHOD <init> (Lcom/mojang/minecraft/class_39;Ljava/lang/String;I)V
+		ARG 1 parent

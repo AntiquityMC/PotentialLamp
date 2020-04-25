@@ -1,0 +1,6 @@
+CLASS com/mojang/minecraft/class_134 com/mojang/minecraft/level/tile/FallingTile
+	METHOD method_442 fall (Lcom/mojang/minecraft/class_7;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

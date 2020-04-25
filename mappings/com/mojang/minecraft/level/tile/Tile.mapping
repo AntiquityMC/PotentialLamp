@@ -39,6 +39,7 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 	FIELD field_729 tnt Lcom/mojang/minecraft/class_11;
 	FIELD field_730 bookshelf Lcom/mojang/minecraft/class_11;
 	FIELD field_731 mossyCobblestone Lcom/mojang/minecraft/class_11;
+	FIELD field_732 random Ljava/util/Random;
 	FIELD field_733 obsidian Lcom/mojang/minecraft/class_11;
 	FIELD field_734 soundGroup Lcom/mojang/minecraft/class_11$class_125;
 	FIELD field_742 sand Lcom/mojang/minecraft/class_11;
@@ -69,15 +70,31 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 	METHOD method_105 renderFace (Lcom/mojang/minecraft/class_10;IIII)V
 	METHOD method_106 shouldRenderFace (Lcom/mojang/minecraft/class_7;IIII)Z
 		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_209 neighborChanged (Lcom/mojang/minecraft/class_7;IIII)V
 		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_212 mayPick ()Z
 	METHOD method_214 renderBackFace (Lcom/mojang/minecraft/class_10;IIII)V
 	METHOD method_215 setShape (FFFFFF)V
 	METHOD method_421 (Lcom/mojang/minecraft/class_10;IIIII)V
 		ARG 1 tesselator
-	METHOD method_425 (Lcom/mojang/minecraft/class_11$class_125;FFF)Lcom/mojang/minecraft/class_11;
+	METHOD method_425 properties (Lcom/mojang/minecraft/class_11$class_125;FFF)Lcom/mojang/minecraft/class_11;
 		ARG 1 soundGroup
+	METHOD method_428 (Lcom/mojang/minecraft/class_7;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_431 getLiquid ()Lcom/mojang/minecraft/class_120;
+	METHOD method_435 getDropCount ()I
+	METHOD method_437 getDrop ()I
 	METHOD method_55 render (Lcom/mojang/minecraft/class_7;IIILcom/mojang/minecraft/class_10;)Z
 		ARG 1 level
+	METHOD method_99 getTextureForSide (I)I
+		ARG 1 side
 	CLASS class_125 SoundGroup
