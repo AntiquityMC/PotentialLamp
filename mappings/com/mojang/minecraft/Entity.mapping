@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/entity/Entity
+CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 	FIELD field_110 bb Lcom/mojang/minecraft/class_12;
 	FIELD field_111 heightOffset F
 	FIELD field_112 level Lcom/mojang/minecraft/class_7;

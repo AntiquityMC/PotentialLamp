@@ -1,0 +1,26 @@
+CLASS com/mojang/minecraft/class_117 com/mojang/minecraft/level/BlockMap
+	FIELD field_653 all Ljava/util/List;
+	FIELD field_654 depth I
+	FIELD field_655 entityGrid [Ljava/util/List;
+	FIELD field_656 height I
+	FIELD field_657 slot2 Lcom/mojang/minecraft/class_117$class_118;
+	FIELD field_658 slot Lcom/mojang/minecraft/class_117$class_118;
+	FIELD field_659 tmp Ljava/util/List;
+	FIELD field_660 width I
+	METHOD <init> (III)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 depth
+	METHOD method_351 clear ()V
+	METHOD method_352 getEntities (Lcom/mojang/minecraft/class_13;FFFFFF)Ljava/util/List;
+	METHOD method_353 getEntities (Lcom/mojang/minecraft/class_13;FFFFFFLjava/util/List;)Ljava/util/List;
+		ARG 8 target
+	METHOD method_354 getEntities (Lcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_12;)Ljava/util/List;
+	METHOD method_355 getEntities (Lcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_12;Ljava/util/List;)Ljava/util/List;
+	METHOD method_356 insert (Lcom/mojang/minecraft/class_13;)V
+	METHOD method_357 moved (Lcom/mojang/minecraft/class_13;)V
+	METHOD method_358 remove (Lcom/mojang/minecraft/class_13;)V
+	METHOD method_359 removeAllNonCreativeModeEntities ()V
+	METHOD method_360 render (Lcom/mojang/minecraft/class_16;Lcom/mojang/minecraft/class_73;Lcom/mojang/minecraft/class_3;F)V
+	METHOD method_361 tickAll ()V
+	CLASS class_118 Slot

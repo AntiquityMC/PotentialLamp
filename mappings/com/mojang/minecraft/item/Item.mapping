@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_111 com/mojang/minecraft/entity/ItemEntity
+CLASS com/mojang/minecraft/class_111 com/mojang/minecraft/item/Item
 	FIELD field_589 item I
 	METHOD <init> (Lcom/mojang/minecraft/class_7;FFFI)V
 		ARG 1 level

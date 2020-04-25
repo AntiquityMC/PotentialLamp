@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_144 com/mojang/minecraft/entity/mob/animal/Animal
+CLASS com/mojang/minecraft/class_141 com/mojang/minecraft/entity/mob/Humanoid
 	METHOD <init> (Lcom/mojang/minecraft/class_7;FFF)V
 		ARG 1 level
 		ARG 2 x

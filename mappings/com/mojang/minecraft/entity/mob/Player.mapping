@@ -1,0 +1,2 @@
+CLASS com/mojang/minecraft/class_152 com/mojang/minecraft/entity/mob/Player
+	FIELD field_819 username Ljava/lang/String;

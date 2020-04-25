@@ -17,21 +17,24 @@ CLASS com/mojang/minecraft/class_116 com/mojang/minecraft/Options
 	FIELD field_624 toggleFog Lcom/mojang/minecraft/class_115;
 	FIELD field_625 saveLocation Lcom/mojang/minecraft/class_115;
 	FIELD field_626 loadLocation Lcom/mojang/minecraft/class_115;
-	FIELD field_627 controls [Lcom/mojang/minecraft/class_115;
+	FIELD field_627 keybinds [Lcom/mojang/minecraft/class_115;
+	FIELD field_628 optionCount I
+		COMMENT The amount of non-keybind options.
 	FIELD field_629 viewDistances [Ljava/lang/String;
 	FIELD field_630 minecraft Lcom/mojang/minecraft/Minecraft;
 	FIELD field_631 file Ljava/io/File;
 	METHOD <init> (Lcom/mojang/minecraft/Minecraft;Ljava/io/File;)V
 		ARG 1 minecraft
-		ARG 2 file
+		ARG 2 directory
 	METHOD method_339 load ()V
-	METHOD method_340 getControlDisplay (I)Ljava/lang/String;
-		ARG 1 control
-	METHOD method_341 setControl (II)V
-		ARG 1 control
+	METHOD method_340 getKeybindLabel (I)Ljava/lang/String;
+		ARG 1 keybind
+	METHOD method_341 setKeybind (II)V
+		ARG 1 keybind
 		ARG 2 key
 	METHOD method_342 save ()V
-	METHOD method_343 getOptionDisplay (I)Ljava/lang/String;
+	METHOD method_343 getOptionLabel (I)Ljava/lang/String;
 		ARG 1 option
-	METHOD method_344 clickButton (II)V
+	METHOD method_344 cycleOption (II)V
 		ARG 1 option
+		ARG 2 direction

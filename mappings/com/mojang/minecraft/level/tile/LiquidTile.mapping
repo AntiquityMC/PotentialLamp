@@ -5,3 +5,13 @@ CLASS com/mojang/minecraft/class_52 com/mojang/minecraft/level/tile/LiquidTile
 	METHOD <init> (ILcom/mojang/minecraft/class_120;)V
 		ARG 1 id
 		ARG 2 liquid
+	METHOD method_440 (Lcom/mojang/minecraft/class_7;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_441 (Lcom/mojang/minecraft/class_7;III)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
