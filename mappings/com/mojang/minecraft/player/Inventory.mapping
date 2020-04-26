@@ -1,0 +1,19 @@
+CLASS com/mojang/minecraft/class_161 com/mojang/minecraft/player/Inventory
+	FIELD field_872 count [I
+	FIELD field_873 popTime [I
+	FIELD field_874 selected I
+	FIELD field_875 slots [I
+	METHOD method_484 indexOf (I)I
+		ARG 1 tileId
+	METHOD method_485 addResource (I)Z
+		ARG 1 tileId
+	METHOD method_486 getSelected ()I
+	METHOD method_487 grabTexture (IZ)V
+	METHOD method_488 removeResource (I)Z
+		ARG 1 tileId
+	METHOD method_489 replaceSlot (I)V
+		ARG 1 id
+	METHOD method_490 replaceSlot (Lcom/mojang/minecraft/class_11;)V
+		ARG 1 tile
+	METHOD method_491 swapPaint (I)V
+	METHOD method_492 tick ()V

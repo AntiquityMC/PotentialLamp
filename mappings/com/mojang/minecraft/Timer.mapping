@@ -1,0 +1,9 @@
+CLASS com/mojang/minecraft/class_4 com/mojang/minecraft/Timer
+	FIELD field_36 a F
+	FIELD field_37 fps F
+	FIELD field_38 lastTime J
+	FIELD field_40 ticks I
+	FIELD field_41 ticksPerSecond F
+	FIELD field_42 timeScale F
+	METHOD <init> (F)V
+		ARG 1 ticksPerSecond

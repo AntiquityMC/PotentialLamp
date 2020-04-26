@@ -1,4 +1,0 @@
-CLASS com/mojang/minecraft/class_156
-	FIELD field_859 player Lcom/mojang/minecraft/class_152;
-	METHOD <init> (Lcom/mojang/minecraft/class_152;)V
-		ARG 1 player

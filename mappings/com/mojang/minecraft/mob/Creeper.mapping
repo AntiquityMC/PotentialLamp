@@ -1,0 +1,6 @@
+CLASS com/mojang/minecraft/class_140 com/mojang/minecraft/mob/Creeper
+	METHOD <init> (Lcom/mojang/minecraft/class_7;FFF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

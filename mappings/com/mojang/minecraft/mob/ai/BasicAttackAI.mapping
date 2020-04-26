@@ -1,0 +1,4 @@
+CLASS com/mojang/minecraft/class_150 com/mojang/minecraft/mob/ai/BasicAttackAI
+	FIELD field_814 damage I
+	METHOD method_458 attack (Lcom/mojang/minecraft/class_13;)Z
+	METHOD method_459 doAttack ()V

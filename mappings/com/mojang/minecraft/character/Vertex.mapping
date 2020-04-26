@@ -1,0 +1,21 @@
+CLASS com/mojang/minecraft/class_17 com/mojang/minecraft/character/Vertex
+	FIELD field_141 pos Lcom/mojang/minecraft/class_16;
+	FIELD field_142 u F
+	FIELD field_143 v F
+	METHOD <init> (FFFFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 u
+		ARG 5 v
+	METHOD <init> (Lcom/mojang/minecraft/class_16;FF)V
+		ARG 1 pos
+		ARG 2 u
+		ARG 3 v
+	METHOD <init> (Lcom/mojang/minecraft/class_17;FF)V
+		ARG 1 other
+		ARG 2 u
+		ARG 3 v
+	METHOD method_76 remap (FF)Lcom/mojang/minecraft/class_17;
+		ARG 1 u
+		ARG 2 v

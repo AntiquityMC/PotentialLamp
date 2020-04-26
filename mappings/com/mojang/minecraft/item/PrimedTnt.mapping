@@ -1,1 +1,11 @@
 CLASS com/mojang/minecraft/class_112 com/mojang/minecraft/item/PrimedTnt
+	FIELD field_595 defused Z
+	FIELD field_596 life I
+	FIELD field_597 xd F
+	FIELD field_598 yd F
+	FIELD field_599 zd F
+	METHOD <init> (Lcom/mojang/minecraft/class_7;FFF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

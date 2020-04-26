@@ -45,7 +45,7 @@ METHOD	com/mojang/rubydung/RubyDung	([Ljava/lang/String;)V	main	main
 METHOD	com/mojang/rubydung/RubyDung	(F)V	moveCameraToPlayer	method_10
 METHOD	com/mojang/rubydung/RubyDung	(F)V	pick	method_11
 METHOD	com/mojang/rubydung/RubyDung	(F)V	render	method_12
-METHOD	com/mojang/rubydung/RubyDung	()V	run	method_13
+METHOD	com/mojang/rubydung/RubyDung	()V	run	run
 METHOD	com/mojang/rubydung/RubyDung	(F)V	setupCamera	method_14
 METHOD	com/mojang/rubydung/RubyDung	(FII)V	setupPickCamera	method_15
 METHOD	com/mojang/rubydung/RubyDung	()V	tick	method_16

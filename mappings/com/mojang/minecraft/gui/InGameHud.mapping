@@ -1,0 +1,10 @@
+CLASS com/mojang/minecraft/class_103 com/mojang/minecraft/gui/InGameHud
+	FIELD field_547 random Ljava/util/Random;
+	FIELD field_548 minecraft Lcom/mojang/minecraft/Minecraft;
+	FIELD field_549 scaledWidth I
+	FIELD field_550 scaledHeight I
+	METHOD <init> (Lcom/mojang/minecraft/Minecraft;II)V
+		ARG 1 minecraft
+		ARG 2 width
+		ARG 3 height
+	METHOD method_321 render (FZII)V

@@ -78,6 +78,7 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_211 render ()I
 	METHOD method_212 mayPick ()Z
 	METHOD method_214 renderBackFace (Lcom/mojang/minecraft/class_10;IIII)V
 	METHOD method_215 setShape (FFFFFF)V

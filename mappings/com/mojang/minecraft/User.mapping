@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/class_36 com/mojang/minecraft/User
+	FIELD field_275 name Ljava/lang/String;
+	FIELD field_376 creativeTiles Ljava/util/List;
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 name

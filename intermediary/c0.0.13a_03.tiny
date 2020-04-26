@@ -4,10 +4,10 @@ FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/c;	a	field_228
 FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	b	field_229
 FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	c	field_227
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	a	method_123
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	destroy	method_118
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	init	method_119
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	start	method_120
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	stop	method_122
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	destroy	destroy
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	init	init
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	start	start
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	stop	stop
 CLASS	com/mojang/minecraft/a	com/mojang/minecraft/class_4
 FIELD	com/mojang/minecraft/a	F	a	field_41
 FIELD	com/mojang/minecraft/a	J	b	field_38
@@ -89,7 +89,7 @@ METHOD	com/mojang/minecraft/a/a/f	(I)I	a	method_99
 METHOD	com/mojang/minecraft/a/a/f	(Lcom/mojang/minecraft/a/f;IIILjava/util/Random;)V	a	method_100
 CLASS	com/mojang/minecraft/a/b	com/mojang/minecraft/class_20
 FIELD	com/mojang/minecraft/a/b	Lcom/mojang/minecraft/e;	a	field_179
-METHOD	com/mojang/minecraft/a/b	(Ljava/lang/Object;Ljava/lang/Object;)I	compare	method_91
+METHOD	com/mojang/minecraft/a/b	(Ljava/lang/Object;Ljava/lang/Object;)I	compare	compare
 CLASS	com/mojang/minecraft/a/b/a	com/mojang/minecraft/class_33
 FIELD	com/mojang/minecraft/a/b/a	Lcom/mojang/minecraft/c;	a	field_309
 FIELD	com/mojang/minecraft/a/b/a	I	b	field_254
@@ -147,7 +147,7 @@ METHOD	com/mojang/minecraft/a/c	()V	d	method_177
 METHOD	com/mojang/minecraft/a/c	()V	e	method_222
 CLASS	com/mojang/minecraft/a/d	com/mojang/minecraft/class_41
 FIELD	com/mojang/minecraft/a/d	Lcom/mojang/minecraft/e;	a	field_290
-METHOD	com/mojang/minecraft/a/d	(Ljava/lang/Object;Ljava/lang/Object;)I	compare	method_179
+METHOD	com/mojang/minecraft/a/d	(Ljava/lang/Object;Ljava/lang/Object;)I	compare	compare
 CLASS	com/mojang/minecraft/a/e	com/mojang/minecraft/class_9
 FIELD	com/mojang/minecraft/a/e	Lcom/mojang/minecraft/a/f;	a	field_83
 FIELD	com/mojang/minecraft/a/e	[Lcom/mojang/minecraft/a/c;	b	field_82
@@ -285,7 +285,7 @@ METHOD	com/mojang/minecraft/c	(Ljava/lang/String;)V	c	method_112
 METHOD	com/mojang/minecraft/c	()V	d	method_158
 METHOD	com/mojang/minecraft/c	()V	e	method_116
 METHOD	com/mojang/minecraft/c	()V	f	method_16
-METHOD	com/mojang/minecraft/c	()V	run	method_13
+METHOD	com/mojang/minecraft/c	()V	run	run
 CLASS	com/mojang/minecraft/c/a	com/mojang/minecraft/class_53
 FIELD	com/mojang/minecraft/c/a	Lcom/mojang/minecraft/c/d;	e	field_348
 FIELD	com/mojang/minecraft/c/a	Ljava/lang/String;	f	field_349
@@ -340,7 +340,7 @@ METHOD	com/mojang/minecraft/c/e	(I)V	a	method_227
 METHOD	com/mojang/minecraft/c/e	(II)V	a	method_169
 METHOD	com/mojang/minecraft/c/e	(Lcom/mojang/minecraft/c/b;)V	a	method_165
 METHOD	com/mojang/minecraft/c/e	([Ljava/lang/String;)V	a	method_228
-METHOD	com/mojang/minecraft/c/e	()V	run	method_229
+METHOD	com/mojang/minecraft/c/e	()V	run	run
 CLASS	com/mojang/minecraft/c/f	com/mojang/minecraft/class_55
 METHOD	com/mojang/minecraft/c/f	(I)V	a	method_227
 METHOD	com/mojang/minecraft/c/f	([Ljava/lang/String;)V	a	method_228

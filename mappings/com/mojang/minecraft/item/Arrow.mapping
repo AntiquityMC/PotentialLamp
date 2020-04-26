@@ -1,1 +1,19 @@
 CLASS com/mojang/minecraft/class_110 com/mojang/minecraft/item/Arrow
+	FIELD field_573 damage I
+	FIELD field_574 gravity F
+	FIELD field_575 hasHit Z
+	FIELD field_576 owner Lcom/mojang/minecraft/class_13;
+	FIELD field_577 stickTime I
+	FIELD field_578 time I
+	FIELD field_579 type I
+	FIELD field_580 xRot F
+	FIELD field_581 xRotO F
+	FIELD field_582 xd F
+	FIELD field_583 yRot F
+	FIELD field_584 yRotO F
+	FIELD field_585 yd F
+	FIELD field_586 zd F
+	METHOD <init> (Lcom/mojang/minecraft/class_7;Lcom/mojang/minecraft/class_13;FFFFFF)V
+		ARG 1 level
+		ARG 2 owner
+	METHOD method_336 getOwner ()Lcom/mojang/minecraft/class_13;

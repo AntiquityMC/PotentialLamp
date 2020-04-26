@@ -1,3 +1,43 @@
 CLASS com/mojang/minecraft/Minecraft
+	FIELD field_161 particleEngine Lcom/mojang/minecraft/class_25;
+	FIELD field_210 fullscreen Z
+	FIELD field_216 appletMode Z
+	FIELD field_218 emptyCursor Lorg/lwjgl/input/Cursor;
+	FIELD field_219 font Lcom/mojang/minecraft/class_32;
+	FIELD field_221 mouseGrabbed Z
+	FIELD field_222 parent Ljava/awt/Canvas;
+	FIELD field_223 pause Z
+	FIELD field_224 running Z
+	FIELD field_225 textures Lcom/mojang/minecraft/class_3;
+	FIELD field_22 height I
+	FIELD field_23 hitResult Lcom/mojang/minecraft/class_1;
+	FIELD field_24 level Lcom/mojang/minecraft/class_7;
+	FIELD field_25 levelRenderer Lcom/mojang/minecraft/class_9;
+	FIELD field_265 levelIo Lcom/mojang/minecraft/class_42;
+	FIELD field_266 screen Lcom/mojang/minecraft/class_39;
+	FIELD field_267 title Ljava/lang/String;
+	FIELD field_268 user Lcom/mojang/minecraft/class_36;
+	FIELD field_26 player Lcom/mojang/minecraft/class_2;
+	FIELD field_28 timer Lcom/mojang/minecraft/class_4;
+	FIELD field_30 width I
 	FIELD field_632 options Lcom/mojang/minecraft/class_116;
+	FIELD field_639 applet Lcom/mojang/minecraft/class_26;
+	FIELD field_641 gameMode Lcom/mojang/minecraft/class_90;
+	FIELD field_649 hud Lcom/mojang/minecraft/class_103;
+	METHOD <init> (Ljava/awt/Canvas;Lcom/mojang/minecraft/class_26;IIZ)V
+		ARG 1 parent
+		ARG 2 applet
+		ARG 3 width
+		ARG 4 height
+		ARG 5 fullscreen
+	METHOD method_112 checkGlError (Ljava/lang/String;)V
+		ARG 0 message
+	METHOD method_113 grabMouse ()V
+	METHOD method_114 handleMouseClick (I)V
+	METHOD method_116 releaseMouse ()V
+	METHOD method_13 run ()V
+	METHOD method_16 tick ()V
+	METHOD method_160 generateNewLevel (I)V
 	METHOD method_162 openScreen (Lcom/mojang/minecraft/class_39;)V
+		ARG 1 screen
+	METHOD method_8 destroy ()V

@@ -1,7 +1,0 @@
-CLASS com/mojang/minecraft/class_97 com/mojang/minecraft/gui/screen/OptionsScreen
-	FIELD field_536 parent Lcom/mojang/minecraft/class_39;
-	FIELD field_537 title Ljava/lang/String;
-	FIELD field_538 options Lcom/mojang/minecraft/class_116;
-	METHOD <init> (Lcom/mojang/minecraft/class_39;Lcom/mojang/minecraft/class_116;)V
-		ARG 1 parent
-		ARG 2 options

@@ -14,9 +14,18 @@ CLASS com/mojang/minecraft/class_12 com/mojang/minecraft/phys/AABB
 		ARG 5 y1
 		ARG 6 z1
 	METHOD method_217 cloneMove (FFF)Lcom/mojang/minecraft/class_12;
+	METHOD method_477 clip (Lcom/mojang/minecraft/class_16;Lcom/mojang/minecraft/class_16;)Lcom/mojang/minecraft/class_1;
+	METHOD method_478 contains (Lcom/mojang/minecraft/class_16;)Z
+		ARG 1 vector
 	METHOD method_479 copy ()Lcom/mojang/minecraft/class_12;
-	METHOD method_482 intersects (Lcom/mojang/minecraft/class_12;)Z
+	METHOD method_480 getSize ()F
+	METHOD method_481 intersects (FFFFFF)Z
+	METHOD method_482 intersectsInner (Lcom/mojang/minecraft/class_12;)Z
 		ARG 1 c
+	METHOD method_483 shrink (FFF)Lcom/mojang/minecraft/class_12;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_57 clipXCollide (Lcom/mojang/minecraft/class_12;F)F
 		ARG 1 c
 		ARG 2 xa
@@ -34,7 +43,7 @@ CLASS com/mojang/minecraft/class_12 com/mojang/minecraft/phys/AABB
 		ARG 1 xa
 		ARG 2 ya
 		ARG 3 za
-	METHOD method_62 (Lcom/mojang/minecraft/class_12;)Z
+	METHOD method_62 intersects (Lcom/mojang/minecraft/class_12;)Z
 		ARG 1 c
 	METHOD method_63 move (FFF)V
 		ARG 1 xa

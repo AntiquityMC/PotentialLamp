@@ -1,0 +1,14 @@
+CLASS com/mojang/minecraft/class_149 com/mojang/minecraft/mob/ai/BasicAI
+	FIELD field_803 attackDelay I
+	FIELD field_804 attackTarget Lcom/mojang/minecraft/class_13;
+	FIELD field_805 jumping Z
+	FIELD field_806 level Lcom/mojang/minecraft/class_7;
+	FIELD field_807 mob Lcom/mojang/minecraft/class_142;
+	FIELD field_808 noActionTime I
+	FIELD field_809 random Ljava/util/Random;
+	FIELD field_810 runSpeed F
+	FIELD field_811 xxa F
+	FIELD field_812 yRotA F
+	FIELD field_813 yya F
+	METHOD method_456 jumpFromGround ()V
+	METHOD method_457 update ()V

@@ -1,0 +1,29 @@
+CLASS com/mojang/minecraft/class_14 com/mojang/minecraft/character/Cube
+	FIELD field_126 polygons [Lcom/mojang/minecraft/class_15;
+	FIELD field_127 vertices [Lcom/mojang/minecraft/class_17;
+	FIELD field_128 x F
+	FIELD field_129 xRot F
+	FIELD field_130 xTexOffs I
+	FIELD field_131 y F
+	FIELD field_132 yRot F
+	FIELD field_133 yTexOffs I
+	FIELD field_134 z F
+	FIELD field_135 zRot F
+	FIELD field_162 compiled Z
+	FIELD field_163 list I
+	METHOD <init> (II)V
+		ARG 1 xTexOffs
+		ARG 2 yTexOffs
+	METHOD method_69 addBox (FFFIIIF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 width
+		ARG 5 height
+		ARG 6 depth
+	METHOD method_70 render (F)V
+	METHOD method_71 setPos (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_85 compile (F)V

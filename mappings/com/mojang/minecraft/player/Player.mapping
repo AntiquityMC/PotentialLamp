@@ -1,0 +1,11 @@
+CLASS com/mojang/minecraft/class_2 com/mojang/minecraft/player/Player
+	FIELD field_876 MAX_ARROWS I
+	FIELD field_877 MAX_HEALTH I
+	FIELD field_879 arrows I
+	FIELD field_880 bob F
+	FIELD field_881 input Lcom/mojang/minecraft/class_162;
+	FIELD field_882 inventory Lcom/mojang/minecraft/class_161;
+	FIELD field_883 newTexture Ljava/awt/image/BufferedImage;
+	FIELD field_884 oBob F
+	FIELD field_885 score I
+	FIELD field_886 userType B

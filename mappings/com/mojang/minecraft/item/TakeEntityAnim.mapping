@@ -1,5 +1,11 @@
 CLASS com/mojang/minecraft/class_113 com/mojang/minecraft/item/TakeEntityAnim
+	FIELD field_600 item Lcom/mojang/minecraft/class_13;
+	FIELD field_601 player Lcom/mojang/minecraft/class_13;
 	FIELD field_602 time I
 	FIELD field_603 xorg F
 	FIELD field_604 yorg F
 	FIELD field_605 zorg F
+	METHOD <init> (Lcom/mojang/minecraft/class_7;Lcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_13;)V
+		ARG 1 level
+		ARG 2 item
+		ARG 3 player
