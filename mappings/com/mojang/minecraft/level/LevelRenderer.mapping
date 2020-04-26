@@ -1,1 +1,26 @@
 CLASS com/mojang/minecraft/class_9 com/mojang/minecraft/level/LevelRenderer
+	FIELD field_255 textures Lcom/mojang/minecraft/class_3;
+	FIELD field_302 lX F
+	FIELD field_303 lY F
+	FIELD field_304 lZ F
+	FIELD field_305 sortedChunks [Lcom/mojang/minecraft/class_5;
+	FIELD field_306 surroundLists I
+	FIELD field_451 level Lcom/mojang/minecraft/class_7;
+	FIELD field_82 chunks [Lcom/mojang/minecraft/class_5;
+	FIELD field_83 minecraft Lcom/mojang/minecraft/Minecraft;
+	FIELD field_85 xChunks I
+	FIELD field_86 yChunks I
+	FIELD field_87 zChunks I
+	METHOD <init> (Lcom/mojang/minecraft/Minecraft;Lcom/mojang/minecraft/class_3;)V
+		ARG 1 minecraft
+		ARG 2 textures
+	METHOD method_42 allChanged ()V
+	METHOD method_46 render (Lcom/mojang/minecraft/class_2;I)I
+		ARG 1 player
+	METHOD method_48 setDirty (IIIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 width
+		ARG 5 height
+		ARG 6 depth

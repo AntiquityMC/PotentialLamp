@@ -24,9 +24,10 @@ CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
 	FIELD field_682 zSpawn I
 	FIELD field_687 serialVersionUID J
 	FIELD field_75 blocks [B
-	FIELD field_76 depth I
-	FIELD field_77 height I
+	FIELD field_76 height I
+	FIELD field_77 depth I
 	FIELD field_78 listeners Ljava/util/ArrayList;
+	FIELD field_79 lightDepths [I
 	FIELD field_80 width I
 	METHOD method_180 containsAnyLiquid (Lcom/mojang/minecraft/class_12;)Z
 		ARG 1 bb
