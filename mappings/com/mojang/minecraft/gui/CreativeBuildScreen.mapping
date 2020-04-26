@@ -1,0 +1,4 @@
+CLASS com/mojang/minecraft/class_96 com/mojang/minecraft/gui/CreativeBuildScreen
+	METHOD method_314 getHoveredTile (II)I
+		ARG 1 mouseX
+		ARG 2 mouseY

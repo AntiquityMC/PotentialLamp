@@ -1,0 +1,21 @@
+CLASS com/mojang/minecraft/class_154 com/mojang/minecraft/net/PosAndRot
+	FIELD field_846 x F
+	FIELD field_847 y F
+	FIELD field_848 z F
+	FIELD field_849 yRot F
+	FIELD field_850 xRot F
+	FIELD field_851 hasRotation Z
+	FIELD field_852 hasPosition Z
+	METHOD <init> (FF)V
+		ARG 1 yRot
+		ARG 2 xRot
+	METHOD <init> (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD <init> (FFFFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 yRot
+		ARG 5 xRot

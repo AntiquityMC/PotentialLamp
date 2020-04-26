@@ -1,0 +1,7 @@
+CLASS com/mojang/minecraft/class_148 com/mojang/minecraft/mob/ai/AI
+	FIELD field_802 defaultLookAngle I
+	METHOD method_453 beforeRemove ()V
+	METHOD method_454 hurt (Lcom/mojang/minecraft/class_13;I)V
+	METHOD method_455 tick (Lcom/mojang/minecraft/class_7;Lcom/mojang/minecraft/class_142;)V
+		ARG 1 level
+		ARG 2 mob

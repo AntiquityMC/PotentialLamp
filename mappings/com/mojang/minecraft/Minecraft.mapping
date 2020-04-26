@@ -23,6 +23,7 @@ CLASS com/mojang/minecraft/Minecraft
 	FIELD field_632 options Lcom/mojang/minecraft/class_116;
 	FIELD field_639 applet Lcom/mojang/minecraft/class_26;
 	FIELD field_641 gameMode Lcom/mojang/minecraft/class_90;
+	FIELD field_649 hud Lcom/mojang/minecraft/class_103;
 	METHOD <init> (Ljava/awt/Canvas;Lcom/mojang/minecraft/class_26;IIZ)V
 		ARG 1 parent
 		ARG 2 applet

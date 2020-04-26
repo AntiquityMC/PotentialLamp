@@ -1,0 +1,39 @@
+CLASS com/mojang/minecraft/class_152 com/mojang/minecraft/net/NetworkPlayer
+	FIELD field_816 displayName Ljava/lang/String;
+	FIELD field_817 minecraft Lcom/mojang/minecraft/Minecraft;
+	FIELD field_818 moveQueue Ljava/util/List;
+	FIELD field_819 username Ljava/lang/String;
+	FIELD field_820 newTexture Ljava/awt/image/BufferedImage;
+	FIELD field_821 textures Lcom/mojang/minecraft/class_3;
+	FIELD field_822 tickCount I
+	FIELD field_823 xp I
+	FIELD field_824 yp I
+	FIELD field_825 zp I
+	METHOD <init> (Lcom/mojang/minecraft/Minecraft;ILjava/lang/String;IIIFF)V
+		ARG 1 minecraft
+		ARG 3 name
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 yRot
+		ARG 8 xRot
+	METHOD method_460 clear ()V
+	METHOD method_461 queue (BBB)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_462 queue (BBBFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 yRot
+		ARG 5 xRot
+	METHOD method_463 queue (FF)V
+		ARG 1 yRot
+		ARG 2 xRot
+	METHOD method_464 teleport (SSSFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 yRot
+		ARG 5 xRot
