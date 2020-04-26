@@ -62,7 +62,7 @@ METHOD	com/mojang/minecraft/RubyDung	([Ljava/lang/String;)V	main	main
 METHOD	com/mojang/minecraft/RubyDung	(F)V	moveCameraToPlayer	method_10
 METHOD	com/mojang/minecraft/RubyDung	(F)V	pick	method_11
 METHOD	com/mojang/minecraft/RubyDung	(F)V	render	method_12
-METHOD	com/mojang/minecraft/RubyDung	()V	run	method_13
+METHOD	com/mojang/minecraft/RubyDung	()V	run	run
 METHOD	com/mojang/minecraft/RubyDung	(F)V	setupCamera	method_14
 METHOD	com/mojang/minecraft/RubyDung	(I)V	setupFog	method_83
 METHOD	com/mojang/minecraft/RubyDung	(FII)V	setupPickCamera	method_15
