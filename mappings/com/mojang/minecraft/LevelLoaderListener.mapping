@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_109 com/mojang/minecraft/level/LevelLoaderListener
+CLASS com/mojang/minecraft/class_109 com/mojang/minecraft/LevelLoaderListener
 	FIELD field_569 stage Ljava/lang/String;
 	FIELD field_570 minecraft Lcom/mojang/minecraft/Minecraft;
 	FIELD field_571 title Ljava/lang/String;
