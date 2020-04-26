@@ -1,1 +1,22 @@
 CLASS com/mojang/minecraft/class_1 com/mojang/minecraft/HitResult
+	FIELD field_1 f I
+	FIELD field_209 type I
+		COMMENT The integer type of this hit result.
+		COMMENT
+		COMMENT <p><ul>
+		COMMENT <li>0: block hit</li>
+		COMMENT <li>1: entity hit</li>
+		COMMENT </ul>
+	FIELD field_3 x I
+	FIELD field_4 y I
+	FIELD field_566 vector Lcom/mojang/minecraft/class_16;
+	FIELD field_567 entity Lcom/mojang/minecraft/class_13;
+	FIELD field_5 z I
+	METHOD <init> (IIIILcom/mojang/minecraft/class_16;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 f
+		ARG 5 vector
+	METHOD <init> (Lcom/mojang/minecraft/class_13;)V
+		ARG 1 entity

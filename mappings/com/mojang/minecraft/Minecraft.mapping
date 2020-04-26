@@ -39,4 +39,4 @@ CLASS com/mojang/minecraft/Minecraft
 	METHOD method_160 generateNewLevel (I)V
 	METHOD method_162 openScreen (Lcom/mojang/minecraft/class_39;)V
 		ARG 1 screen
-	METHOD method_8 destory ()V
+	METHOD method_8 destroy ()V
