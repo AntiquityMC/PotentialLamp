@@ -1,1 +1,23 @@
 CLASS com/mojang/minecraft/class_24 com/mojang/minecraft/particle/Particle
+	FIELD field_201 tex I
+	FIELD field_202 uo F
+	FIELD field_203 vo F
+	FIELD field_212 age I
+	FIELD field_213 lifetime I
+	FIELD field_214 size F
+	FIELD field_866 blue F
+	FIELD field_867 green F
+	FIELD field_869 red F
+	METHOD <init> (Lcom/mojang/minecraft/class_7;FFFFFF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_107 render (Lcom/mojang/minecraft/class_10;FFFFFF)V
+		ARG 1 t
+		ARG 2 tickDelta
+	METHOD method_471 getLayer ()I
+	METHOD method_472 setSize (F)Lcom/mojang/minecraft/class_24;
+		ARG 1 size
+	METHOD method_473 setSpeed (F)Lcom/mojang/minecraft/class_24;
+		ARG 1 speed

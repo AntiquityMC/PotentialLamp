@@ -20,3 +20,4 @@ CLASS com/mojang/minecraft/class_39 com/mojang/minecraft/gui/Screen
 		ARG 2 width
 		ARG 3 height
 	METHOD method_175 tick ()V
+	METHOD method_323 close ()V

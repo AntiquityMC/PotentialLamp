@@ -1,5 +1,6 @@
 CLASS com/mojang/minecraft/class_5 com/mojang/minecraft/level/Chunk
 	FIELD field_45 level Lcom/mojang/minecraft/class_7;
+	FIELD field_468 updates I
 	FIELD field_46 lists I
 	FIELD field_470 sizeX I
 	FIELD field_471 sizeY I

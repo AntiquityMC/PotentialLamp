@@ -54,9 +54,12 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 	METHOD method_229 distanceToSqr (Lcom/mojang/minecraft/class_13;)F
 		ARG 1 other
 	METHOD method_230 getBrightness (F)F
+		ARG 1 tickDelta
 	METHOD method_231 getTexture ()I
 	METHOD method_232 hurt (Lcom/mojang/minecraft/class_13;I)V
 	METHOD method_233 interpolateTurn (FF)V
+		ARG 1 y
+		ARG 2 x
 	METHOD method_234 intersects (FFFFFF)Z
 	METHOD method_235 isCreativeModeAllowed ()Z
 	METHOD method_236 isFree (FFFF)Z
@@ -71,6 +74,7 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 		ARG 4 yRot
 		ARG 5 xRot
 	METHOD method_242 playSound (Ljava/lang/String;FF)V
+		ARG 1 sound
 	METHOD method_243 playerTouch (Lcom/mojang/minecraft/class_13;)V
 		ARG 1 player
 	METHOD method_244 push (FFF)V
@@ -99,7 +103,10 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 		ARG 2 y
 		ARG 3 z
 	METHOD method_68 turn (FF)V
+		ARG 1 y
+		ARG 2 x
 	METHOD method_77 render (Lcom/mojang/minecraft/class_3;F)V
+		ARG 1 textures
 	METHOD method_78 isLit ()Z
 	METHOD method_79 remove ()V
 	METHOD method_80 setSize (FF)V

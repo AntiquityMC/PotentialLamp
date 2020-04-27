@@ -3,7 +3,13 @@ CLASS com/mojang/minecraft/class_54 com/mojang/minecraft/comm/SocketConnection
 	FIELD field_344 socketChannel Ljava/nio/channels/SocketChannel;
 	FIELD field_345 readBuffer Ljava/nio/ByteBuffer;
 	FIELD field_346 writeBuffer Ljava/nio/ByteBuffer;
+	FIELD field_347 manager Lcom/mojang/minecraft/class_155;
 	FIELD field_348 socket Ljava/net/Socket;
 	METHOD <init> (Ljava/lang/String;I)V
 		ARG 1 ip
 		ARG 2 port
+	METHOD method_222 disconnect ()V
+	METHOD method_223 sendPacket (Lcom/mojang/minecraft/class_153;[Ljava/lang/Object;)V
+		ARG 1 packet
+	METHOD method_224 read (Ljava/lang/Class;)Ljava/lang/Object;
+		ARG 1 type

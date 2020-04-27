@@ -1,1 +1,5 @@
 CLASS com/mojang/minecraft/class_137 com/mojang/minecraft/level/tile/SlabTile
+	FIELD field_755 isDouble Z
+	METHOD <init> (IZ)V
+		ARG 1 id
+		ARG 2 isDouble

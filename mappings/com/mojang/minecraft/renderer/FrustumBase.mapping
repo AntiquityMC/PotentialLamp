@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_73
+CLASS com/mojang/minecraft/class_73 com/mojang/minecraft/renderer/FrustumBase
 	FIELD field_464 m_Frustum [[F
 	FIELD field_465 proj [F
 	FIELD field_466 modl [F

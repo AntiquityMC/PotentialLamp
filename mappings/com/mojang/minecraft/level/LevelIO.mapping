@@ -2,7 +2,7 @@ CLASS com/mojang/minecraft/class_42 com/mojang/minecraft/level/LevelIO
 	FIELD field_300 levelLoaderListener Lcom/mojang/minecraft/class_109;
 	METHOD <init> (Lcom/mojang/minecraft/class_109;)V
 		ARG 1 levelLoaderListener
-	METHOD method_186 (Ljava/io/InputStream;)Lcom/mojang/minecraft/class_7;
+	METHOD method_186 read (Ljava/io/InputStream;)Lcom/mojang/minecraft/class_7;
 		ARG 1 in
 	METHOD method_188 save (Lcom/mojang/minecraft/class_7;Ljava/io/OutputStream;)V
 		ARG 0 level
@@ -14,5 +14,9 @@ CLASS com/mojang/minecraft/class_42 com/mojang/minecraft/level/LevelIO
 		ARG 1 level
 	METHOD method_406 (Ljava/io/File;)Lcom/mojang/minecraft/class_7;
 		ARG 1 file
+	METHOD method_407 download (Ljava/lang/String;Ljava/lang/String;I)Lcom/mojang/minecraft/class_7;
+		ARG 1 host
+		ARG 2 user
+		ARG 3 id
 	METHOD method_408 (Ljava/io/InputStream;)[B
 		ARG 0 in

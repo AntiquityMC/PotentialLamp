@@ -2,7 +2,9 @@ CLASS com/mojang/minecraft/class_109 com/mojang/minecraft/LevelLoaderListener
 	FIELD field_569 stage Ljava/lang/String;
 	FIELD field_570 minecraft Lcom/mojang/minecraft/Minecraft;
 	FIELD field_571 title Ljava/lang/String;
+	FIELD field_572 lastUpdateTime J
 	METHOD method_333 render (I)V
+		ARG 1 progress
 	METHOD method_334 beginLevelLoading (Ljava/lang/String;)V
 		ARG 1 title
 	METHOD method_335 levelLoadUpdate (Ljava/lang/String;)V

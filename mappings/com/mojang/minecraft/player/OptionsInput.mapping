@@ -1,0 +1,2 @@
+CLASS com/mojang/minecraft/class_163 com/mojang/minecraft/player/OptionsInput
+	FIELD field_892 options Lcom/mojang/minecraft/class_116;
