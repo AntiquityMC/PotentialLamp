@@ -1,0 +1,12 @@
+CLASS com/mojang/minecraft/class_62 com/mojang/minecraft/renderer/model/ModelCache
+	FIELD field_388 humanoid Lcom/mojang/minecraft/class_65;
+	FIELD field_389 humanoidArmor Lcom/mojang/minecraft/class_65;
+	FIELD field_390 creeper Lcom/mojang/minecraft/class_60;
+	FIELD field_391 skeleton Lcom/mojang/minecraft/class_63;
+	FIELD field_392 zombie Lcom/mojang/minecraft/class_61;
+	FIELD field_393 pig Lcom/mojang/minecraft/class_19;
+	FIELD field_394 sheep Lcom/mojang/minecraft/class_19;
+	FIELD field_395 spider Lcom/mojang/minecraft/class_66;
+	FIELD field_396 sheepFur Lcom/mojang/minecraft/class_59;
+	METHOD method_262 getModel (Ljava/lang/String;)Lcom/mojang/minecraft/class_58;
+		ARG 1 id

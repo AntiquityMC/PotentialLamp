@@ -8,7 +8,7 @@ CLASS com/mojang/minecraft/class_155 com/mojang/minecraft/net/ConnectionManager
 		ARG 2 ip
 		ARG 3 port
 		ARG 4 username
-		ARG 5 sessionId
+		ARG 5 mpPass
 	METHOD method_465 isConnected ()Z
 	METHOD method_466 setTile (IIIII)V
 		ARG 1 x

@@ -21,7 +21,7 @@ CLASS com/mojang/minecraft/Minecraft
 	FIELD field_28 timer Lcom/mojang/minecraft/class_4;
 	FIELD field_30 width I
 	FIELD field_632 options Lcom/mojang/minecraft/class_116;
-	FIELD field_633 ip Ljava/lang/String;
+	FIELD field_633 server Ljava/lang/String;
 	FIELD field_634 port I
 	FIELD field_636 resourceDownloadThread Lcom/mojang/minecraft/class_74;
 	FIELD field_639 applet Lcom/mojang/minecraft/class_26;

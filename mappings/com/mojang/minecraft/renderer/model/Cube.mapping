@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_14 com/mojang/minecraft/character/Cube
+CLASS com/mojang/minecraft/class_14 com/mojang/minecraft/renderer/model/Cube
 	FIELD field_126 polygons [Lcom/mojang/minecraft/class_15;
 	FIELD field_127 vertices [Lcom/mojang/minecraft/class_17;
 	FIELD field_128 x F

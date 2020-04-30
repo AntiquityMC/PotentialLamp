@@ -1,0 +1,2 @@
+CLASS com/mojang/minecraft/class_19 com/mojang/minecraft/renderer/model/AnimalModel
+	FIELD field_168 head Lcom/mojang/minecraft/class_14;

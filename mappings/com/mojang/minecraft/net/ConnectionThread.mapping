@@ -2,7 +2,7 @@ CLASS com/mojang/minecraft/class_157 com/mojang/minecraft/net/ConnectionThread
 	FIELD field_860 ip Ljava/lang/String;
 	FIELD field_861 port I
 	FIELD field_862 username Ljava/lang/String;
-	FIELD field_863 sessionId Ljava/lang/String;
+	FIELD field_863 mpPass Ljava/lang/String;
 	FIELD field_864 minecraft Lcom/mojang/minecraft/Minecraft;
 	FIELD field_865 connectionManager Lcom/mojang/minecraft/class_155;
 	METHOD <init> (Lcom/mojang/minecraft/class_155;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Lcom/mojang/minecraft/Minecraft;)V
@@ -10,5 +10,5 @@ CLASS com/mojang/minecraft/class_157 com/mojang/minecraft/net/ConnectionThread
 		ARG 2 ip
 		ARG 3 port
 		ARG 4 username
-		ARG 5 sessionId
+		ARG 5 mpPass
 		ARG 6 minecraft

@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_15 com/mojang/minecraft/character/Polygon
+CLASS com/mojang/minecraft/class_15 com/mojang/minecraft/renderer/model/Polygon
 	FIELD field_137 vertices [Lcom/mojang/minecraft/class_17;
 	METHOD <init> ([Lcom/mojang/minecraft/class_17;)V
 		ARG 1 vertices

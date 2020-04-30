@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_17 com/mojang/minecraft/character/Vertex
+CLASS com/mojang/minecraft/class_17 com/mojang/minecraft/renderer/model/Vertex
 	FIELD field_141 pos Lcom/mojang/minecraft/class_16;
 	FIELD field_142 u F
 	FIELD field_143 v F
