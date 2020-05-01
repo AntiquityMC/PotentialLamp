@@ -1,0 +1,4 @@
+CLASS com/mojang/minecraft/class_104 com/mojang/minecraft/gui/LevelFileChooserThread
+	FIELD field_554 screen Lcom/mojang/minecraft/class_105;
+	METHOD <init> (Lcom/mojang/minecraft/class_105;)V
+		ARG 1 screen

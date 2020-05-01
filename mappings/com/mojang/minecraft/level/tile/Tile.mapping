@@ -132,7 +132,7 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 6 engine
 	METHOD method_425 properties (Lcom/mojang/minecraft/class_11$class_125;FFF)Lcom/mojang/minecraft/class_11;
 		ARG 1 soundGroup
-	METHOD method_428 (Lcom/mojang/minecraft/class_7;III)V
+	METHOD method_428 onPlaced (Lcom/mojang/minecraft/class_7;III)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y

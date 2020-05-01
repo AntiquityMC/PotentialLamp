@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/class_72
+	FIELD field_458 minecraft Lcom/mojang/minecraft/Minecraft;
+	FIELD field_463 handSwinging Z
+	METHOD <init> (Lcom/mojang/minecraft/Minecraft;)V
+		ARG 1 minecraft
