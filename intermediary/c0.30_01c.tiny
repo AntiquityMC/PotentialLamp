@@ -110,17 +110,17 @@ FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	field_227
 FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/l;	minecraft	field_228
 FIELD	com/mojang/minecraft/MinecraftApplet	J	serialVersionUID	serialVersionUID
 FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	field_229
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	destroy	method_118
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	init	method_119
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	start	method_120
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	destroy	destroy
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	init	init
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	start	start
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	method_121
-METHOD	com/mojang/minecraft/MinecraftApplet	()V	stop	method_122
+METHOD	com/mojang/minecraft/MinecraftApplet	()V	stop	stop
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	method_123
 CLASS	com/mojang/minecraft/MinecraftApplet$1	com/mojang/minecraft/class_26$1
 FIELD	com/mojang/minecraft/MinecraftApplet$1	J	serialVersionUID	serialVersionUID
 FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	field_230
-METHOD	com/mojang/minecraft/MinecraftApplet$1	()V	addNotify	method_124
-METHOD	com/mojang/minecraft/MinecraftApplet$1	()V	removeNotify	method_125
+METHOD	com/mojang/minecraft/MinecraftApplet$1	()V	addNotify	addNotify
+METHOD	com/mojang/minecraft/MinecraftApplet$1	()V	removeNotify	removeNotify
 CLASS	com/mojang/minecraft/StopGameException	com/mojang/minecraft/class_56
 FIELD	com/mojang/minecraft/StopGameException	J	serialVersionUID	serialVersionUID
 CLASS	com/mojang/minecraft/a	com/mojang/minecraft/class_36
