@@ -1,1 +1,6 @@
 CLASS com/mojang/minecraft/class_131 com/mojang/minecraft/level/tile/GlassTile
+	FIELD field_754 renderAdjacentFaces Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 renderAdjacentFaces

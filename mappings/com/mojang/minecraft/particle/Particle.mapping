@@ -2,6 +2,9 @@ CLASS com/mojang/minecraft/class_24 com/mojang/minecraft/particle/Particle
 	FIELD field_201 tex I
 	FIELD field_202 uo F
 	FIELD field_203 vo F
+	FIELD field_204 speedX F
+	FIELD field_205 speedY F
+	FIELD field_206 speedZ F
 	FIELD field_212 age I
 	FIELD field_213 lifetime I
 	FIELD field_214 size F
@@ -13,6 +16,9 @@ CLASS com/mojang/minecraft/class_24 com/mojang/minecraft/particle/Particle
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 speedX
+		ARG 6 speedY
+		ARG 7 speedZ
 	METHOD method_107 render (Lcom/mojang/minecraft/class_10;FFFFFF)V
 		ARG 1 t
 		ARG 2 tickDelta

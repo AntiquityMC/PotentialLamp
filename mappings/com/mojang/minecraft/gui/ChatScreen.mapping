@@ -1,0 +1,3 @@
+CLASS com/mojang/minecraft/class_94 com/mojang/minecraft/gui/ChatScreen
+	FIELD field_528 message Ljava/lang/String;
+	FIELD field_529 ticks I

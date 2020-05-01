@@ -1,1 +1,6 @@
 CLASS com/mojang/minecraft/class_126 com/mojang/minecraft/level/tile/TransparentTile
+	FIELD field_753 renderAdjacentFaces Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 tex
+		ARG 3 renderAdjacentFaces

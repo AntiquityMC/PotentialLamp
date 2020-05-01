@@ -12,3 +12,6 @@ CLASS com/mojang/minecraft/class_33 com/mojang/minecraft/level/levelgen/LevelGen
 		ARG 1 creator
 		ARG 2 width
 		ARG 3 depth
+		ARG 4 height
+	METHOD method_409 renderLoadingStage (I)V
+		ARG 1 progress

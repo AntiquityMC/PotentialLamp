@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/class_114 com/mojang/minecraft/item/ItemModel
+	FIELD field_606 cube Lcom/mojang/minecraft/class_14;
+	METHOD <init> (I)V
+		ARG 1 texture
+	METHOD method_338 render ()V

@@ -1,0 +1,4 @@
+CLASS com/mojang/minecraft/class_121 com/mojang/minecraft/level/LevelInputStream
+	FIELD field_689 aiClasses Ljava/util/Set;
+	METHOD <init> (Ljava/io/InputStream;)V
+		ARG 1 in

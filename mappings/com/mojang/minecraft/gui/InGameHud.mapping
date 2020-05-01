@@ -1,4 +1,6 @@
 CLASS com/mojang/minecraft/class_103 com/mojang/minecraft/gui/InGameHud
+	FIELD field_544 messages Ljava/util/List;
+	FIELD field_545 hoveredPlayer Ljava/lang/String;
 	FIELD field_547 random Ljava/util/Random;
 	FIELD field_548 minecraft Lcom/mojang/minecraft/Minecraft;
 	FIELD field_549 scaledWidth I
@@ -8,3 +10,8 @@ CLASS com/mojang/minecraft/class_103 com/mojang/minecraft/gui/InGameHud
 		ARG 2 width
 		ARG 3 height
 	METHOD method_321 render (FZII)V
+		ARG 2 hasScreen
+		ARG 3 mouseX
+		ARG 4 mouseY
+	METHOD method_322 addMessage (Ljava/lang/String;)V
+		ARG 1 message

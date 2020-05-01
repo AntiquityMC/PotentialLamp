@@ -143,11 +143,16 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 	METHOD method_431 getLiquid ()Lcom/mojang/minecraft/class_120;
+	METHOD method_433 getTickDelay ()I
 	METHOD method_435 getDropCount ()I
 	METHOD method_437 getDrop ()I
 	METHOD method_438 getBreakTime ()I
 	METHOD method_55 render (Lcom/mojang/minecraft/class_7;IIILcom/mojang/minecraft/class_10;)Z
 		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 tesselator
 	METHOD method_99 getTextureForSide (I)I
 		ARG 1 side
 	CLASS class_125 SoundGroup

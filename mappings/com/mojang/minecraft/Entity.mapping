@@ -44,6 +44,8 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 	METHOD method_154 isInLava ()Z
 	METHOD method_155 isInWater ()Z
 	METHOD method_225 awardKillScore (Lcom/mojang/minecraft/class_13;I)V
+		ARG 1 killed
+		ARG 2 score
 	METHOD method_226 causeFallDamage (F)V
 	METHOD method_227 distanceTo (FFF)F
 		ARG 1 x
@@ -57,6 +59,8 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 		ARG 1 tickDelta
 	METHOD method_231 getTexture ()I
 	METHOD method_232 hurt (Lcom/mojang/minecraft/class_13;I)V
+		ARG 1 attacker
+		ARG 2 damage
 	METHOD method_233 interpolateTurn (FF)V
 		ARG 1 y
 		ARG 2 x
@@ -78,6 +82,9 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 	METHOD method_243 playerTouch (Lcom/mojang/minecraft/class_13;)V
 		ARG 1 player
 	METHOD method_244 push (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_245 push (Lcom/mojang/minecraft/class_13;)V
 	METHOD method_246 renderHover (Lcom/mojang/minecraft/class_3;F)V
 	METHOD method_247 setLevel (Lcom/mojang/minecraft/class_7;)V
@@ -88,7 +95,9 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 		ARG 1 yRot
 		ARG 2 xRot
 	METHOD method_250 shouldRender (Lcom/mojang/minecraft/class_16;)Z
+		ARG 1 vector
 	METHOD method_251 shouldRenderAtSqrDistance (F)Z
+		ARG 1 distance
 	METHOD method_5 tick ()V
 	METHOD method_64 move (FFF)V
 		ARG 1 x
