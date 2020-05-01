@@ -1,4 +1,0 @@
-CLASS com/mojang/minecraft/class_20 com/mojang/minecraft/level/DirtyChunkSorter
-	FIELD field_179 player Lcom/mojang/minecraft/class_2;
-	METHOD <init> (Lcom/mojang/minecraft/class_2;)V
-		ARG 1 player

@@ -1,8 +1,0 @@
-CLASS com/mojang/minecraft/class_119 com/mojang/minecraft/gamemode/SurvivalMobSpawner
-	FIELD field_684 level Lcom/mojang/minecraft/class_7;
-	METHOD <init> (Lcom/mojang/minecraft/class_7;)V
-		ARG 1 level
-	METHOD method_411 spawn (ILcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_109;)I
-		ARG 1 count
-		ARG 2 player
-		ARG 3 listener

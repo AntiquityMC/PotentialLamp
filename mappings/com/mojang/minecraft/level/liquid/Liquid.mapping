@@ -1,7 +1,0 @@
-CLASS com/mojang/minecraft/class_120 com/mojang/minecraft/level/liquid/Liquid
-	FIELD field_685 none Lcom/mojang/minecraft/class_120;
-	FIELD field_686 water Lcom/mojang/minecraft/class_120;
-	FIELD field_687 lava Lcom/mojang/minecraft/class_120;
-	FIELD field_688 liquids [Lcom/mojang/minecraft/class_120;
-	METHOD <init> (I)V
-		ARG 1 id

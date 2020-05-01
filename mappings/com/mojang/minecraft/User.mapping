@@ -1,9 +1,0 @@
-CLASS com/mojang/minecraft/class_36 com/mojang/minecraft/User
-	FIELD field_275 name Ljava/lang/String;
-	FIELD field_376 creativeTiles Ljava/util/List;
-	FIELD field_377 sessionId Ljava/lang/String;
-	FIELD field_378 mpPass Ljava/lang/String;
-	FIELD field_379 hasPaid Z
-	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
-		ARG 1 name
-		ARG 2 sessionId

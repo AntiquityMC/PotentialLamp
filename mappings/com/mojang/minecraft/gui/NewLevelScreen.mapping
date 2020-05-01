@@ -1,4 +1,0 @@
-CLASS com/mojang/minecraft/class_98 com/mojang/minecraft/gui/NewLevelScreen
-	FIELD field_539 parent Lcom/mojang/minecraft/class_39;
-	METHOD <init> (Lcom/mojang/minecraft/class_39;)V
-		ARG 1 parent

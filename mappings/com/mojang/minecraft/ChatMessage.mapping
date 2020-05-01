@@ -1,5 +1,0 @@
-CLASS com/mojang/minecraft/class_67 com/mojang/minecraft/ChatMessage
-	FIELD field_418 message Ljava/lang/String;
-	FIELD field_419 age I
-	METHOD <init> (Ljava/lang/String;)V
-		ARG 1 message

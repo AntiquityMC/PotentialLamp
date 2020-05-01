@@ -1,2 +1,0 @@
-CLASS com/mojang/minecraft/class_58 com/mojang/minecraft/renderer/model/Model
-	METHOD method_86 render (FFFFFF)V

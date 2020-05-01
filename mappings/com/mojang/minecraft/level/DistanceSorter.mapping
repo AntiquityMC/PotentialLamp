@@ -1,4 +1,0 @@
-CLASS com/mojang/minecraft/class_41 com/mojang/minecraft/level/DistanceSorter
-	FIELD field_290 player Lcom/mojang/minecraft/class_2;
-	METHOD <init> (Lcom/mojang/minecraft/class_2;)V
-		ARG 1 player

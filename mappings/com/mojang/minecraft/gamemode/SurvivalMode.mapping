@@ -1,6 +1,0 @@
-CLASS com/mojang/minecraft/class_91 com/mojang/minecraft/gamemode/SurvivalMode
-	FIELD field_516 breakingX I
-	FIELD field_517 breakingY I
-	FIELD field_518 breakingZ I
-	FIELD field_520 currentBreakTime I
-	FIELD field_522 spawner Lcom/mojang/minecraft/class_119;

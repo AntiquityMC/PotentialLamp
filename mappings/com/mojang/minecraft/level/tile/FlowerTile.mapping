@@ -1,6 +1,0 @@
-CLASS com/mojang/minecraft/class_27 com/mojang/minecraft/level/tile/FlowerTile
-	METHOD method_443 render (Lcom/mojang/minecraft/class_10;FFF)V
-		ARG 1 tesselator
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z

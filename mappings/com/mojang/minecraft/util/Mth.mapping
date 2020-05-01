@@ -1,8 +1,0 @@
-CLASS com/mojang/minecraft/class_53 com/mojang/minecraft/util/Mth
-	FIELD field_342 SINE_TABLE [F
-	METHOD method_219 sin (F)F
-		ARG 0 x
-	METHOD method_220 cos (F)F
-		ARG 0 x
-	METHOD method_221 sqrt (F)F
-		ARG 0 x
