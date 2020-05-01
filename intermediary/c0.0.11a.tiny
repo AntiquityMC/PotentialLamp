@@ -83,7 +83,7 @@ METHOD	com/mojang/minecraft/Minecraft	(I)V	setupFog	method_83
 METHOD	com/mojang/minecraft/Minecraft	(FII)V	setupPickCamera	method_15
 METHOD	com/mojang/minecraft/Minecraft	()V	stop	method_117
 METHOD	com/mojang/minecraft/Minecraft	()V	tick	method_16
-CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/class_26
+CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
 FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	field_227
 FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/Minecraft;	minecraft	field_228
 FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	field_229
@@ -93,7 +93,7 @@ METHOD	com/mojang/minecraft/MinecraftApplet	()V	start	start
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	method_121
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	stop	stop
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	method_123
-CLASS	com/mojang/minecraft/MinecraftApplet$1	com/mojang/minecraft/class_26$1
+CLASS	com/mojang/minecraft/MinecraftApplet$1	com/mojang/minecraft/MinecraftApplet$1
 FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	field_230
 METHOD	com/mojang/minecraft/MinecraftApplet$1	()V	addNotify	addNotify
 METHOD	com/mojang/minecraft/MinecraftApplet$1	()V	removeNotify	removeNotify

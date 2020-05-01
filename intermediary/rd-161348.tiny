@@ -33,7 +33,7 @@ FIELD	com/mojang/minecraft/HitResult	I	type	field_209
 FIELD	com/mojang/minecraft/HitResult	I	x	field_3
 FIELD	com/mojang/minecraft/HitResult	I	y	field_4
 FIELD	com/mojang/minecraft/HitResult	I	z	field_5
-CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/class_26
+CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
 CLASS	com/mojang/minecraft/Player	com/mojang/minecraft/class_2
 METHOD	com/mojang/minecraft/Player	()V	tick	method_5
 CLASS	com/mojang/minecraft/RubyDung	com/mojang/minecraft/Minecraft

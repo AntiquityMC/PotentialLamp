@@ -105,7 +105,7 @@ FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	unkn
 FIELD	com/mojang/minecraft/Minecraft$OS	Lcom/mojang/minecraft/Minecraft$OS;	windows	field_375
 METHOD	com/mojang/minecraft/Minecraft$OS	(Ljava/lang/String;)Lcom/mojang/minecraft/Minecraft$OS;	valueOf	method_252
 METHOD	com/mojang/minecraft/Minecraft$OS	()[Lcom/mojang/minecraft/Minecraft$OS;	values	method_253
-CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/class_26
+CLASS	com/mojang/minecraft/MinecraftApplet	com/mojang/minecraft/MinecraftApplet
 FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	field_227
 FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/l;	minecraft	field_228
 FIELD	com/mojang/minecraft/MinecraftApplet	J	serialVersionUID	serialVersionUID
@@ -116,7 +116,7 @@ METHOD	com/mojang/minecraft/MinecraftApplet	()V	start	start
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	method_121
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	stop	stop
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	method_123
-CLASS	com/mojang/minecraft/MinecraftApplet$1	com/mojang/minecraft/class_26$1
+CLASS	com/mojang/minecraft/MinecraftApplet$1	com/mojang/minecraft/MinecraftApplet$1
 FIELD	com/mojang/minecraft/MinecraftApplet$1	J	serialVersionUID	serialVersionUID
 FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	field_230
 METHOD	com/mojang/minecraft/MinecraftApplet$1	()V	addNotify	addNotify
