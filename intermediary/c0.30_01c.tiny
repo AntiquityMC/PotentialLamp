@@ -897,7 +897,7 @@ FIELD	com/mojang/minecraft/level/b/a	Lcom/mojang/minecraft/level/b/a;	c	field_68
 FIELD	com/mojang/minecraft/level/b/a	[Lcom/mojang/minecraft/level/b/a;	d	field_688
 CLASS	com/mojang/minecraft/level/c	com/mojang/minecraft/class_121
 FIELD	com/mojang/minecraft/level/c	Ljava/util/Set;	a	field_689
-METHOD	com/mojang/minecraft/level/c	()Ljava/io/ObjectStreamClass;	readClassDescriptor	method_412
+METHOD	com/mojang/minecraft/level/c	()Ljava/io/ObjectStreamClass;	readClassDescriptor	readClassDescriptor
 CLASS	com/mojang/minecraft/level/d	com/mojang/minecraft/class_122
 FIELD	com/mojang/minecraft/level/d	I	a	field_690
 FIELD	com/mojang/minecraft/level/d	I	b	field_691
