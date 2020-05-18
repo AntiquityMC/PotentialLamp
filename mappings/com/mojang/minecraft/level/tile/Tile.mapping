@@ -73,6 +73,12 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 4 z
 		ARG 5 random
 	METHOD method_101 blocksLight ()Z
+	METHOD method_102 destroy (Lcom/mojang/minecraft/class_7;IIILcom/mojang/minecraft/class_25;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 particleEngine
 	METHOD method_103 getAABB (III)Lcom/mojang/minecraft/class_12;
 		ARG 1 x
 		ARG 2 y
@@ -90,6 +96,10 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 3 y
 		ARG 4 z
 		ARG 5 face
+	METHOD method_111 getTileAABB (III)Lcom/mojang/minecraft/class_12;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_209 neighborChanged (Lcom/mojang/minecraft/class_7;IIII)V
 		ARG 1 level
 		ARG 2 x
@@ -126,6 +136,12 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_423 drop (Lcom/mojang/minecraft/class_7;IIIF)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 chance
 	METHOD method_424 spawnBreakParticle (Lcom/mojang/minecraft/class_7;IIIILcom/mojang/minecraft/class_25;)V
 		ARG 1 level
 		ARG 2 x
@@ -147,7 +163,17 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 4 z
 	METHOD method_431 getLiquid ()Lcom/mojang/minecraft/class_120;
 	METHOD method_433 getTickDelay ()I
+	METHOD method_434 drop (Lcom/mojang/minecraft/class_7;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_435 getDropCount ()I
+	METHOD method_436 onDestroyedByExplosion (Lcom/mojang/minecraft/class_7;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_437 getDrop ()I
 	METHOD method_438 getBreakTime ()I
 	METHOD method_55 render (Lcom/mojang/minecraft/class_7;IIILcom/mojang/minecraft/class_10;)Z
