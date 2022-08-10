@@ -35,5 +35,6 @@ jobs:
         with:
           body: ${{ steps.changelog.outputs.changelog }}
           tag_name: ${{ steps.artifacts.outputs.version }}
+          name: ${{ steps.artifacts.outputs.title }}
           files: |
             build/libs/obfToNamed.jar
