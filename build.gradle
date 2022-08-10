@@ -610,11 +610,17 @@ task generateObfToNamedTiny(type: FileOutput, dependsOn: [downloadIntermediary, 
 }
 
 task obfToNamedTinyJar(type: Jar, dependsOn: [generateObfToNamedTiny]) {
-	archiveClassifier = 'obfToNamed'
+	archiveBaseName = 'obfToNamed'
 
 	from(generateObfToNamedTiny.output) {
 		into 'mappings'
 		rename { 'mappings.tiny' }
+	}
+}
+
+task prepareRelease(dependsOn: [obfToNamedTinyJar]) {
+	doLast {
+		println "::set-output name=minecraft::$minecraft_version"
 	}
 }
 
