@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '18'
+          java-version: '8'
       - name: create changelog
         uses: FabricMC/fabric-action-scripts@v1
         id: changelog
@@ -21,7 +21,7 @@ jobs:
           context: changelog
           workflow_id: release.yml
       - name: create artifacts
-        run: ./gradlew prepareRelease
+        run: ./gradlew prepareRelease --stacktrace
         id: artifacts
       - name: release
         uses: softprops/action-gh-release@v1
