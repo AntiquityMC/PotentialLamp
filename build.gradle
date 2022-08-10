@@ -620,7 +620,10 @@ task obfToNamedTinyJar(type: Jar, dependsOn: [generateObfToNamedTiny]) {
 
 task prepareRelease(dependsOn: [obfToNamedTinyJar]) {
 	doLast {
-		println "::set-output name=minecraft::$minecraft_version"
+		def env = System.getenv()
+		def runNumber = env.GITHUB_RUN_NUMBER.toInteger() + 15
+		def version = "$minecraft_version-$runNumber"
+		println "::set-output name=version::$version"
 	}
 }
 
