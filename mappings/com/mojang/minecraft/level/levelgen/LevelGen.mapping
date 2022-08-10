@@ -6,6 +6,7 @@ CLASS com/mojang/minecraft/class_33 com/mojang/minecraft/level/levelgen/LevelGen
 	FIELD field_307 blocks [B
 	FIELD field_308 coords [I
 	FIELD field_309 levelLoaderListener Lcom/mojang/minecraft/class_109;
+	FIELD field_683 waterLevel I
 	METHOD <init> (Lcom/mojang/minecraft/class_109;)V
 		ARG 1 levelLoaderListener
 	METHOD method_202 generateLevel (Ljava/lang/String;III)Lcom/mojang/minecraft/class_7;
