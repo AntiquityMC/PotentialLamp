@@ -590,7 +590,7 @@ task prepareRelease(dependsOn: [obfToNamedTinyJar]) {
 		def env = System.getenv()
 		def runNumber = env.GITHUB_RUN_NUMBER.toInteger() + 15
 		def version = "$minecraft_version-$runNumber"
-		def title = "Build $runNumber for $minecraft_version"
+		def title = "Build $runNumber for $minecraft_version ($version)"
 		println "::set-output name=version::$version"
 		println "::set-output name=title::$title"
 	}
