@@ -30,6 +30,7 @@ CLASS com/mojang/minecraft/Minecraft
 	FIELD field_643 levelLoaderListener Lcom/mojang/minecraft/class_109;
 	FIELD field_646 loadMapUser Ljava/lang/String;
 	FIELD field_647 loadMapId I
+	FIELD field_648 robot Ljava/awt/Robot;
 	FIELD field_649 hud Lcom/mojang/minecraft/class_103;
 	FIELD field_651 connectionManager Lcom/mojang/minecraft/class_155;
 	METHOD <init> (Ljava/awt/Canvas;Lcom/mojang/minecraft/class_26;IIZ)V
@@ -43,7 +44,7 @@ CLASS com/mojang/minecraft/Minecraft
 	METHOD method_113 grabMouse ()V
 	METHOD method_114 handleMouseClick (I)V
 		ARG 1 button
-	METHOD method_116 releaseMouse ()V
+	METHOD method_116 pause ()V
 	METHOD method_13 run ()V
 	METHOD method_16 tick ()V
 	METHOD method_160 generateNewLevel (I)V
