@@ -1,1 +1,9 @@
 CLASS com/mojang/minecraft/class_162 com/mojang/minecraft/player/Input
+	FIELD field_888 xxa F
+	FIELD field_889 yya F
+	FIELD field_890 jumping Z
+	METHOD method_496 tick ()V
+	METHOD method_497 setKey (IZ)V
+		ARG 1 key
+		ARG 2 down
+	METHOD method_498 releaseAllKeys ()V
