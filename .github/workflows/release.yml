@@ -38,3 +38,4 @@ jobs:
           name: ${{ steps.artifacts.outputs.title }}
           files: |
             build/libs/obfToNamed.jar
+            build/libs/obfToNamedI.jar
