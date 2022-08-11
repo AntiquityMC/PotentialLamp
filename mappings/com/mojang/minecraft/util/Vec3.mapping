@@ -6,3 +6,14 @@ CLASS com/mojang/minecraft/class_16 com/mojang/minecraft/util/Vec3
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_254 normalize ()Lcom/mojang/minecraft/class_16;
+	METHOD method_255 add (FFF)Lcom/mojang/minecraft/class_16;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_256 subtract (Lcom/mojang/minecraft/class_16;)Lcom/mojang/minecraft/class_16;
+		ARG 1 other
+	METHOD method_258 distanceTo (Lcom/mojang/minecraft/class_16;)F
+		ARG 1 other
+	METHOD method_260 squaredDistanceTo (Lcom/mojang/minecraft/class_16;)F
+		ARG 1 other
