@@ -571,8 +571,8 @@ task generateObfToNamedTiny(type: FileOutput, dependsOn: [downloadIntermediary, 
 		// TODO: This should rather ensure that intermediary is used as a fallback instead of obf,
 		//   but it's good enough for now since it's consistent (all obf instead of mixed).
 		def removeIntermediary = { entry ->
-			def intermediary = entry.getDstName(0)
-			if (intermediary.matches(/^(class|method|field)_[0-9]+$/) && entry.getDstName(0) == entry.getDstName(1)) {
+			def name = entry.getDstName(1)
+			if (name && name =~ /^(.+\/class|method|field)_[0-9]+$/) {
 				entry.setDstName(entry.srcName, 1)
 			}
 		}
