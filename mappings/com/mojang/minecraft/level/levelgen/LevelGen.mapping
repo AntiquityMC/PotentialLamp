@@ -9,6 +9,8 @@ CLASS com/mojang/minecraft/class_33 com/mojang/minecraft/level/levelgen/LevelGen
 	FIELD field_683 waterLevel I
 	METHOD <init> (Lcom/mojang/minecraft/class_109;)V
 		ARG 1 levelLoaderListener
+	METHOD method_201 generateFluid (IIIII)J
+		ARG 5 fluid
 	METHOD method_202 generateLevel (Ljava/lang/String;III)Lcom/mojang/minecraft/class_7;
 		ARG 1 creator
 		ARG 2 width
@@ -16,3 +18,8 @@ CLASS com/mojang/minecraft/class_33 com/mojang/minecraft/level/levelgen/LevelGen
 		ARG 4 height
 	METHOD method_409 renderLoadingStage (I)V
 		ARG 1 progress
+	METHOD method_410 generateOre (IIII)V
+		ARG 1 ore
+		ARG 2 abundance
+		ARG 3 stage
+		ARG 4 maxStage
