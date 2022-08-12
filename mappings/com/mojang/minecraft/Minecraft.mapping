@@ -45,7 +45,6 @@ CLASS com/mojang/minecraft/Minecraft
 	METHOD method_114 handleMouseClick (I)V
 		ARG 1 button
 	METHOD method_116 pause ()V
-	METHOD method_13 run ()V
 	METHOD method_16 tick ()V
 	METHOD method_160 generateNewLevel (I)V
 	METHOD method_162 openScreen (Lcom/mojang/minecraft/class_39;)V

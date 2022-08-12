@@ -2,9 +2,5 @@ CLASS com/mojang/minecraft/class_26 com/mojang/minecraft/MinecraftApplet
 	FIELD field_227 canvas Ljava/awt/Canvas;
 	FIELD field_228 minecraft Lcom/mojang/minecraft/Minecraft;
 	FIELD field_229 thread Ljava/lang/Thread;
-	METHOD method_118 destroy ()V
-	METHOD method_119 init ()V
-	METHOD method_120 start ()V
 	METHOD method_121 startGameThread ()V
-	METHOD method_122 stop ()V
 	METHOD method_123 stopGameThread ()V

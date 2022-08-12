@@ -22,7 +22,6 @@ CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
 	FIELD field_680 xSpawn I
 	FIELD field_681 ySpawn I
 	FIELD field_682 zSpawn I
-	FIELD field_687 serialVersionUID J
 	FIELD field_75 blocks [B
 	FIELD field_76 height I
 	FIELD field_77 depth I

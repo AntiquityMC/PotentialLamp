@@ -27,7 +27,6 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 	FIELD field_357 nextStep I
 	FIELD field_358 noPhysics Z
 	FIELD field_359 pushthrough F
-	FIELD field_360 serialVersionUID J
 	FIELD field_360 slide Z
 	FIELD field_361 textureId I
 	FIELD field_362 walkDist F
