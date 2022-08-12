@@ -49,7 +49,11 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 	FIELD field_732 random Ljava/util/Random;
 	FIELD field_733 obsidian Lcom/mojang/minecraft/class_11;
 	FIELD field_734 soundGroup Lcom/mojang/minecraft/class_11$class_125;
+	FIELD field_735 particleMass F
+	FIELD field_736 SOLID_TILES [Z
+	FIELD field_737 PICKABLE_TILES [Z
 	FIELD field_739 breakTime I
+	FIELD field_741 LIQUID_TILES [Z
 	FIELD field_742 sand Lcom/mojang/minecraft/class_11;
 	FIELD field_743 gravel Lcom/mojang/minecraft/class_11;
 	FIELD field_744 goldOre Lcom/mojang/minecraft/class_11;
@@ -151,6 +155,8 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 6 engine
 	METHOD method_425 properties (Lcom/mojang/minecraft/class_11$class_125;FFF)Lcom/mojang/minecraft/class_11;
 		ARG 1 soundGroup
+		ARG 3 particleMass
+		ARG 4 breakTime
 	METHOD method_428 onPlaced (Lcom/mojang/minecraft/class_7;III)V
 		ARG 1 level
 		ARG 2 x
