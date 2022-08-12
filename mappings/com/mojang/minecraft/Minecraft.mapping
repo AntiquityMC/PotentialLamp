@@ -34,6 +34,7 @@ CLASS com/mojang/minecraft/Minecraft
 	FIELD field_648 robot Ljava/awt/Robot;
 	FIELD field_649 hud Lcom/mojang/minecraft/class_103;
 	FIELD field_651 connectionManager Lcom/mojang/minecraft/class_155;
+	FIELD field_652 soundPlayer Lcom/mojang/minecraft/class_83;
 	METHOD <init> (Ljava/awt/Canvas;Lcom/mojang/minecraft/class_26;IIZ)V
 		ARG 1 parent
 		ARG 2 applet

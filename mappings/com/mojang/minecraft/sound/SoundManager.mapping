@@ -5,6 +5,7 @@ CLASS com/mojang/minecraft/class_85 com/mojang/minecraft/sound/SoundManager
 	FIELD field_497 soundLoader Lcom/mojang/minecraft/class_78;
 	FIELD field_498 music Ljava/util/Map;
 	METHOD method_293 (Lcom/mojang/minecraft/class_83;Ljava/lang/String;)Z
+		ARG 1 player
 		ARG 2 name
 	METHOD method_294 loadSound (Ljava/io/File;Ljava/lang/String;)V
 		ARG 1 file

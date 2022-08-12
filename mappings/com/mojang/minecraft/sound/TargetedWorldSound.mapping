@@ -1,0 +1,16 @@
+CLASS com/mojang/minecraft/class_79 com/mojang/minecraft/sound/TargetedWorldSound
+	FIELD field_480 target Lcom/mojang/minecraft/class_13;
+		COMMENT The entity hearing the sound.
+	METHOD <init> (Lcom/mojang/minecraft/class_13;)V
+		ARG 1 target
+	METHOD method_285 (FF)F
+		ARG 1 x
+		ARG 2 z
+	METHOD method_286 getVolume (FFF)F
+		COMMENT Calculates the volume multiplier based on the distance
+		COMMENT from the target entity to the provided coordinates.
+		COMMENT
+		COMMENT @return a volume multiplier between 0 and 1 (both inclusive)
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

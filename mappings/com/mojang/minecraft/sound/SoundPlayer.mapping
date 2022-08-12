@@ -1,4 +1,10 @@
 CLASS com/mojang/minecraft/class_83 com/mojang/minecraft/sound/SoundPlayer
+	FIELD field_487 running Z
 	FIELD field_489 options Lcom/mojang/minecraft/class_116;
+	FIELD field_490 sounds Ljava/util/List;
 	METHOD <init> (Lcom/mojang/minecraft/class_116;)V
 		ARG 1 options
+	METHOD method_290 play (Lcom/mojang/minecraft/class_75;)V
+		ARG 1 sound
+	METHOD method_291 (Lcom/mojang/minecraft/class_82;Lcom/mojang/minecraft/class_80;)V
+		ARG 1 sound

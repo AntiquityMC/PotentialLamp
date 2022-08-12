@@ -1,0 +1,7 @@
+CLASS com/mojang/minecraft/class_81 com/mojang/minecraft/sound/WorldSoundSource
+	FIELD field_481 sound Lcom/mojang/minecraft/class_82;
+	FIELD field_482 worldSound Lcom/mojang/minecraft/class_80;
+	FIELD field_484 volume F
+	METHOD <init> (Lcom/mojang/minecraft/class_82;Lcom/mojang/minecraft/class_80;)V
+		ARG 1 sound
+		ARG 2 worldSound

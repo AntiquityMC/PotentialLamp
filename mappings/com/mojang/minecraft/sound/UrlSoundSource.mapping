@@ -1,0 +1,6 @@
+CLASS com/mojang/minecraft/class_87 com/mojang/minecraft/sound/UrlSoundSource
+	FIELD field_503 stream Lcom/mojang/minecraft/class_173;
+	FIELD field_504 player Lcom/mojang/minecraft/class_83;
+	METHOD <init> (Lcom/mojang/minecraft/class_83;Ljava/net/URL;)V
+		ARG 1 player
+		ARG 2 url
