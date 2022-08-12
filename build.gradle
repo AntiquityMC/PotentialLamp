@@ -12,7 +12,6 @@ buildscript {
 		classpath "net.fabricmc:stitch:0.4.6+build.74"
 		classpath "commons-io:commons-io:2.6"
 		classpath "com.google.guava:guava:28.0-jre"
-		classpath 'de.undercouch:gradle-download-task:4.0.2'
 		classpath 'net.fabricmc:tiny-remapper:+'
 		classpath 'net.fabricmc:mapping-io:0.3.0'
 		classpath "net.fabricmc:name-proposal:$project.name_proposal_version"
@@ -86,7 +85,6 @@ import groovy.json.JsonSlurper
 import net.fabricmc.mappingio.MappingReader
 import net.fabricmc.mappingio.adapter.MappingNsCompleter
 import net.fabricmc.mappingio.adapter.MappingDstNsReorder
-import net.fabricmc.mappingio.adapter.MappingSourceNsSwitch
 import net.fabricmc.mappingio.format.Tiny2Writer
 import net.fabricmc.mappingio.tree.MemoryMappingTree
 import net.fabricmc.nameproposal.MappingNameCompleter
@@ -100,6 +98,8 @@ import net.fabricmc.tinyremapper.TinyUtils
 import org.apache.commons.io.FileUtils
 
 import java.nio.charset.StandardCharsets
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
 import java.util.zip.GZIPOutputStream
 
 boolean validateChecksum(File file, String checksum) {
@@ -187,14 +187,21 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 	}
 }
 
-task downloadIntermediary(type: Download) {
-	def destination = new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
-	outputs.file(destination)
+class FakeDownload extends DefaultTask {
+	@InputFile File src
+	@OutputFile File dest
 
+	@TaskAction
+	def run() {
+		Files.copy(src.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING)
+	}
+}
+
+task downloadIntermediary(type: FakeDownload) {
+	def destination = new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 	group = buildMappingGroup
-	def url = "https://github.com/Juuxel/PotentialLamp/raw/master/intermediary/${minecraft_version}.tiny"
-	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
-	dest destination
+	src = file("intermediary/${minecraft_version}.tiny")
+	dest = destination
 }
 
 task downloadMcLibs(dependsOn: downloadWantedVersionManifest) {
