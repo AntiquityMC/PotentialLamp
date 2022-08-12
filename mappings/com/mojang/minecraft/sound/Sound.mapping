@@ -1,0 +1,2 @@
+CLASS com/mojang/minecraft/class_82 com/mojang/minecraft/sound/Sound
+	FIELD field_486 volume F

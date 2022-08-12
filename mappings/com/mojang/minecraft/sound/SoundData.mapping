@@ -1,0 +1,6 @@
+CLASS com/mojang/minecraft/class_76 com/mojang/minecraft/sound/SoundData
+	FIELD field_477 data [S
+	FIELD field_478 sampleRate F
+	METHOD <init> ([SF)V
+		ARG 1 data
+		ARG 2 sampleRate

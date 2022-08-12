@@ -1,0 +1,3 @@
+CLASS com/mojang/minecraft/class_78 com/mojang/minecraft/sound/SoundLoader
+	METHOD method_284 load (Ljava/net/URL;)Lcom/mojang/minecraft/class_76;
+		ARG 0 url

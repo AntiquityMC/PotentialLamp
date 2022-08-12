@@ -1,0 +1,11 @@
+CLASS com/mojang/minecraft/class_79 com/mojang/minecraft/sound/WorldSound
+	FIELD field_480 target Lcom/mojang/minecraft/class_13;
+	METHOD <init> (Lcom/mojang/minecraft/class_13;)V
+		ARG 1 target
+	METHOD method_285 (FF)F
+		ARG 1 x
+		ARG 2 z
+	METHOD method_286 (FFF)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

@@ -138,7 +138,17 @@ CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
 		ARG 3 z
 		ARG 4 tile
 	METHOD method_394 playSound (Ljava/lang/String;FFFFF)V
+		ARG 1 sound
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 volume
+		ARG 6 pitch
 	METHOD method_395 playSound (Ljava/lang/String;Lcom/mojang/minecraft/class_13;FF)V
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+		ARG 4 pitch
 	METHOD method_396 removeAllNonCreativeModeEntities ()V
 	METHOD method_397 removeEntity (Lcom/mojang/minecraft/class_13;)V
 		ARG 1 entity

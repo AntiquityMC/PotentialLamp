@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/class_77 com/mojang/minecraft/sound/EntityWorldSound
+	FIELD field_479 source Lcom/mojang/minecraft/class_13;
+	METHOD <init> (Lcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_13;)V
+		ARG 1 source
+		ARG 2 target

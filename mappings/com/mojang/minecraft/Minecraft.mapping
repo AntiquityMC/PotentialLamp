@@ -28,6 +28,7 @@ CLASS com/mojang/minecraft/Minecraft
 	FIELD field_641 gameMode Lcom/mojang/minecraft/class_90;
 	FIELD field_642 host Ljava/lang/String;
 	FIELD field_643 levelLoaderListener Lcom/mojang/minecraft/class_109;
+	FIELD field_645 soundManager Lcom/mojang/minecraft/class_85;
 	FIELD field_646 loadMapUser Ljava/lang/String;
 	FIELD field_647 loadMapId I
 	FIELD field_648 robot Ljava/awt/Robot;

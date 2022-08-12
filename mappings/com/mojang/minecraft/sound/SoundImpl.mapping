@@ -1,0 +1,7 @@
+CLASS com/mojang/minecraft/class_84 com/mojang/minecraft/sound/SoundImpl
+	FIELD field_491 data Lcom/mojang/minecraft/class_76;
+	FIELD field_493 pitch F
+	METHOD <init> (Lcom/mojang/minecraft/class_76;FF)V
+		ARG 1 data
+		ARG 2 pitch
+		ARG 3 volume

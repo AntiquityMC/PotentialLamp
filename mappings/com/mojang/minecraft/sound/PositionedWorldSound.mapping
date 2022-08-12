@@ -1,0 +1,9 @@
+CLASS com/mojang/minecraft/class_88 com/mojang/minecraft/sound/PositionedWorldSound
+	FIELD field_508 x F
+	FIELD field_509 y F
+	FIELD field_510 z F
+	METHOD <init> (FFFLcom/mojang/minecraft/class_13;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 target
