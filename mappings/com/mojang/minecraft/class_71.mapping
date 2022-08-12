@@ -1,2 +1,3 @@
 CLASS com/mojang/minecraft/class_71
 	FIELD field_437 minecraft Lcom/mojang/minecraft/Minecraft;
+	METHOD method_277 bobView (F)V
