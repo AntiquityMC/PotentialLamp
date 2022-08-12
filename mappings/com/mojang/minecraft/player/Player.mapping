@@ -10,6 +10,11 @@ CLASS com/mojang/minecraft/class_2 com/mojang/minecraft/player/Player
 	FIELD field_884 oBob F
 	FIELD field_885 score I
 	FIELD field_886 userType B
+	METHOD method_163 releaseAllKeys ()V
+	METHOD method_164 setKey (IZ)V
+		ARG 1 key
+		ARG 2 down
 	METHOD method_493 addResource (I)Z
 		ARG 1 resource
+	METHOD method_494 getModel ()Lcom/mojang/minecraft/class_65;
 	METHOD method_495 getScore ()I

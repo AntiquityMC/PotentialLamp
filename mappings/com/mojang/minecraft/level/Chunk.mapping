@@ -5,6 +5,8 @@ CLASS com/mojang/minecraft/class_5 com/mojang/minecraft/level/Chunk
 	FIELD field_470 sizeX I
 	FIELD field_471 sizeY I
 	FIELD field_472 sizeZ I
+	FIELD field_473 dirty [Z
+		COMMENT The dirty state by {@linkplain com.mojang.minecraft.level.tile.Tile#getLayer() tile layer}.
 	FIELD field_48 t Lcom/mojang/minecraft/class_10;
 	FIELD field_51 x I
 	FIELD field_53 y I
@@ -17,4 +19,6 @@ CLASS com/mojang/minecraft/class_5 com/mojang/minecraft/level/Chunk
 		ARG 6 lists
 	METHOD method_177 reset ()V
 	METHOD method_22 setDirty ()V
+	METHOD method_280 ([III)I
+		ARG 3 layer
 	METHOD method_89 rebuild ()V

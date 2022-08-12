@@ -1,0 +1,4 @@
+CLASS com/mojang/minecraft/class_83
+	FIELD field_489 options Lcom/mojang/minecraft/class_116;
+	METHOD <init> (Lcom/mojang/minecraft/class_116;)V
+		ARG 1 options

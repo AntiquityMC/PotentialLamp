@@ -1,1 +1,6 @@
 CLASS com/mojang/minecraft/class_101 com/mojang/minecraft/gui/ErrorScreen
+	FIELD field_541 title Ljava/lang/String;
+	FIELD field_542 message Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 title
+		ARG 2 message

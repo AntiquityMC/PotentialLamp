@@ -1,1 +1,6 @@
 CLASS com/mojang/minecraft/class_44 com/mojang/minecraft/level/levelgen/synth/Distort
+	FIELD field_310 distortionSource Lcom/mojang/minecraft/class_50;
+	FIELD field_311 base Lcom/mojang/minecraft/class_50;
+	METHOD <init> (Lcom/mojang/minecraft/class_50;Lcom/mojang/minecraft/class_50;)V
+		ARG 1 base
+		ARG 2 distortionSource

@@ -3,6 +3,7 @@ CLASS com/mojang/minecraft/class_90 com/mojang/minecraft/gamemode/GameMode
 	FIELD field_515 creative Z
 	METHOD <init> (Lcom/mojang/minecraft/Minecraft;)V
 		ARG 1 minecraft
+	METHOD method_298 openBuildScreen ()V
 	METHOD method_302 tileBreakTick (IIII)V
 		ARG 1 x
 		ARG 2 y
@@ -14,7 +15,7 @@ CLASS com/mojang/minecraft/class_90 com/mojang/minecraft/gamemode/GameMode
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_308 (Lcom/mojang/minecraft/class_7;)V
+	METHOD method_308 generate (Lcom/mojang/minecraft/class_7;)V
 		ARG 1 level
 	METHOD method_309 init (Lcom/mojang/minecraft/class_2;)V
 		ARG 1 player

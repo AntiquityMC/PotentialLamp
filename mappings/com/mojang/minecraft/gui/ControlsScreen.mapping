@@ -1,0 +1,8 @@
+CLASS com/mojang/minecraft/class_95 com/mojang/minecraft/gui/ControlsScreen
+	FIELD field_530 previous Lcom/mojang/minecraft/class_39;
+	FIELD field_531 title Ljava/lang/String;
+	FIELD field_532 options Lcom/mojang/minecraft/class_116;
+	FIELD field_533 currentKeybind I
+	METHOD <init> (Lcom/mojang/minecraft/class_39;Lcom/mojang/minecraft/class_116;)V
+		ARG 1 previous
+		ARG 2 options

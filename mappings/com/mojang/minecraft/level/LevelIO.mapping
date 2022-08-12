@@ -13,6 +13,10 @@ CLASS com/mojang/minecraft/class_42 com/mojang/minecraft/level/LevelIO
 	METHOD method_405 saveOnline (Lcom/mojang/minecraft/class_7;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z
 		ARG 1 level
 		ARG 2 host
+		ARG 3 userName
+		ARG 4 sessionId
+		ARG 5 name
+		ARG 6 levelId
 	METHOD method_406 load (Ljava/io/File;)Lcom/mojang/minecraft/class_7;
 		ARG 1 file
 	METHOD method_407 download (Ljava/lang/String;Ljava/lang/String;I)Lcom/mojang/minecraft/class_7;

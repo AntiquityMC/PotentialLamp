@@ -5,6 +5,7 @@ CLASS com/mojang/minecraft/class_54 com/mojang/minecraft/comm/SocketConnection
 	FIELD field_346 writeBuffer Ljava/nio/ByteBuffer;
 	FIELD field_347 manager Lcom/mojang/minecraft/class_155;
 	FIELD field_348 socket Ljava/net/Socket;
+	FIELD field_350 stringBuffer [B
 	METHOD <init> (Ljava/lang/String;I)V
 		ARG 1 ip
 		ARG 2 port

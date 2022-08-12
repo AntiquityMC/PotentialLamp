@@ -39,6 +39,7 @@ CLASS com/mojang/minecraft/class_142 com/mojang/minecraft/mob/Mob
 	METHOD method_445 bindTexture (Lcom/mojang/minecraft/class_3;)V
 		ARG 1 textures
 	METHOD method_446 die (Lcom/mojang/minecraft/class_13;)V
+		ARG 1 attacker
 	METHOD method_447 heal (I)V
 	METHOD method_448 knockback (Lcom/mojang/minecraft/class_13;IFF)V
 	METHOD method_449 renderModel (Lcom/mojang/minecraft/class_3;FFFFFF)V

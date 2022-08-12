@@ -1,5 +1,10 @@
 CLASS com/mojang/minecraft/class_93 com/mojang/minecraft/gui/NameLevelScreen
 	FIELD field_523 parent Lcom/mojang/minecraft/class_39;
 	FIELD field_524 title Ljava/lang/String;
+	FIELD field_525 levelId I
+	FIELD field_526 name Ljava/lang/String;
+	FIELD field_527 ticks I
 	METHOD <init> (Lcom/mojang/minecraft/class_39;Ljava/lang/String;I)V
 		ARG 1 parent
+		ARG 2 name
+		ARG 3 levelId
