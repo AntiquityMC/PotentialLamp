@@ -1,0 +1,5 @@
+CLASS com/mojang/minecraft/class_174 de/jarnbjo/vorbis/Floor0
+	FIELD field_937 bookList [I
+	METHOD <init> (Lcom/mojang/minecraft/class_164;Lcom/mojang/minecraft/class_188;)V
+		ARG 1 source
+		ARG 2 header

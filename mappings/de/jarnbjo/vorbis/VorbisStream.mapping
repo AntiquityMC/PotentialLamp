@@ -1,0 +1,19 @@
+CLASS com/mojang/minecraft/class_173 de/jarnbjo/vorbis/VorbisStream
+	FIELD field_926 identificationHeader Lcom/mojang/minecraft/class_189;
+	FIELD field_927 setupHeader Lcom/mojang/minecraft/class_188;
+	FIELD field_928 oggStream Lcom/mojang/minecraft/class_168;
+	FIELD field_929 commentHeader Lcom/mojang/minecraft/class_175;
+	FIELD field_930 lastAudioPacket Lcom/mojang/minecraft/class_177;
+	FIELD field_931 currentPcm [B
+	FIELD field_932 currentPcmIndex I
+	FIELD field_933 currentPcmLimit I
+	FIELD field_934 streamLock Ljava/lang/Object;
+	FIELD field_935 pageCounter I
+	FIELD field_936 currentGranulePosition J
+	METHOD <init> (Lcom/mojang/minecraft/class_168;)V
+		ARG 1 oggStream
+	METHOD method_512 getNextAudioPacket ()Lcom/mojang/minecraft/class_177;
+	METHOD method_513 readPcm ([BII)I
+		ARG 1 buffer
+		ARG 2 offset
+		ARG 3 length

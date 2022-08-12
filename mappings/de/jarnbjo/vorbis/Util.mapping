@@ -1,0 +1,17 @@
+CLASS com/mojang/minecraft/class_179 de/jarnbjo/vorbis/Util
+	METHOD method_522 ilog (I)I
+		ARG 0 x
+	METHOD method_523 renderLine (IIII[F)V
+		ARG 0 x0
+		ARG 1 y0
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 v
+	METHOD method_524 lowNeighbour ([II)I
+		ARG 0 v
+		ARG 1 x
+	METHOD method_525 float32unpack (I)F
+		ARG 0 x
+	METHOD method_526 highNeighbour ([II)I
+		ARG 0 v
+		ARG 1 x

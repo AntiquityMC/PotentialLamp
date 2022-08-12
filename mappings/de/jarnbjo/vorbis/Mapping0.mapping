@@ -1,0 +1,10 @@
+CLASS com/mojang/minecraft/class_172 de/jarnbjo/vorbis/Mapping0
+	FIELD field_921 magnitudes [I
+	FIELD field_922 angles [I
+	FIELD field_923 mux [I
+	FIELD field_924 submapFloors [I
+	FIELD field_925 submapResidues [I
+	METHOD <init> (Lcom/mojang/minecraft/class_173;Lcom/mojang/minecraft/class_164;Lcom/mojang/minecraft/class_188;)V
+		ARG 1 vorbis
+		ARG 2 source
+		ARG 3 header

@@ -1,0 +1,10 @@
+CLASS com/mojang/minecraft/class_168 de/jarnbjo/ogg/LogicalOggStreamImpl
+	FIELD field_903 source Lcom/mojang/minecraft/class_169;
+	FIELD field_904 pageNumberMapping Ljava/util/ArrayList;
+	FIELD field_905 pageIndex I
+	FIELD field_906 currentPage Lcom/mojang/minecraft/class_170;
+	FIELD field_907 currentSegmentIndex I
+	METHOD <init> (Lcom/mojang/minecraft/class_169;)V
+		ARG 1 source
+	METHOD method_505 getNextOggPacket ()[B
+	METHOD method_506 getNextOggPage ()Lcom/mojang/minecraft/class_170;

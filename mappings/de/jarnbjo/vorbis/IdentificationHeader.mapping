@@ -1,0 +1,8 @@
+CLASS com/mojang/minecraft/class_189 de/jarnbjo/vorbis/IdentificationHeader
+	FIELD field_1011 channels I
+	FIELD field_1012 sampleRate I
+	FIELD field_1013 blockSize0 I
+	FIELD field_1014 blockSize1 I
+	FIELD field_1015 mdct [Lcom/mojang/minecraft/class_183;
+	METHOD <init> (Lcom/mojang/minecraft/class_164;)V
+		ARG 1 source

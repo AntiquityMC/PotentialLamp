@@ -1,0 +1,17 @@
+CLASS com/mojang/minecraft/class_176 de/jarnbjo/vorbis/Floor1
+	FIELD field_939 partitionClassList [I
+	FIELD field_940 maximumClass I
+	FIELD field_941 multiplier I
+	FIELD field_942 rangeBits I
+	FIELD field_943 classDimensions [I
+	FIELD field_944 classSubclasses [I
+	FIELD field_945 classMasterbooks [I
+	FIELD field_946 subclassBooks [[I
+	FIELD field_947 xList [I
+	FIELD field_948 yList [I
+	FIELD field_949 lowNeighbours [I
+	FIELD field_950 highNeighbours [I
+	FIELD field_951 RANGES [I
+	METHOD <init> (Lcom/mojang/minecraft/class_164;Lcom/mojang/minecraft/class_188;)V
+		ARG 1 source
+		ARG 2 header

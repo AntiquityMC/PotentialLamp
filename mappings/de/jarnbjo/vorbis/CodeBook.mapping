@@ -1,0 +1,10 @@
+CLASS com/mojang/minecraft/class_184 de/jarnbjo/vorbis/CodeBook
+	FIELD field_993 huffmanRoot Lcom/mojang/minecraft/class_165;
+	FIELD field_994 dimensions I
+	FIELD field_995 valueVector [[F
+	FIELD field_996 entries I
+	FIELD field_997 entryLengths [I
+	METHOD <init> (Lcom/mojang/minecraft/class_164;)V
+		ARG 1 source
+	METHOD method_536 createHuffmanTree ([I)Z
+		ARG 1 entryLengths

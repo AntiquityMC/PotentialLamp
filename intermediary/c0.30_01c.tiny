@@ -1476,7 +1476,7 @@ FIELD	de/jarnbjo/vorbis/j	Z	a	field_972
 FIELD	de/jarnbjo/vorbis/j	I	b	field_973
 FIELD	de/jarnbjo/vorbis/j	I	c	field_974
 FIELD	de/jarnbjo/vorbis/j	I	d	field_975
-CLASS	de/jarnbjo/vorbis/k	com/mojang/minecraft/class_182
+CLASS	de/jarnbjo/vorbis/k	com/mojang/minecraft/class_185$class_182
 FIELD	de/jarnbjo/vorbis/k	I	a	field_976
 FIELD	de/jarnbjo/vorbis/k	Lde/jarnbjo/vorbis/m;	b	field_977
 FIELD	de/jarnbjo/vorbis/k	[[I	c	field_978

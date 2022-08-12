@@ -1,0 +1,31 @@
+CLASS com/mojang/minecraft/class_170 de/jarnbjo/ogg/OggPage
+	FIELD field_913 continued Z
+	FIELD field_914 eos Z
+	FIELD field_915 streamSerialNumber I
+	FIELD field_916 segmentOffsets [I
+	FIELD field_917 segmentLengths [I
+	FIELD field_918 segmentTable [B
+	FIELD field_919 data [B
+	FIELD field_920 totalLength I
+	METHOD <init> (ZZZJIII[I[II[B[B[B)V
+		ARG 1 continued
+		ARG 2 bos
+		ARG 3 eos
+		ARG 4 absoluteGranulePosition
+		ARG 6 streamSerialNumber
+		ARG 7 pageSequenceNumber
+		ARG 8 pageCheckSum
+		ARG 9 segmentOffsets
+		ARG 10 segmentLengths
+		ARG 11 totalLength
+		ARG 13 segmentTable
+		ARG 14 data
+	METHOD method_508 getTotalLength ()I
+	METHOD method_509 create (Ljava/io/InputStream;)Lcom/mojang/minecraft/class_170;
+		ARG 0 souruce
+	METHOD method_510 readFully (Ljava/io/InputStream;[B)V
+		ARG 0 source
+		ARG 1 buffer
+	METHOD method_511 create (Ljava/lang/Object;Z)Lcom/mojang/minecraft/class_170;
+		ARG 0 source
+		ARG 1 skipData

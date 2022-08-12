@@ -1,0 +1,18 @@
+CLASS com/mojang/minecraft/class_164 de/jarnbjo/util/io/ByteArrayBitInputStream
+	FIELD field_893 source [B
+	FIELD field_894 currentByte B
+	FIELD field_895 endian I
+	FIELD field_896 byteIndex I
+	FIELD field_897 bitIndex I
+	METHOD <init> ([B)V
+		ARG 1 source
+	METHOD <init> ([BI)V
+		ARG 1 source
+		ARG 2 endian
+	METHOD method_499 getBit ()Z
+	METHOD method_500 getInt (I)I
+		ARG 1 bits
+	METHOD method_501 getInt (Lcom/mojang/minecraft/class_165;)I
+		ARG 1 root
+	METHOD method_502 getLong (I)J
+		ARG 1 bits

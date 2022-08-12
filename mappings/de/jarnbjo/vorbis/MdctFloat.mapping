@@ -1,0 +1,17 @@
+CLASS com/mojang/minecraft/class_183 de/jarnbjo/vorbis/MdctFloat
+	FIELD field_983 n I
+	FIELD field_984 log2n I
+	FIELD field_985 trig [F
+	FIELD field_986 bitrev [I
+	FIELD field_987 dtmp1 F
+	FIELD field_988 dtmp2 F
+	FIELD field_989 dtmp3 F
+	FIELD field_990 dtmp4 F
+	FIELD field_991 _x [F
+	FIELD field_992 _w [F
+	METHOD <init> (I)V
+		ARG 1 n
+	METHOD method_535 imdct ([F[F[I)V
+		ARG 1 frq
+		ARG 2 window
+		ARG 3 pcm

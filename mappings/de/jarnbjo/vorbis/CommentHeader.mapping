@@ -1,0 +1,6 @@
+CLASS com/mojang/minecraft/class_175 de/jarnbjo/vorbis/CommentHeader
+	FIELD field_938 comments Ljava/util/HashMap;
+	METHOD <init> (Lcom/mojang/minecraft/class_164;)V
+		ARG 1 source
+	METHOD method_514 getString (Lcom/mojang/minecraft/class_164;)Ljava/lang/String;
+		ARG 0 source

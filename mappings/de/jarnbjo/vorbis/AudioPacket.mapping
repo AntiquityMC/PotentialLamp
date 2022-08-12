@@ -1,0 +1,3 @@
+CLASS com/mojang/minecraft/class_177 de/jarnbjo/vorbis/AudioPacket
+	METHOD method_516 getNumberOfSamples ()I
+	METHOD method_517 getPcm (Lcom/mojang/minecraft/class_177;[B)V

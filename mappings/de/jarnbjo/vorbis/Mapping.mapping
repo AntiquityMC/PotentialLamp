@@ -1,0 +1,12 @@
+CLASS com/mojang/minecraft/class_180 de/jarnbjo/vorbis/Mapping
+	METHOD method_527 getAngles ()[I
+	METHOD method_528 createInstance (Lcom/mojang/minecraft/class_173;Lcom/mojang/minecraft/class_164;Lcom/mojang/minecraft/class_188;)Lcom/mojang/minecraft/class_180;
+		ARG 0 vorbis
+		ARG 1 source
+		ARG 2 header
+	METHOD method_529 getMagnitudes ()[I
+	METHOD method_530 getMux ()[I
+	METHOD method_531 getSubmapFloors ()[I
+	METHOD method_532 getSubmapResidues ()[I
+	METHOD method_533 getCouplingSteps ()I
+	METHOD method_534 getSubmaps ()I

@@ -1,0 +1,9 @@
+CLASS com/mojang/minecraft/class_188 de/jarnbjo/vorbis/SetupHeader
+	FIELD field_1006 codeBooks [Lcom/mojang/minecraft/class_184;
+	FIELD field_1007 floors [Lcom/mojang/minecraft/class_178;
+	FIELD field_1008 residues [Lcom/mojang/minecraft/class_185;
+	FIELD field_1009 mappings [Lcom/mojang/minecraft/class_180;
+	FIELD field_1010 modes [Lcom/mojang/minecraft/class_181;
+	METHOD <init> (Lcom/mojang/minecraft/class_173;Lcom/mojang/minecraft/class_164;)V
+		ARG 1 vorbis
+		ARG 2 source

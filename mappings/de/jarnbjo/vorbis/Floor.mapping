@@ -1,0 +1,10 @@
+CLASS com/mojang/minecraft/class_178 de/jarnbjo/vorbis/Floor
+	FIELD field_971 DB_STATIC_TABLE [F
+	METHOD method_519 createInstance (Lcom/mojang/minecraft/class_164;Lcom/mojang/minecraft/class_188;)Lcom/mojang/minecraft/class_178;
+		ARG 0 source
+		ARG 1 header
+	METHOD method_520 decodeFloor (Lcom/mojang/minecraft/class_173;Lcom/mojang/minecraft/class_164;)Lcom/mojang/minecraft/class_178;
+		ARG 1 vorbis
+		ARG 2 source
+	METHOD method_521 computeFloor ([F)V
+		ARG 1 vector

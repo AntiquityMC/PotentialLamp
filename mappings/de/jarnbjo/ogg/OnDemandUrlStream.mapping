@@ -1,0 +1,9 @@
+CLASS com/mojang/minecraft/class_169 de/jarnbjo/ogg/OnDemandUrlStream
+	FIELD field_908 logicalStreams Ljava/util/HashMap;
+	FIELD field_909 source Ljava/net/URLConnection;
+	FIELD field_910 sourceStream Ljava/io/InputStream;
+	FIELD field_911 position I
+	FIELD field_912 firstPage Lcom/mojang/minecraft/class_170;
+	METHOD <init> (Ljava/net/URL;)V
+		ARG 1 source
+	METHOD method_507 getOggPage ()Lcom/mojang/minecraft/class_170;

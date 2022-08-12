@@ -1,0 +1,15 @@
+CLASS com/mojang/minecraft/class_165 de/jarnbjo/util/io/HuffmanNode
+	FIELD field_898 o0 Lcom/mojang/minecraft/class_165;
+	FIELD field_899 o1 Lcom/mojang/minecraft/class_165;
+	FIELD field_900 value Ljava/lang/Integer;
+	FIELD field_901 depth I
+	FIELD field_902 full Z
+	METHOD <init> (Lcom/mojang/minecraft/class_165;)V
+		ARG 1 parent
+	METHOD <init> (Lcom/mojang/minecraft/class_165;I)V
+		ARG 1 parent
+		ARG 2 value
+	METHOD method_503 isFull ()Z
+	METHOD method_504 setNewValue (II)Z
+		ARG 1 depth
+		ARG 2 value

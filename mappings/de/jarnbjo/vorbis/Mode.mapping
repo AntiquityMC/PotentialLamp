@@ -1,0 +1,8 @@
+CLASS com/mojang/minecraft/class_181 de/jarnbjo/vorbis/Mode
+	FIELD field_972 blockFlag Z
+	FIELD field_973 mapping I
+	FIELD field_974 windowType I
+	FIELD field_975 transformType I
+	METHOD <init> (Lcom/mojang/minecraft/class_164;Lcom/mojang/minecraft/class_188;)V
+		ARG 1 source
+		ARG 2 header
