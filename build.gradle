@@ -1,6 +1,6 @@
 buildscript {
 	repositories {
-		jcenter()
+		mavenCentral()
 		maven {
 			name "Fabric Repository"
 			url 'https://maven.fabricmc.net'
@@ -82,6 +82,7 @@ import cuchaz.enigma.command.ConvertMappingsCommand
 import cuchaz.enigma.command.MapSpecializedMethodsCommand
 import groovy.io.FileType
 import groovy.json.JsonSlurper
+import juuxel.chocostitch.CommandFixNesting
 import net.fabricmc.mappingio.MappingReader
 import net.fabricmc.mappingio.adapter.MappingNsCompleter
 import net.fabricmc.mappingio.adapter.MappingDstNsReorder
@@ -296,6 +297,7 @@ task mapIntermediaryJar(dependsOn: [downloadMcLibs, downloadIntermediary, downlo
 		logger.lifecycle(":mapping minecraft to intermediary")
 		def tinyInput = downloadIntermediary.dest
 		mapJar(intermediaryJar, clientJar, tinyInput, libraries, "official", "intermediary")
+		CommandFixNesting.run(intermediaryJar)
 	}
 }
 

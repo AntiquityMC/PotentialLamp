@@ -1,3 +1,0 @@
-CLASS com/mojang/minecraft/class_92 com/mojang/minecraft/SleepingThread
-	METHOD <init> (Lcom/mojang/minecraft/Minecraft;)V
-		ARG 1 minecraft

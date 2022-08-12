@@ -1,4 +1,0 @@
-CLASS com/mojang/minecraft/class_108 com/mojang/minecraft/SkinDownloadThread
-	FIELD field_568 minecraft Lcom/mojang/minecraft/Minecraft;
-	METHOD <init> (Lcom/mojang/minecraft/Minecraft;)V
-		ARG 1 minecraft

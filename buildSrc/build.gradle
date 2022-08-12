@@ -1,0 +1,14 @@
+repositories {
+	mavenCentral()
+	maven {
+		name "Fabric Repository"
+		url 'https://maven.fabricmc.net'
+	}
+}
+
+dependencies {
+	implementation "org.ow2.asm:asm:9.3"
+	implementation "org.ow2.asm:asm-tree:9.3"
+	implementation "net.fabricmc:stitch:0.4.6+build.74"
+	implementation 'commons-io:commons-io:2.11.0'
+}

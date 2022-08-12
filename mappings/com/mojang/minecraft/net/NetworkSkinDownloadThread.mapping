@@ -1,5 +1,0 @@
-CLASS com/mojang/minecraft/class_156 com/mojang/minecraft/net/NetworkSkinDownloadThread
-	FIELD field_859 player Lcom/mojang/minecraft/class_152;
-	METHOD <init> (Lcom/mojang/minecraft/class_152;)V
-		ARG 1 player
-	METHOD method_469 run ()V

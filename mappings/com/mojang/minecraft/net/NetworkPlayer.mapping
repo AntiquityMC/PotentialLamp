@@ -37,3 +37,4 @@ CLASS com/mojang/minecraft/class_152 com/mojang/minecraft/net/NetworkPlayer
 		ARG 3 z
 		ARG 4 yRot
 		ARG 5 xRot
+	CLASS class_156 NetworkSkinDownloadThread

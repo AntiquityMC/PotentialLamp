@@ -11,7 +11,7 @@ CLASS com/mojang/minecraft/Minecraft
 	FIELD field_225 textures Lcom/mojang/minecraft/class_3;
 	FIELD field_22 height I
 	FIELD field_23 hitResult Lcom/mojang/minecraft/class_1;
-	FIELD field_24 level Lcom/mojang/minecraft/class_7;
+	FIELD field_24 level Lcom/mojangminecraft/class_7;
 	FIELD field_25 levelRenderer Lcom/mojang/minecraft/class_9;
 	FIELD field_265 levelIo Lcom/mojang/minecraft/class_42;
 	FIELD field_266 screen Lcom/mojang/minecraft/class_39;
@@ -58,3 +58,5 @@ CLASS com/mojang/minecraft/Minecraft
 	METHOD method_347 hasConnectionManager ()Z
 	METHOD method_8 destroy ()V
 	CLASS class_55 OS
+	CLASS class_92 SleepingThread
+	CLASS class_108 SkinDownloadThread

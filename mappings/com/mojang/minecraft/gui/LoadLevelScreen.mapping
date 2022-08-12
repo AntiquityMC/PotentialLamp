@@ -8,3 +8,4 @@ CLASS com/mojang/minecraft/class_105 com/mojang/minecraft/gui/LoadLevelScreen
 		ARG 1 parent
 	METHOD method_328 loadMap (I)V
 		ARG 1 id
+	CLASS class_104 LevelFileChooserThread
