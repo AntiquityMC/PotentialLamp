@@ -145,7 +145,6 @@ METHOD	com/mojang/minecraft/a/c	(Lcom/mojang/minecraft/a/c;)F	b	method_258
 METHOD	com/mojang/minecraft/a/c	(Lcom/mojang/minecraft/a/c;F)Lcom/mojang/minecraft/a/c;	b	method_259
 METHOD	com/mojang/minecraft/a/c	(Lcom/mojang/minecraft/a/c;)F	c	method_260
 METHOD	com/mojang/minecraft/a/c	(Lcom/mojang/minecraft/a/c;F)Lcom/mojang/minecraft/a/c;	c	method_261
-METHOD	com/mojang/minecraft/a/c	()Ljava/lang/String;	toString	toString
 CLASS	com/mojang/minecraft/a/d	com/mojang/minecraft/class_59
 CLASS	com/mojang/minecraft/a/e	com/mojang/minecraft/class_60
 FIELD	com/mojang/minecraft/a/e	Lcom/mojang/minecraft/a/n;	b	field_381
@@ -1429,7 +1428,6 @@ FIELD	de/jarnbjo/vorbis/e	[I	k	field_948
 FIELD	de/jarnbjo/vorbis/e	[I	l	field_949
 FIELD	de/jarnbjo/vorbis/e	[I	m	field_950
 FIELD	de/jarnbjo/vorbis/e	[I	n	field_951
-METHOD	de/jarnbjo/vorbis/e	()Ljava/lang/Object;	clone	method_515
 CLASS	de/jarnbjo/vorbis/f	com/mojang/minecraft/class_177
 FIELD	de/jarnbjo/vorbis/f	I	a	field_952
 FIELD	de/jarnbjo/vorbis/f	Lde/jarnbjo/vorbis/j;	b	field_953
@@ -1527,7 +1525,6 @@ METHOD	de/jarnbjo/vorbis/n	()[I	f	method_546
 METHOD	de/jarnbjo/vorbis/n	()[[I	g	method_547
 CLASS	de/jarnbjo/vorbis/o	com/mojang/minecraft/class_186
 CLASS	de/jarnbjo/vorbis/p	com/mojang/minecraft/class_187
-METHOD	de/jarnbjo/vorbis/p	()Ljava/lang/Object;	clone	method_548
 CLASS	de/jarnbjo/vorbis/q	com/mojang/minecraft/class_188
 FIELD	de/jarnbjo/vorbis/q	[Lde/jarnbjo/vorbis/m;	a	field_1006
 FIELD	de/jarnbjo/vorbis/q	[Lde/jarnbjo/vorbis/g;	b	field_1007
