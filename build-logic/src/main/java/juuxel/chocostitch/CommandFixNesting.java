@@ -1,5 +1,16 @@
 package juuxel.chocostitch;
 
+import net.fabricmc.stitch.Command;
+import net.fabricmc.stitch.representation.JarClassEntry;
+import net.fabricmc.stitch.representation.JarReader.Builder;
+import net.fabricmc.stitch.representation.JarRootEntry;
+import net.fabricmc.stitch.util.StitchUtil;
+import net.fabricmc.stitch.util.StitchUtil.FileSystemDelegate;
+import org.apache.commons.io.FilenameUtils;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.tree.ClassNode;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,18 +23,6 @@ import java.util.Set;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.stream.Collectors;
-
-import org.apache.commons.io.FilenameUtils;
-import org.objectweb.asm.ClassReader;
-import org.objectweb.asm.ClassWriter;
-import org.objectweb.asm.tree.ClassNode;
-
-import net.fabricmc.stitch.Command;
-import net.fabricmc.stitch.representation.JarClassEntry;
-import net.fabricmc.stitch.representation.JarReader.Builder;
-import net.fabricmc.stitch.representation.JarRootEntry;
-import net.fabricmc.stitch.util.StitchUtil;
-import net.fabricmc.stitch.util.StitchUtil.FileSystemDelegate;
 
 /**
  * @author <a href="https://github.com/Chocohead/Stitch/blob/old/src/main/java/net/fabricmc/stitch/commands/CommandFixNesting.java">Chocohead</a>,
