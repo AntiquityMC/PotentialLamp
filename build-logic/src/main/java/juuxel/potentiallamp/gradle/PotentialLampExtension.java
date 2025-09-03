@@ -44,6 +44,10 @@ public abstract class PotentialLampExtension {
         return getCacheDir().flatMap(dir -> dir.file(name));
     }
 
+    public Provider<RegularFile> getSuffixedGameJar(String suffix) {
+        return getCacheFile(getMinecraftVersion().map(ver -> ver + '-' + suffix + ".jar"));
+    }
+
     public String getFilamentJar() {
         return NameFinder.class.getProtectionDomain().getCodeSource().getLocation().getFile();
     }
