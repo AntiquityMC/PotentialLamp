@@ -3,6 +3,9 @@ plugins {
 }
 
 def minecraft_version = "c0.30_01c"
+def env = System.getenv()
+def runNumber = env.GITHUB_RUN_NUMBER ? env.GITHUB_RUN_NUMBER.toInteger() + 15 : 'local'
+version = "$minecraft_version-$runNumber"
 
 potentialLamp {
 	minecraftVersion = minecraft_version
@@ -20,10 +23,7 @@ mapIntermediaryJar {
 tasks.register('prepareRelease', juuxel.potentiallamp.gradle.task.SetGithubOutputs) {
 	dependsOn 'obfToNamedTinyJar', 'obfToNamedITinyJar'
 	outputProperties = provider {
-		def env = System.getenv()
-		def runNumber = env.GITHUB_RUN_NUMBER.toInteger() + 15
-		String version = "$minecraft_version-$runNumber"
 		String title = "Build $runNumber for $minecraft_version ($version)"
-		[ version: version, title: title ]
+		[ version: project.version.toString(), title: title ]
 	}
 }

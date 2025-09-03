@@ -7,7 +7,9 @@ import daomephsta.unpick.api.constantgroupers.ConstantGroupers;
 import daomephsta.unpick.api.constantgroupers.IConstantGrouper;
 import juuxel.potentiallamp.gradle.util.PathUtil;
 import org.gradle.api.DefaultTask;
+import org.gradle.api.file.DirectoryProperty;
 import org.gradle.api.file.RegularFileProperty;
+import org.gradle.api.tasks.InputDirectory;
 import org.gradle.api.tasks.InputFile;
 import org.gradle.api.tasks.OutputFile;
 import org.gradle.api.tasks.TaskAction;
@@ -31,6 +33,9 @@ public abstract class UnpickJar extends DefaultTask {
     @InputFile
     public abstract RegularFileProperty getUnpickDefinitions();
 
+    @InputDirectory
+    public abstract DirectoryProperty getConstantClasses();
+
     @OutputFile
     public abstract RegularFileProperty getOutputJar();
 
@@ -40,7 +45,7 @@ public abstract class UnpickJar extends DefaultTask {
              var jarOut = new JarOutputStream(out);
              var jarIn = new JarFile(getInputJar().get().getAsFile());
              var definitions = Files.newBufferedReader(PathUtil.get(getUnpickDefinitions()))) {
-            IClassResolver classResolver = ClassResolvers.jar(jarIn);
+            IClassResolver classResolver = ClassResolvers.jar(jarIn).chain(ClassResolvers.fromDirectory(PathUtil.get(getConstantClasses())));
             IConstantGrouper grouper = ConstantGroupers.dataDriven()
                 .classResolver(classResolver)
                 .mappingSource(definitions)

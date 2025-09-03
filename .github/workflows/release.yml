@@ -37,5 +37,6 @@ jobs:
           tag_name: ${{ steps.artifacts.outputs.version }}
           name: ${{ steps.artifacts.outputs.title }}
           files: |
+            build/libs/constants.jar
             build/libs/obfToNamed.jar
             build/libs/obfToNamedI.jar

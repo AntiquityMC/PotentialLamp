@@ -23,6 +23,10 @@ public final class ClassIndex {
         this.packages = packages;
     }
 
+    public boolean packageExists(@Dotty String packageName) {
+        return packages.containsKey(packageName.replace('.', '/'));
+    }
+
     public List<@Dotty String> getClassesInPackage(@Dotty String packageName) {
         return packages.get(packageName.replace('.', '/'))
             .classesBySimpleName

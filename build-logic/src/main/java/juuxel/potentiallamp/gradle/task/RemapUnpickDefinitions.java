@@ -1,5 +1,8 @@
 package juuxel.potentiallamp.gradle.task;
 
+import daomephsta.unpick.api.ValidatingUnpickV3Visitor;
+import daomephsta.unpick.api.classresolvers.ClassResolvers;
+import daomephsta.unpick.api.classresolvers.IClassResolver;
 import daomephsta.unpick.constantmappers.datadriven.parser.v3.UnpickV3Reader;
 import daomephsta.unpick.constantmappers.datadriven.parser.v3.UnpickV3Remapper;
 import daomephsta.unpick.constantmappers.datadriven.parser.v3.UnpickV3Writer;
@@ -11,9 +14,11 @@ import net.fabricmc.mappingio.MappingReader;
 import net.fabricmc.mappingio.tree.MappingTreeView;
 import net.fabricmc.mappingio.tree.MemoryMappingTree;
 import org.gradle.api.DefaultTask;
+import org.gradle.api.file.DirectoryProperty;
 import org.gradle.api.file.RegularFileProperty;
 import org.gradle.api.provider.Property;
 import org.gradle.api.tasks.Input;
+import org.gradle.api.tasks.InputDirectory;
 import org.gradle.api.tasks.InputFile;
 import org.gradle.api.tasks.OutputFile;
 import org.gradle.api.tasks.TaskAction;
@@ -22,8 +27,10 @@ import java.io.IOException;
 import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Objects;
+import java.util.jar.JarFile;
 
 public abstract class RemapUnpickDefinitions extends DefaultTask {
     @InputFile
@@ -41,6 +48,9 @@ public abstract class RemapUnpickDefinitions extends DefaultTask {
     @InputFile
     public abstract RegularFileProperty getGameJar();
 
+    @InputDirectory
+    public abstract DirectoryProperty getConstantClasses();
+
     @OutputFile
     public abstract RegularFileProperty getOutputFile();
 
@@ -56,14 +66,31 @@ public abstract class RemapUnpickDefinitions extends DefaultTask {
         int srcNsIndex = tree.getNamespaceId(getSourceNamespace().get());
         int dstNsIndex = tree.getNamespaceId(getTargetNamespace().get());
         UnpickV3Writer writer = new UnpickV3Writer();
-        ClassIndex index = ClassIndex.create(PathUtil.get(getGameJar()));
+        Path gameJarPath = PathUtil.get(getGameJar());
+        ClassIndex index = ClassIndex.create(gameJarPath);
 
         try (Reader reader = Files.newBufferedReader(PathUtil.get(getInputFile()));
-             UnpickV3Reader unpickReader = new UnpickV3Reader(reader)) {
-            unpickReader.accept(new RemapperImpl(writer, tree, srcNsIndex, dstNsIndex, index));
+             UnpickV3Reader unpickReader = new UnpickV3Reader(reader);
+             JarFile gameJar = new JarFile(gameJarPath.toFile())) {
+            IClassResolver classResolver = ClassResolvers.jar(gameJar).chain(ClassResolvers.fromDirectory(PathUtil.get(getConstantClasses())));
+            unpickReader.accept(new Validator(new RemapperImpl(writer, tree, srcNsIndex, dstNsIndex, index), classResolver, index));
         }
 
         Files.writeString(PathUtil.get(getOutputFile()), writer.getOutput(), StandardCharsets.UTF_8);
+    }
+
+    private static final class Validator extends ValidatingUnpickV3Visitor {
+        private final ClassIndex index;
+
+        Validator(UnpickV3Visitor downstream, IClassResolver classResolver, ClassIndex index) {
+            super(classResolver, downstream);
+            this.index = index;
+        }
+
+        @Override
+        public boolean packageExists(@Dotty String packageName) {
+            return index.packageExists(packageName);
+        }
     }
 
     private static final class RemapperImpl extends UnpickV3Remapper {
