@@ -1,6 +1,7 @@
 package juuxel.potentiallamp.gradle.task;
 
 import juuxel.potentiallamp.gradle.util.PathUtil;
+import juuxel.potentiallamp.gradle.util.TaskGroups;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.file.ConfigurableFileCollection;
 import org.gradle.api.file.DirectoryProperty;
@@ -30,6 +31,10 @@ public abstract class LaunchEnigma extends DefaultTask {
 
     @Inject
     protected abstract ExecOperations getExecOperations();
+
+    public LaunchEnigma() {
+        setGroup(TaskGroups.MAPPING_DEV);
+    }
 
     @TaskAction
     protected void run() {
