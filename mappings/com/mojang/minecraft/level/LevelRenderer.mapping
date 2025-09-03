@@ -1,4 +1,9 @@
 CLASS com/mojang/minecraft/class_9 com/mojang/minecraft/level/LevelRenderer
+	FIELD field_82 chunks [Lcom/mojang/minecraft/class_5;
+	FIELD field_83 minecraft Lcom/mojang/minecraft/Minecraft;
+	FIELD field_85 xChunks I
+	FIELD field_86 yChunks I
+	FIELD field_87 zChunks I
 	FIELD field_255 textures Lcom/mojang/minecraft/class_3;
 	FIELD field_302 lX F
 	FIELD field_303 lY F
@@ -6,11 +11,6 @@ CLASS com/mojang/minecraft/class_9 com/mojang/minecraft/level/LevelRenderer
 	FIELD field_305 sortedChunks [Lcom/mojang/minecraft/class_5;
 	FIELD field_306 surroundLists I
 	FIELD field_451 level Lcom/mojang/minecraft/class_7;
-	FIELD field_82 chunks [Lcom/mojang/minecraft/class_5;
-	FIELD field_83 minecraft Lcom/mojang/minecraft/Minecraft;
-	FIELD field_85 xChunks I
-	FIELD field_86 yChunks I
-	FIELD field_87 zChunks I
 	METHOD <init> (Lcom/mojang/minecraft/Minecraft;Lcom/mojang/minecraft/class_3;)V
 		ARG 1 minecraft
 		ARG 2 textures

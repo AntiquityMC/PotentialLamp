@@ -13,6 +13,7 @@ import juuxel.potentiallamp.gradle.task.MergeUnpickDefinitions;
 import juuxel.potentiallamp.gradle.task.RemapUnpickDefinitions;
 import juuxel.potentiallamp.gradle.task.UnpickJar;
 import juuxel.potentiallamp.gradle.util.TaskGroups;
+import net.fabricmc.filament.task.mappingio.FormatMappingsTask;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 import org.gradle.api.artifacts.ModuleDependency;
@@ -152,6 +153,10 @@ public final class PotentialLampPlugin implements Plugin<Project> {
             task.getGameJar().set(unpickJar.flatMap(UnpickJar::getOutputJar));
             task.getMappingsDir().set(extension.getMappingsDir());
             task.getProfile().set(extension.getEnigmaProfile());
+        });
+        project.getTasks().register("formatMappings", FormatMappingsTask.class, task -> {
+            task.setGroup(TaskGroups.MAPPING_DEV);
+            task.getInput().set(extension.getMappingsDir());
         });
     }
 

@@ -1,10 +1,4 @@
 CLASS com/mojang/minecraft/class_10 com/mojang/minecraft/renderer/Tesselator
-	FIELD field_190 array [F
-	FIELD field_191 buffer Ljava/nio/FloatBuffer;
-	FIELD field_192 instance Lcom/mojang/minecraft/class_10;
-	FIELD field_193 len I
-	FIELD field_194 p I
-	FIELD field_257 noColor Z
 	FIELD field_89 b F
 	FIELD field_91 g F
 	FIELD field_92 hasColor Z
@@ -13,13 +7,12 @@ CLASS com/mojang/minecraft/class_10 com/mojang/minecraft/renderer/Tesselator
 	FIELD field_96 u F
 	FIELD field_97 v F
 	FIELD field_99 vertices I
-	METHOD method_147 color (I)V
-		ARG 1 color
-	METHOD method_148 noColor ()V
-	METHOD method_270 normal (FFF)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
+	FIELD field_190 array [F
+	FIELD field_191 buffer Ljava/nio/FloatBuffer;
+	FIELD field_192 instance Lcom/mojang/minecraft/class_10;
+	FIELD field_193 len I
+	FIELD field_194 p I
+	FIELD field_257 noColor Z
 	METHOD method_49 clear ()V
 	METHOD method_50 color (FFF)V
 		ARG 1 r
@@ -37,3 +30,10 @@ CLASS com/mojang/minecraft/class_10 com/mojang/minecraft/renderer/Tesselator
 		ARG 3 z
 		ARG 4 u
 		ARG 5 v
+	METHOD method_147 color (I)V
+		ARG 1 color
+	METHOD method_148 noColor ()V
+	METHOD method_270 normal (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

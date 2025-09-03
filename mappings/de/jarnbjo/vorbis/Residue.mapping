@@ -1,12 +1,12 @@
 CLASS com/mojang/minecraft/class_185 de/jarnbjo/vorbis/Residue
+	FIELD field_998 begin I
+	FIELD field_999 cascade [I
 	FIELD field_1000 end I
 	FIELD field_1001 partitionSize I
 	FIELD field_1002 classifications I
 	FIELD field_1003 classBook I
 	FIELD field_1004 books [[I
 	FIELD field_1005 looks Ljava/util/HashMap;
-	FIELD field_998 begin I
-	FIELD field_999 cascade [I
 	METHOD <init> (Lcom/mojang/minecraft/class_164;Lcom/mojang/minecraft/class_188;)V
 		ARG 1 source
 		ARG 2 header
