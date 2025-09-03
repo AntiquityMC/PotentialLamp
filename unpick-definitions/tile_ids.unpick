@@ -4,6 +4,8 @@ group int tile_ids
     juuxel.potentiallamp.constant.TileIds.*
 
 target_field com.mojang.minecraft.level.tile.Tile id I tile_ids
+target_field com.mojang.minecraft.level.tile.LiquidTile calmTileId I tile_ids
+target_field com.mojang.minecraft.level.tile.LiquidTile tileId I tile_ids
 target_method com.mojang.minecraft.level.tile.Tile <init> (I)V
     param 0 tile_ids
 target_method com.mojang.minecraft.level.tile.Tile <init> (II)V
