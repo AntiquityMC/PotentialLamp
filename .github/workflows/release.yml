@@ -20,7 +20,7 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
-          java-version: '18'
+          java-version: '21'
       - name: create changelog
         uses: FabricMC/fabric-action-scripts@v2
         id: changelog
