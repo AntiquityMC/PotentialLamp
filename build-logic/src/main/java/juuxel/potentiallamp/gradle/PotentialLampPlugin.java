@@ -1,12 +1,15 @@
 package juuxel.potentiallamp.gradle;
 
 import juuxel.potentiallamp.gradle.task.CompleteNames;
+import juuxel.potentiallamp.gradle.task.CreateUnpickConfig;
 import juuxel.potentiallamp.gradle.task.DownloadGameJar;
 import juuxel.potentiallamp.gradle.task.DownloadVersionManifest;
 import juuxel.potentiallamp.gradle.task.GenerateObfToNamedTiny;
 import juuxel.potentiallamp.gradle.task.MapJar;
 import juuxel.potentiallamp.gradle.task.MapSpecializedMethods;
 import juuxel.potentiallamp.gradle.task.MappingsJar;
+import juuxel.potentiallamp.gradle.task.MergeUnpickDefinitions;
+import juuxel.potentiallamp.gradle.task.RemapUnpickDefinitions;
 import juuxel.potentiallamp.gradle.util.TaskGroups;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
@@ -14,6 +17,7 @@ import org.gradle.api.file.RegularFile;
 import org.gradle.api.plugins.BasePlugin;
 import org.gradle.api.provider.Provider;
 import org.gradle.api.tasks.Delete;
+import org.gradle.api.tasks.TaskProvider;
 
 public final class PotentialLampPlugin implements Plugin<Project> {
     @Override
@@ -35,14 +39,14 @@ public final class PotentialLampPlugin implements Plugin<Project> {
             task.getGameJar().set(extension.getCacheFile(task.getGameVersion().map(ver -> ver + ".jar")));
             task.getVersionManifest().set(downloadVersionManifest.flatMap(DownloadVersionManifest::getTarget));
         });
-        var mapIntermediaryJar = project.getTasks().register("mapIntermediaryJar", MapJar.class, task -> {
-            task.setGroup(TaskGroups.JAR_SETUP);
-            task.getInputJar().set(downloadGameJar.flatMap(DownloadGameJar::getGameJar));
-            task.getOutputJar().set(extension.getCacheFile(extension.getMinecraftVersion().map(ver -> ver + "-intermediary.jar")));
-            task.getSourceNamespace().set("official");
-            task.getTargetNamespace().set("intermediary");
-            task.getMappings().set(extension.getIntermediaryFile());
-        });
+        var mapIntermediaryJar = registerMapJar(
+            "mapIntermediaryJar",
+            project,
+            extension,
+            downloadGameJar.flatMap(DownloadGameJar::getGameJar),
+            extension.getIntermediaryFile(),
+            "intermediary"
+        );
         var mapSpecializedMethods = project.getTasks().register("mapSpecializedMethods", MapSpecializedMethods.class, task -> {
             task.setGroup(TaskGroups.MAPPING_BUILD);
             task.getInputMappings().set(extension.getMappingsDir());
@@ -52,15 +56,54 @@ public final class PotentialLampPlugin implements Plugin<Project> {
         var completeNames = project.getTasks().register("completeNames", CompleteNames.class, task -> {
             task.setGroup(TaskGroups.MAPPING_BUILD);
             task.getInputFile().set(mapSpecializedMethods.flatMap(MapSpecializedMethods::getOutputFile));
+            task.getIntermediaryFile().set(extension.getIntermediaryFile());
             task.getIntermediaryGameJar().set(mapIntermediaryJar.flatMap(MapJar::getOutputJar));
             task.getOutputFile().set(extension.getCacheFile("completed_mappings.tiny"));
         });
+        var mapNamedJar = registerMapJar(
+            "mapNamedJar",
+            project,
+            extension,
+            downloadGameJar.flatMap(DownloadGameJar::getGameJar),
+            completeNames.flatMap(CompleteNames::getOutputFile),
+            "named"
+        );
+        var createUnpickConfig = project.getTasks().register("createUnpickConfig", CreateUnpickConfig.class, task -> {
+            task.setGroup(TaskGroups.MAPPING_BUILD);
+            task.getOutputFile().set(extension.getCacheFile("unpick.json"));
+        });
+        var mergeUnpickDefinitions = project.getTasks().register("mergeUnpickDefinitions", MergeUnpickDefinitions.class, task -> {
+            task.setGroup(TaskGroups.MAPPING_BUILD);
+            task.getDefinitions().from(project.fileTree(extension.getUnpickDefinitionsDir()));
+            task.getOutputFile().set(extension.getCacheFile("merged.unpick"));
+        });
+        var remapUnpickDefinitions = project.getTasks().register("remapUnpickDefinitions", RemapUnpickDefinitions.class, task -> {
+            task.setGroup(TaskGroups.MAPPING_BUILD);
+            task.getInputFile().set(mergeUnpickDefinitions.flatMap(MergeUnpickDefinitions::getOutputFile));
+            task.getOutputFile().set(extension.getCacheFile("remapped.unpick"));
+            task.getMappings().set(completeNames.flatMap(CompleteNames::getOutputFile));
+            task.getGameJar().set(mapNamedJar.flatMap(MapJar::getOutputJar));
+        });
 
-        registerObfToNamedTiny(project, extension, completeNames.flatMap(CompleteNames::getOutputFile), "", "official");
-        registerObfToNamedTiny(project, extension, completeNames.flatMap(CompleteNames::getOutputFile), "I", "intermediary");
+        var unpickConfig = createUnpickConfig.flatMap(CreateUnpickConfig::getOutputFile);
+        var unpickDefs = remapUnpickDefinitions.flatMap(RemapUnpickDefinitions::getOutputFile);
+
+        registerObfToNamedTiny(project, extension, completeNames.flatMap(CompleteNames::getOutputFile), unpickConfig, unpickDefs, "", "official");
+        registerObfToNamedTiny(project, extension, completeNames.flatMap(CompleteNames::getOutputFile), unpickConfig, unpickDefs, "I", "intermediary");
     }
 
-    private static void registerObfToNamedTiny(Project project, PotentialLampExtension extension, Provider<RegularFile> mappings, String variant, String fallbackNamespace) {
+    private static TaskProvider<MapJar> registerMapJar(String name, Project project, PotentialLampExtension extension, Provider<RegularFile> obfJar, Provider<RegularFile> mappings, String targetNamespace) {
+        return project.getTasks().register(name, MapJar.class, task -> {
+            task.setGroup(TaskGroups.JAR_SETUP);
+            task.getInputJar().set(obfJar);
+            task.getOutputJar().set(extension.getCacheFile(extension.getMinecraftVersion().map(ver -> ver + '-' + targetNamespace + ".jar")));
+            task.getSourceNamespace().set("official");
+            task.getTargetNamespace().set(targetNamespace);
+            task.getMappings().set(mappings);
+        });
+    }
+
+    private static void registerObfToNamedTiny(Project project, PotentialLampExtension extension, Provider<RegularFile> mappings, Provider<RegularFile> unpickConfig, Provider<RegularFile> unpickDefs, String variant, String fallbackNamespace) {
         var mappingTask = project.getTasks().register("generateObfToNamed" + variant + "Tiny", GenerateObfToNamedTiny.class, task -> {
             task.setGroup(TaskGroups.MAPPING_BUILD);
             task.getFallbackNamespace().set(fallbackNamespace);
@@ -72,6 +115,15 @@ public final class PotentialLampPlugin implements Plugin<Project> {
             task.setGroup(TaskGroups.MAPPING_BUILD);
             task.getArchiveBaseName().set("obfToNamed" + variant);
             task.mappings(mappingTask.flatMap(GenerateObfToNamedTiny::getOutput));
+
+            task.from(unpickConfig, spec -> {
+                spec.into("extras");
+                spec.rename(unused -> "unpick.json");
+            });
+            task.from(unpickDefs, spec -> {
+                spec.into("extras");
+                spec.rename(unused -> "definitions.unpick");
+            });
         });
         project.getTasks().named("assemble", task -> task.dependsOn(jarTask));
     }

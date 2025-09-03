@@ -15,12 +15,15 @@ public abstract class PotentialLampExtension {
     @Inject
     public PotentialLampExtension(Project project) {
         getMappingsDir().convention(project.getLayout().getProjectDirectory().dir("mappings"));
+        getUnpickDefinitionsDir().convention(project.getLayout().getProjectDirectory().dir("unpick-definitions"));
         Provider<File> intermediaryFile = getMinecraftVersion().map(version -> project.file("intermediary/" + version + ".tiny"));
         getIntermediaryFile().convention(project.getLayout().file(intermediaryFile));
         getCacheDir().convention(project.getLayout().getBuildDirectory().dir("pl-cache"));
     }
 
     public abstract DirectoryProperty getMappingsDir();
+
+    public abstract DirectoryProperty getUnpickDefinitionsDir();
 
     public abstract Property<String> getMinecraftVersion();
 

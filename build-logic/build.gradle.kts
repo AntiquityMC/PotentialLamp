@@ -8,8 +8,8 @@ repositories {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
 dependencies {
@@ -21,6 +21,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.13.1")
     implementation("net.fabricmc:stitch:0.4.6+build.74")
     implementation("commons-io:commons-io:2.11.0")
+    implementation("net.fabricmc.unpick:unpick-format-utils:3.0.0-beta.9")
 }
 
 gradlePlugin {

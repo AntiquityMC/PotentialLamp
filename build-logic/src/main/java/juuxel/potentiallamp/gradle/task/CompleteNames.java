@@ -1,10 +1,10 @@
 package juuxel.potentiallamp.gradle.task;
 
+import juuxel.potentiallamp.gradle.util.PathUtil;
 import net.fabricmc.filament.nameproposal.MappingEntry;
 import net.fabricmc.filament.nameproposal.NameFinder;
 import net.fabricmc.mappingio.MappedElementKind;
 import net.fabricmc.mappingio.MappingReader;
-import net.fabricmc.mappingio.MappingVisitor;
 import net.fabricmc.mappingio.MappingWriter;
 import net.fabricmc.mappingio.adapter.MappingNsCompleter;
 import net.fabricmc.mappingio.format.MappingFormat;
@@ -24,13 +24,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
-import java.util.function.UnaryOperator;
 import java.util.jar.JarEntry;
 import java.util.jar.JarInputStream;
 
 public abstract class CompleteNames extends DefaultTask {
     @InputFile
     public abstract RegularFileProperty getInputFile();
+
+    @InputFile
+    public abstract RegularFileProperty getIntermediaryFile();
 
     @InputFile
     public abstract RegularFileProperty getIntermediaryGameJar();
@@ -41,6 +43,7 @@ public abstract class CompleteNames extends DefaultTask {
     @TaskAction
     protected void run() throws IOException {
         Path inputPath = getInputFile().get().getAsFile().toPath();
+        Path intermediaryPath = PathUtil.get(getIntermediaryFile());
         Path outputPath = getOutputFile().get().getAsFile().toPath();
         Path gameJar = getIntermediaryGameJar().get().getAsFile().toPath();
 
@@ -48,21 +51,25 @@ public abstract class CompleteNames extends DefaultTask {
         loadJarIntoNameFinder(gameJar, nameFinder);
         getLogger().info("Found {} field names", nameFinder.getFieldNames().size());
 
-        MemoryMappingTree tree = processMappings(inputPath, visitor -> new MappingNsCompleter(visitor, Map.of("named", "intermediary"), true));
+        MemoryMappingTree tree = new MemoryMappingTree();
+        MappingReader.read(intermediaryPath, tree);
+        MappingReader.read(inputPath, new MappingNsCompleter(tree, Map.of("named", "intermediary"), true));
 
         if (tree.visitHeader()) {
-            tree.visitNamespaces("intermediary", List.of("named"));
+            tree.visitNamespaces("official", List.of("intermediary", "named"));
         }
 
         for (MappingEntry fieldEntry : nameFinder.getFieldNames().keySet()) {
-            if (tree.visitClass(fieldEntry.owner()) && tree.visitField(fieldEntry.name(), fieldEntry.desc())) {
-                MappingTree.FieldMapping existingMapping = tree.getField(fieldEntry.owner(), fieldEntry.name(), fieldEntry.desc());
-                assert existingMapping != null;
-                String existingName = existingMapping.getName(0);
+            MappingTree.FieldMapping existingMapping = tree.getField(fieldEntry.owner(), fieldEntry.name(), fieldEntry.desc(), 0);
+            assert existingMapping != null;
+            String existingName = existingMapping.getName(1);
 
-                if (existingName == null || existingName.startsWith("field_")) {
-                    tree.visitDstName(MappedElementKind.FIELD, 0, nameFinder.getFieldNames().get(fieldEntry));
-                }
+            MappingTree.ClassMapping c = tree.getClass(fieldEntry.owner(), 0);
+            tree.visitClass(c.getSrcName());
+
+            if (existingName == null || existingName.startsWith("field_")) {
+                tree.visitField(existingMapping.getSrcName(), existingMapping.getSrcDesc());
+                tree.visitDstName(MappedElementKind.FIELD, 1, nameFinder.getFieldNames().get(fieldEntry));
             }
         }
 
@@ -85,11 +92,5 @@ public abstract class CompleteNames extends DefaultTask {
                 }
             }
         }
-    }
-
-    private static MemoryMappingTree processMappings(Path in, UnaryOperator<MappingVisitor> visitorOp) throws IOException {
-        MemoryMappingTree tree = new MemoryMappingTree();
-        MappingReader.read(in, visitorOp.apply(tree));
-        return tree;
     }
 }
