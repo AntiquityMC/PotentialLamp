@@ -196,7 +196,7 @@ public final class PotentialLampPlugin implements Plugin<Project> {
         var jar = project.getTasks().register("constantsJar", Jar.class, task -> {
             task.setGroup(TaskGroups.MAPPING_BUILD);
             task.from(sourceSet.getOutput());
-            task.getArchiveBaseName().set("constants");
+            task.getArchiveFileName().set("constants.jar");
         });
         project.getTasks().named(BasePlugin.ASSEMBLE_TASK_NAME, task -> task.dependsOn(jar));
         return sourceSet;
