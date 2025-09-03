@@ -83,7 +83,7 @@ public final class PotentialLampPlugin implements Plugin<Project> {
         SourceSet constantsSourceSet = setupConstants(project);
         var createUnpickConfig = project.getTasks().register("createUnpickConfig", CreateUnpickConfig.class, task -> {
             task.setGroup(TaskGroups.MAPPING_BUILD);
-            task.getConstants().set(project.provider(() -> "io.github.antiquitymc:potential-lamp:" + project.getVersion() + ":constants"));
+            task.getConstants().set(project.provider(() -> "io.github.antiquitymc.potential-lamp:constants:" + project.getVersion()));
             task.getOutputFile().set(extension.getCacheFile("unpick.json"));
         });
         var mergeUnpickDefinitions = project.getTasks().register("mergeUnpickDefinitions", MergeUnpickDefinitions.class, task -> {
