@@ -21,7 +21,7 @@ mapIntermediaryJar {
 }
 
 tasks.register('prepareRelease', juuxel.potentiallamp.gradle.task.SetGithubOutputs) {
-	dependsOn 'obfToNamedTinyJar', 'obfToNamedITinyJar'
+	dependsOn 'assemble'
 	outputProperties = provider {
 		String title = "Build $runNumber for $minecraft_version ($version)"
 		[ version: project.version.toString(), title: title ]
