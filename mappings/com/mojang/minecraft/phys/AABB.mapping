@@ -37,12 +37,31 @@ CLASS com/mojang/minecraft/class_12 com/mojang/minecraft/phys/AABB
 		ARG 2 ya
 		ARG 3 za
 	METHOD method_217 cloneMove (FFF)Lcom/mojang/minecraft/class_12;
+		COMMENT {@return a translated copy of this vector}
+		COMMENT
+		COMMENT <p>This method has a bug and the offset for the Z axis is also used for this vector's
+		COMMENT smaller X coordinate.
+		ARG 1 offsetX
+		ARG 2 offsetY
+		ARG 3 offsetZ
+	METHOD method_474 containsYz (Lcom/mojang/minecraft/class_16;)Z
+		ARG 1 point
+	METHOD method_475 containsXz (Lcom/mojang/minecraft/class_16;)Z
+		ARG 1 point
+	METHOD method_476 containsXy (Lcom/mojang/minecraft/class_16;)Z
+		ARG 1 point
 	METHOD method_477 clip (Lcom/mojang/minecraft/class_16;Lcom/mojang/minecraft/class_16;)Lcom/mojang/minecraft/class_1;
 	METHOD method_478 contains (Lcom/mojang/minecraft/class_16;)Z
 		ARG 1 vector
 	METHOD method_479 copy ()Lcom/mojang/minecraft/class_12;
 	METHOD method_480 getSize ()F
 	METHOD method_481 intersects (FFFFFF)Z
+		ARG 1 x0
+		ARG 2 y0
+		ARG 3 z0
+		ARG 4 x1
+		ARG 5 y1
+		ARG 6 z1
 	METHOD method_482 intersectsInner (Lcom/mojang/minecraft/class_12;)Z
 		ARG 1 c
 	METHOD method_483 shrink (FFF)Lcom/mojang/minecraft/class_12;

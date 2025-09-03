@@ -136,6 +136,12 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 6 maxZ
 	METHOD method_216 setTicking (Z)V
 		ARG 1 ticking
+	METHOD method_418 (IIILcom/mojang/minecraft/class_16;Lcom/mojang/minecraft/class_16;)Lcom/mojang/minecraft/class_1;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_419 containsYz (Lcom/mojang/minecraft/class_16;)Z
+		ARG 1 point
 	METHOD method_420 renderAsIcon (Lcom/mojang/minecraft/class_10;)V
 		ARG 1 tesselator
 	METHOD method_421 renderFace (Lcom/mojang/minecraft/class_10;IIIII)V
@@ -167,17 +173,26 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 1 soundGroup
 		ARG 3 particleMass
 		ARG 4 breakTime
+	METHOD method_426 containsXz (Lcom/mojang/minecraft/class_16;)Z
+		ARG 1 point
 	METHOD method_428 onPlaced (Lcom/mojang/minecraft/class_7;III)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_430 (Lcom/mojang/minecraft/class_7;III)V
+	METHOD method_429 containsXy (Lcom/mojang/minecraft/class_16;)Z
+		ARG 1 point
+	METHOD method_430 onAdded (Lcom/mojang/minecraft/class_7;III)V
 		ARG 1 level
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 	METHOD method_431 getLiquid ()Lcom/mojang/minecraft/class_120;
+	METHOD method_432 onRemoved (Lcom/mojang/minecraft/class_7;III)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_433 getTickDelay ()I
 	METHOD method_434 drop (Lcom/mojang/minecraft/class_7;III)V
 		ARG 1 level

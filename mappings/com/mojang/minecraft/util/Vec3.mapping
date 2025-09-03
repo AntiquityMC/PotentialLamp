@@ -13,7 +13,49 @@ CLASS com/mojang/minecraft/class_16 com/mojang/minecraft/util/Vec3
 		ARG 3 z
 	METHOD method_256 subtract (Lcom/mojang/minecraft/class_16;)Lcom/mojang/minecraft/class_16;
 		ARG 1 other
+	METHOD method_257 lerpFromCurrentX (Lcom/mojang/minecraft/class_16;F)Lcom/mojang/minecraft/class_16;
+		COMMENT Lerps this vector towards the target based on the current progress
+		COMMENT along the X axis.
+		COMMENT
+		COMMENT <p>If the current X coordinate is not along the path from this vector's X coordinate
+		COMMENT to the target vector's X coordinate, returns {@code null}
+		COMMENT
+		COMMENT @return the interpolated vector, or {@code null} if out of range
+		COMMENT @see #lerpFromCurrentY
+		COMMENT @see #lerpFromCurrentZ
+		ARG 1 target
+			COMMENT the target vector
+		ARG 2 currentX
+			COMMENT the current X coordinate
 	METHOD method_258 distanceTo (Lcom/mojang/minecraft/class_16;)F
 		ARG 1 other
+	METHOD method_259 lerpFromCurrentY (Lcom/mojang/minecraft/class_16;F)Lcom/mojang/minecraft/class_16;
+		COMMENT Lerps this vector towards the target based on the current progress
+		COMMENT along the Y axis.
+		COMMENT
+		COMMENT <p>If the current Y coordinate is not along the path from this vector's Y coordinate
+		COMMENT to the target vector's Y coordinate, returns {@code null}
+		COMMENT
+		COMMENT @return the interpolated vector, or {@code null} if out of range
+		COMMENT @see #lerpFromCurrentX
+		COMMENT @see #lerpFromCurrentZ
+		ARG 1 target
+			COMMENT the target vector
+		ARG 2 currentY
+			COMMENT the current Y coordinate
 	METHOD method_260 squaredDistanceTo (Lcom/mojang/minecraft/class_16;)F
 		ARG 1 other
+	METHOD method_261 lerpFromCurrentZ (Lcom/mojang/minecraft/class_16;F)Lcom/mojang/minecraft/class_16;
+		COMMENT Lerps this vector towards the target based on the current progress
+		COMMENT along the Z axis.
+		COMMENT
+		COMMENT <p>If the current Z coordinate is not along the path from this vector's Z coordinate
+		COMMENT to the target vector's Z coordinate, returns {@code null}
+		COMMENT
+		COMMENT @return the interpolated vector, or {@code null} if out of range
+		COMMENT @see #lerpFromCurrentX
+		COMMENT @see #lerpFromCurrentY
+		ARG 1 target
+			COMMENT the target vector
+		ARG 2 currentZ
+			COMMENT the current Z coordinate
