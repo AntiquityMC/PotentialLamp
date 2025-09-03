@@ -3,6 +3,7 @@ unpick v3
 group int tile_ids
     juuxel.potentiallamp.constant.TileIds.*
 
+target_field com.mojang.minecraft.level.tile.Tile id I tile_ids
 target_method com.mojang.minecraft.level.tile.Tile <init> (I)V
     param 0 tile_ids
 target_method com.mojang.minecraft.level.tile.Tile <init> (II)V
@@ -45,3 +46,32 @@ target_method com.mojang.minecraft.level.tile.TntTile <init> (II)V
     param 0 tile_ids
 target_method com.mojang.minecraft.level.tile.TransparentTile <init> (IIZ)V
     param 0 tile_ids
+target_field com.mojang.minecraft.item.Item resource I tile_ids
+target_method com.mojang.minecraft.item.Item <init> (Lcom/mojang/minecraft/level/Level;FFFI)V
+    param 4 tile_ids
+target_method com.mojang.minecraft.player.Inventory getSelected ()I
+    return tile_ids
+target_method com.mojang.minecraft.player.Inventory addResource (I)Z
+    param 0 tile_ids
+target_method com.mojang.minecraft.player.Inventory removeResource (I)Z
+    param 0 tile_ids
+target_method com.mojang.minecraft.player.Inventory grabTexture (IZ)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.player.Player addResource (I)Z
+    param 0 tile_ids
+target_method com.mojang.minecraft.gamemode.GameMode consumeInventoryItem (I)Z
+    param 0 tile_ids
+target_method com.mojang.minecraft.gamemode.GameMode useInventoryItem (Lcom/mojang/minecraft/player/Player;I)Z
+    param 1 tile_ids
+target_method com.mojang.minecraft.level.Level getTile (III)I
+    return tile_ids
+target_method com.mojang.minecraft.level.Level setTileNoNeighborChange (IIII)Z
+    param 3 tile_ids
+target_method com.mojang.minecraft.level.Level netSetTileNoNeighborChange (IIII)Z
+    param 3 tile_ids
+target_method com.mojang.minecraft.level.Level setTile (IIII)Z
+    param 3 tile_ids
+target_method com.mojang.minecraft.level.Level netSetTile (IIII)Z
+    param 3 tile_ids
+target_method com.mojang.minecraft.level.Level setTileNoUpdate (IIII)Z
+    param 3 tile_ids
