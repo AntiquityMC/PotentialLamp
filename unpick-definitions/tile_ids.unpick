@@ -1,0 +1,47 @@
+unpick v3
+
+group int tile_ids
+    juuxel.potentiallamp.constant.TileIds.*
+
+target_method com.mojang.minecraft.level.tile.Tile <init> (I)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.Tile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.BookshelfTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.BushTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.CalmLiquidTile <init> (ILcom/mojang/minecraft/level/liquid/Liquid;)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.DirtTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.FallingTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.FlowerTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.GlassTile <init> (IIZ)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.GrassTile <init> (I)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.LeavesTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.LiquidTile <init> (ILcom/mojang/minecraft/level/liquid/Liquid;)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.LogTile <init> (I)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.MetalTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.MushroomTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.OreTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.RockTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.SlabTile <init> (IZ)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.SpongeTile <init> (I)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.TntTile <init> (II)V
+    param 0 tile_ids
+target_method com.mojang.minecraft.level.tile.TransparentTile <init> (IIZ)V
+    param 0 tile_ids
