@@ -6,27 +6,7 @@ def minecraft_version = "c0.30_01c"
 
 potentialLamp {
 	minecraftVersion = minecraft_version
-}
-
-repositories {
-	mavenCentral()
-	mavenLocal()
-	maven {
-		name = 'Fabric'
-		url = 'https://maven.fabricmc.net'
-	}
-}
-
-configurations {
-	enigmaRuntime
-}
-
-dependencies {
-	enigmaRuntime("cuchaz:enigma-swing:$project.enigma_version") {
-		attributes {
-			attribute(Bundling.BUNDLING_ATTRIBUTE, objects.named(Bundling, Bundling.EXTERNAL))
-		}
-	}
+	enigmaVersion = project.enigma_version
 }
 
 import juuxel.chocostitch.CommandFixNesting
@@ -35,20 +15,6 @@ mapIntermediaryJar {
 	doLast {
 		CommandFixNesting.run(outputJar.get().asFile)
 	}
-}
-
-tasks.register('enigma', JavaExec) {
-	dependsOn 'mapIntermediaryJar'
-	group = juuxel.potentiallamp.gradle.util.TaskGroups.MAPPING_DEV
-	mainClass = 'cuchaz.enigma.gui.Main'
-	classpath(configurations.enigmaRuntime, file(potentialLamp.filamentJar))
-	args '-jar'
-	args tasks.named('mapIntermediaryJar').get().outputJar.get().asFile.absolutePath
-	args '-mappings'
-	args potentialLamp.mappingsDir.get().asFile.absolutePath
-	args '-profile'
-	args 'enigma_profile.json'
-	maxHeapSize = '2G'
 }
 
 tasks.register('prepareRelease', juuxel.potentiallamp.gradle.task.SetGithubOutputs) {

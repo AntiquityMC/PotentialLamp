@@ -16,6 +16,7 @@ public abstract class PotentialLampExtension {
     public PotentialLampExtension(Project project) {
         getMappingsDir().convention(project.getLayout().getProjectDirectory().dir("mappings"));
         getUnpickDefinitionsDir().convention(project.getLayout().getProjectDirectory().dir("unpick-definitions"));
+        getEnigmaProfile().convention(project.getLayout().getProjectDirectory().file("enigma_profile.json"));
         Provider<File> intermediaryFile = getMinecraftVersion().map(version -> project.file("intermediary/" + version + ".tiny"));
         getIntermediaryFile().convention(project.getLayout().file(intermediaryFile));
         getCacheDir().convention(project.getLayout().getBuildDirectory().dir("pl-cache"));
@@ -26,6 +27,10 @@ public abstract class PotentialLampExtension {
     public abstract DirectoryProperty getUnpickDefinitionsDir();
 
     public abstract Property<String> getMinecraftVersion();
+
+    public abstract Property<String> getEnigmaVersion();
+
+    public abstract RegularFileProperty getEnigmaProfile();
 
     public abstract RegularFileProperty getIntermediaryFile();
 

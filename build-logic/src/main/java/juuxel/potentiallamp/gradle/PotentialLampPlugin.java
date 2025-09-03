@@ -4,6 +4,7 @@ import juuxel.potentiallamp.gradle.task.CompleteNames;
 import juuxel.potentiallamp.gradle.task.CreateUnpickConfig;
 import juuxel.potentiallamp.gradle.task.DownloadGameJar;
 import juuxel.potentiallamp.gradle.task.DownloadVersionManifest;
+import juuxel.potentiallamp.gradle.task.LaunchEnigma;
 import juuxel.potentiallamp.gradle.task.GenerateObfToNamedTiny;
 import juuxel.potentiallamp.gradle.task.MapJar;
 import juuxel.potentiallamp.gradle.task.MapSpecializedMethods;
@@ -13,6 +14,8 @@ import juuxel.potentiallamp.gradle.task.RemapUnpickDefinitions;
 import juuxel.potentiallamp.gradle.util.TaskGroups;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
+import org.gradle.api.artifacts.ModuleDependency;
+import org.gradle.api.attributes.Bundling;
 import org.gradle.api.file.RegularFile;
 import org.gradle.api.plugins.BasePlugin;
 import org.gradle.api.provider.Provider;
@@ -90,6 +93,30 @@ public final class PotentialLampPlugin implements Plugin<Project> {
 
         registerObfToNamedTiny(project, extension, completeNames.flatMap(CompleteNames::getOutputFile), unpickConfig, unpickDefs, "", "official");
         registerObfToNamedTiny(project, extension, completeNames.flatMap(CompleteNames::getOutputFile), unpickConfig, unpickDefs, "I", "intermediary");
+
+        project.getRepositories().mavenCentral();
+        project.getRepositories().maven(repo -> repo.setUrl("https://maven.fabricmc.net"));
+
+        var enigmaRuntime = project.getConfigurations().create("enigmaRuntime");
+        enigmaRuntime.setCanBeConsumed(false);
+        project.getDependencies().addProvider("enigmaRuntime", extension.getEnigmaVersion().map(ver -> {
+            var dep = project.getDependencies().create("cuchaz:enigma-swing:" + ver);
+
+            if (dep instanceof ModuleDependency moduleDependency) {
+                moduleDependency.attributes(attributes -> {
+                    attributes.attribute(Bundling.BUNDLING_ATTRIBUTE, project.getObjects().named(Bundling.class, Bundling.SHADOWED));
+                });
+            }
+
+            return dep;
+        }));
+
+        project.getTasks().register("enigma", LaunchEnigma.class, task -> {
+            task.getClasspath().from(enigmaRuntime, extension.getFilamentJar());
+            task.getGameJar().set(mapIntermediaryJar.flatMap(MapJar::getOutputJar));
+            task.getMappingsDir().set(extension.getMappingsDir());
+            task.getProfile().set(extension.getEnigmaProfile());
+        });
     }
 
     private static TaskProvider<MapJar> registerMapJar(String name, Project project, PotentialLampExtension extension, Provider<RegularFile> obfJar, Provider<RegularFile> mappings, String targetNamespace) {
