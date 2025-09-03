@@ -53,6 +53,7 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 	FIELD field_736 SOLID_TILES [Z
 	FIELD field_737 PICKABLE_TILES [Z
 	FIELD field_739 breakTime I
+	FIELD field_740 canExplode Z
 	FIELD field_741 LIQUID_TILES [Z
 	FIELD field_742 sand Lcom/mojang/minecraft/class_11;
 	FIELD field_743 gravel Lcom/mojang/minecraft/class_11;
@@ -182,6 +183,7 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 4 z
 	METHOD method_437 getDrop ()I
 	METHOD method_438 getBreakTime ()I
+	METHOD method_439 canExplode ()Z
 	METHOD method_55 render (Lcom/mojang/minecraft/class_7;IIILcom/mojang/minecraft/class_10;)Z
 		ARG 1 level
 		ARG 2 x
@@ -192,3 +194,11 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 1 side
 	CLASS class_125 SoundGroup
 		FIELD field_700 id Ljava/lang/String;
+		FIELD field_702 pitch F
+		FIELD field_704 volume F
+		METHOD <init> (Ljava/lang/String;ILjava/lang/String;FF)V
+			ARG 3 id
+			ARG 4 volume
+			ARG 5 pitch
+		METHOD method_413 getPitch ()F
+		METHOD method_414 getVolume ()F

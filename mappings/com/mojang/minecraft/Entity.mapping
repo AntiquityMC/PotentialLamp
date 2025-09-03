@@ -78,6 +78,8 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 		ARG 5 xRot
 	METHOD method_242 playSound (Ljava/lang/String;FF)V
 		ARG 1 sound
+		ARG 2 volume
+		ARG 3 pitch
 	METHOD method_243 playerTouch (Lcom/mojang/minecraft/class_13;)V
 		ARG 1 player
 	METHOD method_244 push (FFF)V

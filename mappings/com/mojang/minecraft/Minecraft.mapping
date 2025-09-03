@@ -24,6 +24,7 @@ CLASS com/mojang/minecraft/Minecraft
 	FIELD field_633 server Ljava/lang/String;
 	FIELD field_634 port I
 	FIELD field_636 resourceDownloadThread Lcom/mojang/minecraft/class_74;
+	FIELD field_638 clickCooldown I
 	FIELD field_639 applet Lcom/mojang/minecraft/class_26;
 	FIELD field_641 gameMode Lcom/mojang/minecraft/class_90;
 	FIELD field_642 host Ljava/lang/String;
@@ -49,6 +50,7 @@ CLASS com/mojang/minecraft/Minecraft
 	METHOD method_116 pause ()V
 	METHOD method_16 tick ()V
 	METHOD method_160 generateNewLevel (I)V
+		ARG 1 size
 	METHOD method_162 openScreen (Lcom/mojang/minecraft/class_39;)V
 		ARG 1 screen
 	METHOD method_345 setLevel (Lcom/mojang/minecraft/class_7;)V

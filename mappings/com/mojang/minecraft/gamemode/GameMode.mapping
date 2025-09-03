@@ -4,12 +4,23 @@ CLASS com/mojang/minecraft/class_90 com/mojang/minecraft/gamemode/GameMode
 	METHOD <init> (Lcom/mojang/minecraft/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_298 openBuildScreen ()V
+	METHOD method_300 consumeInventoryItem (I)Z
+		ARG 1 tileId
+	METHOD method_301 attackTile (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_302 tileBreakTick (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD method_303 applyTo (Lcom/mojang/minecraft/class_7;)V
 		ARG 1 level
+	METHOD method_304 initPlayer (Lcom/mojang/minecraft/class_2;)V
+		ARG 1 player
+	METHOD method_305 useInventoryItem (Lcom/mojang/minecraft/class_2;I)Z
+		ARG 1 player
+		ARG 2 tileId
 	METHOD method_306 isSurvival ()Z
 	METHOD method_307 breakTile (III)V
 		ARG 1 x
@@ -19,3 +30,4 @@ CLASS com/mojang/minecraft/class_90 com/mojang/minecraft/gamemode/GameMode
 		ARG 1 level
 	METHOD method_309 init (Lcom/mojang/minecraft/class_2;)V
 		ARG 1 player
+	METHOD method_312 tick ()V
