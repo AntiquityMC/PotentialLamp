@@ -1,4 +1,10 @@
 CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
+	FIELD field_75 blocks [B
+	FIELD field_76 height I
+	FIELD field_77 depth I
+	FIELD field_78 listeners Ljava/util/ArrayList;
+	FIELD field_79 lightDepths [I
+	FIELD field_80 width I
 	FIELD field_181 random Ljava/util/Random;
 	FIELD field_182 unprocessed I
 	FIELD field_292 createTime J
@@ -22,19 +28,42 @@ CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
 	FIELD field_680 xSpawn I
 	FIELD field_681 ySpawn I
 	FIELD field_682 zSpawn I
-	FIELD field_75 blocks [B
-	FIELD field_76 height I
-	FIELD field_77 depth I
-	FIELD field_78 listeners Ljava/util/ArrayList;
-	FIELD field_79 lightDepths [I
-	FIELD field_80 width I
+	METHOD method_31 addListener (Lcom/mojang/minecraft/class_9;)V
+		ARG 1 listener
+	METHOD method_32 calcLightDepths (IIII)V
+	METHOD method_34 getCubes (Lcom/mojang/minecraft/class_12;)Ljava/util/ArrayList;
+		ARG 1 bb
+	METHOD method_35 isLightBlocker (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_36 isSolidTile (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_37 isLit (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_39 removeListener (Lcom/mojang/minecraft/class_9;)V
+		ARG 1 listener
+	METHOD method_41 setTile (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 tile
+	METHOD method_93 getTile (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_94 tick ()V
 	METHOD method_180 containsAnyLiquid (Lcom/mojang/minecraft/class_12;)Z
 		ARG 1 bb
 	METHOD method_181 containsLiquid (Lcom/mojang/minecraft/class_12;Lcom/mojang/minecraft/class_120;)Z
 		ARG 1 bb
 		ARG 2 liquid
 	METHOD method_182 getGroundLevel ()F
-	METHOD method_183 (IIII)V
+	METHOD method_183 sendNeighborUpdate (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -49,24 +78,11 @@ CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tile
-	METHOD method_31 addListener (Lcom/mojang/minecraft/class_9;)V
-		ARG 1 listener
-	METHOD method_32 calcLightDepths (IIII)V
-	METHOD method_34 getCubes (Lcom/mojang/minecraft/class_12;)Ljava/util/ArrayList;
-		ARG 1 bb
-	METHOD method_35 isLightBlocker (III)Z
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD method_36 isSolidTile (III)Z
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
 	METHOD method_368 isSolid (FFF)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_37 isLit (III)Z
+	METHOD method_369 isInLevel (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -82,13 +98,14 @@ CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
 	METHOD method_374 countInstanceOf (Ljava/lang/Class;)I
 		ARG 1 entityClass
 	METHOD method_375 explode (Lcom/mojang/minecraft/class_13;FFFF)V
-		ARG 1 entity
+		ARG 1 source
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 size
 	METHOD method_376 finalize ()V
-	METHOD method_377 findEntities (Lcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_12;)Ljava/util/List;
+	METHOD method_377 getEntities (Lcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_12;)Ljava/util/List;
+		ARG 1 except
 		ARG 2 bb
 	METHOD method_378 findSpawn ()V
 	METHOD method_379 findSubclassOf (Ljava/lang/Class;)Lcom/mojang/minecraft/class_13;
@@ -117,8 +134,6 @@ CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 size
-	METHOD method_39 removeListener (Lcom/mojang/minecraft/class_9;)V
-		ARG 1 listener
 	METHOD method_390 isWater (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -177,13 +192,3 @@ CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tile
-	METHOD method_41 setTile (IIII)Z
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-		ARG 4 tile
-	METHOD method_93 getTile (III)I
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD method_94 tick ()V

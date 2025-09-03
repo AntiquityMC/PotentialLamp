@@ -39,6 +39,30 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 	FIELD field_369 zOld F
 	METHOD <init> (Lcom/mojang/minecraft/class_7;)V
 		ARG 1 level
+	METHOD method_5 tick ()V
+	METHOD method_64 move (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_65 moveRelative (FFF)V
+		ARG 1 x
+		ARG 2 z
+	METHOD method_66 resetPos ()V
+	METHOD method_67 setPos (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_68 turn (FF)V
+		ARG 1 y
+		ARG 2 x
+	METHOD method_77 render (Lcom/mojang/minecraft/class_3;F)V
+		ARG 1 textures
+		ARG 2 tickProgress
+	METHOD method_78 isLit ()Z
+	METHOD method_79 remove ()V
+	METHOD method_80 setSize (FF)V
+		ARG 1 width
+		ARG 2 height
 	METHOD method_153 isFree (FFF)Z
 	METHOD method_154 isInLava ()Z
 	METHOD method_155 isInWater ()Z
@@ -55,7 +79,7 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 	METHOD method_229 distanceToSqr (Lcom/mojang/minecraft/class_13;)F
 		ARG 1 other
 	METHOD method_230 getBrightness (F)F
-		ARG 1 tickDelta
+		ARG 1 tickProgress
 	METHOD method_231 getTexture ()I
 	METHOD method_232 hurt (Lcom/mojang/minecraft/class_13;I)V
 		ARG 1 attacker
@@ -99,26 +123,3 @@ CLASS com/mojang/minecraft/class_13 com/mojang/minecraft/Entity
 		ARG 1 vector
 	METHOD method_251 shouldRenderAtSqrDistance (F)Z
 		ARG 1 distance
-	METHOD method_5 tick ()V
-	METHOD method_64 move (FFF)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD method_65 moveRelative (FFF)V
-		ARG 1 x
-		ARG 2 z
-	METHOD method_66 resetPos ()V
-	METHOD method_67 setPos (FFF)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD method_68 turn (FF)V
-		ARG 1 y
-		ARG 2 x
-	METHOD method_77 render (Lcom/mojang/minecraft/class_3;F)V
-		ARG 1 textures
-	METHOD method_78 isLit ()Z
-	METHOD method_79 remove ()V
-	METHOD method_80 setSize (FF)V
-		ARG 1 width
-		ARG 2 height

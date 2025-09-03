@@ -71,6 +71,14 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 	METHOD <init> (II)V
 		ARG 1 id
 		ARG 2 tex
+	METHOD method_55 render (Lcom/mojang/minecraft/class_7;IIILcom/mojang/minecraft/class_10;)Z
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 tesselator
+	METHOD method_99 getTextureForSide (I)I
+		ARG 1 side
 	METHOD method_100 tick (Lcom/mojang/minecraft/class_7;IIILjava/util/Random;)V
 		ARG 1 level
 		ARG 2 x
@@ -110,6 +118,7 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 neighborTileId
 	METHOD method_211 getLayer ()I
 	METHOD method_212 mayPick ()Z
 	METHOD method_214 renderBackFace (Lcom/mojang/minecraft/class_10;IIII)V
@@ -184,14 +193,6 @@ CLASS com/mojang/minecraft/class_11 com/mojang/minecraft/level/tile/Tile
 	METHOD method_437 getDrop ()I
 	METHOD method_438 getBreakTime ()I
 	METHOD method_439 canExplode ()Z
-	METHOD method_55 render (Lcom/mojang/minecraft/class_7;IIILcom/mojang/minecraft/class_10;)Z
-		ARG 1 level
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 tesselator
-	METHOD method_99 getTextureForSide (I)I
-		ARG 1 side
 	CLASS class_125 SoundGroup
 		FIELD field_700 id Ljava/lang/String;
 		FIELD field_702 pitch F

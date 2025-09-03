@@ -22,7 +22,7 @@ CLASS com/mojang/minecraft/class_24 com/mojang/minecraft/particle/Particle
 		ARG 7 speedZ
 	METHOD method_107 render (Lcom/mojang/minecraft/class_10;FFFFFF)V
 		ARG 1 t
-		ARG 2 tickDelta
+		ARG 2 tickProgress
 	METHOD method_471 getLayer ()I
 	METHOD method_472 setSize (F)Lcom/mojang/minecraft/class_24;
 		ARG 1 size

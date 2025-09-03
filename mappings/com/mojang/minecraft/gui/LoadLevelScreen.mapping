@@ -4,10 +4,14 @@ CLASS com/mojang/minecraft/class_105 com/mojang/minecraft/gui/LoadLevelScreen
 	FIELD field_558 fileChooser Ljavax/swing/JFileChooser;
 	FIELD field_559 save Z
 	FIELD field_560 selectedFile Ljava/io/File;
+	FIELD field_563 maps [Ljava/lang/String;
+	FIELD field_564 status Ljava/lang/String;
 	METHOD <init> (Lcom/mojang/minecraft/class_39;)V
 		ARG 1 parent
 	METHOD method_328 loadMap (I)V
 		ARG 1 id
 	METHOD method_329 loadLevel (Ljava/io/File;)V
 		ARG 1 file
+	METHOD method_330 initLevelButtons ([Ljava/lang/String;)V
+		ARG 1 labels
 	CLASS class_104 LevelFileChooserThread

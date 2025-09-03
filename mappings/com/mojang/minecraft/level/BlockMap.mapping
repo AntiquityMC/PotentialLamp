@@ -13,10 +13,17 @@ CLASS com/mojang/minecraft/class_117 com/mojang/minecraft/level/BlockMap
 		ARG 3 depth
 	METHOD method_351 clear ()V
 	METHOD method_352 getEntities (Lcom/mojang/minecraft/class_13;FFFFFF)Ljava/util/List;
+		ARG 1 except
 	METHOD method_353 getEntities (Lcom/mojang/minecraft/class_13;FFFFFFLjava/util/List;)Ljava/util/List;
+		ARG 1 except
 		ARG 8 target
 	METHOD method_354 getEntities (Lcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_12;)Ljava/util/List;
+		ARG 1 except
+		ARG 2 aabb
 	METHOD method_355 getEntities (Lcom/mojang/minecraft/class_13;Lcom/mojang/minecraft/class_12;Ljava/util/List;)Ljava/util/List;
+		ARG 1 except
+		ARG 2 aabb
+		ARG 3 target
 	METHOD method_356 insert (Lcom/mojang/minecraft/class_13;)V
 	METHOD method_357 moved (Lcom/mojang/minecraft/class_13;)V
 	METHOD method_358 remove (Lcom/mojang/minecraft/class_13;)V
