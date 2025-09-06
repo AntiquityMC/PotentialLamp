@@ -1,3 +1,8 @@
 CLASS com/mojang/minecraft/class_71
 	FIELD field_437 minecraft Lcom/mojang/minecraft/Minecraft;
+	FIELD field_444 random Ljava/util/Random;
+	METHOD <init> (Lcom/mojang/minecraft/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_274 setLightingEnabled (Z)V
+		ARG 1 lightingEnabled
 	METHOD method_277 bobView (F)V
