@@ -1,6 +1,9 @@
 plugins {
 	id 'potential-lamp'
+	id 'maven-publish'
 }
+
+group = 'io.github.antiquitymc.potential-lamp'
 
 def minecraft_version = "c0.30_01c"
 def env = System.getenv()
@@ -25,5 +28,22 @@ tasks.register('prepareRelease', juuxel.potentiallamp.gradle.task.SetGithubOutpu
 	outputProperties = provider {
 		String title = "Build $runNumber for $minecraft_version ($version)"
 		[ version: project.version.toString(), title: title ]
+	}
+}
+
+publishing {
+	publications.register('mappings', MavenPublication) {
+		artifactId = 'mappings'
+		artifact(tasks.named('obfToNamedTinyJar')) {
+			classifier = 'obfToNamed'
+		}
+		artifact(tasks.named('obfToNamedITinyJar')) {
+			classifier = 'obfToNamedI'
+		}
+	}
+
+	publications.register('constants', MavenPublication) {
+		artifactId = 'constants'
+		artifact tasks.named('constantsJar')
 	}
 }
