@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_5 com/mojang/minecraft/level/Chunk
+CLASS com/mojang/minecraft/class_5 com/mojang/minecraft/renderer/Chunk
 	FIELD field_45 level Lcom/mojang/minecraft/class_7;
 	FIELD field_46 lists I
 	FIELD field_48 t Lcom/mojang/minecraft/class_10;

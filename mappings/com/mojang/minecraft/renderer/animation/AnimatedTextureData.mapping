@@ -1,0 +1,7 @@
+CLASS com/mojang/minecraft/class_70 com/mojang/minecraft/renderer/animation/AnimatedTextureData
+	FIELD field_434 data [B
+	FIELD field_435 texture I
+	FIELD field_436 anaglyph3d Z
+	METHOD <init> (I)V
+		ARG 1 texture
+	METHOD method_269 refresh ()V

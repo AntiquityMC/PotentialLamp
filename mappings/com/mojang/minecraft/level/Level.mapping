@@ -108,13 +108,16 @@ CLASS com/mojang/minecraft/class_7 com/mojang/minecraft/level/Level
 		ARG 1 except
 		ARG 2 bb
 	METHOD method_378 findSpawn ()V
-	METHOD method_379 findSubclassOf (Ljava/lang/Class;)Lcom/mojang/minecraft/class_13;
+	METHOD method_379 findInstanceOf (Ljava/lang/Class;)Lcom/mojang/minecraft/class_13;
 		ARG 1 entityClass
 	METHOD method_380 getBrightness (III)F
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD method_381 getCaveness (FFFF)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_382 getCaveness (Lcom/mojang/minecraft/class_13;)F
 		ARG 1 entity
 	METHOD method_383 getHighestTile (II)I

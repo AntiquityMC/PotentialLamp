@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_9 com/mojang/minecraft/level/LevelRenderer
+CLASS com/mojang/minecraft/class_9 com/mojang/minecraft/renderer/LevelRenderer
 	FIELD field_82 chunks [Lcom/mojang/minecraft/class_5;
 	FIELD field_83 minecraft Lcom/mojang/minecraft/Minecraft;
 	FIELD field_85 xChunks I

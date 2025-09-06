@@ -1,5 +1,6 @@
-CLASS com/mojang/minecraft/class_71
+CLASS com/mojang/minecraft/class_71 com/mojang/minecraft/renderer/RenderState
 	FIELD field_437 minecraft Lcom/mojang/minecraft/Minecraft;
+	FIELD field_441 playerRenderState Lcom/mojang/minecraft/class_72;
 	FIELD field_444 random Ljava/util/Random;
 	METHOD <init> (Lcom/mojang/minecraft/Minecraft;)V
 		ARG 1 minecraft
