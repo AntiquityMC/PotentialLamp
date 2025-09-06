@@ -1,0 +1,10 @@
+CLASS com/mojang/minecraft/class_159 com/mojang/minecraft/particle/TerrainParticle
+	METHOD <init> (Lcom/mojang/minecraft/class_7;FFFFFFLcom/mojang/minecraft/class_11;)V
+		ARG 1 level
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 xd
+		ARG 6 yd
+		ARG 7 zd
+		ARG 8 tile

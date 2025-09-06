@@ -1,3 +1,0 @@
-CLASS com/mojang/minecraft/class_159 com/mojang/minecraft/particle/BlockParticle
-	METHOD <init> (Lcom/mojang/minecraft/class_7;FFFFFFLcom/mojang/minecraft/class_11;)V
-		ARG 8 tile

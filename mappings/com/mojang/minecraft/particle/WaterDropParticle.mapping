@@ -1,4 +1,4 @@
-CLASS com/mojang/minecraft/class_160
+CLASS com/mojang/minecraft/class_160 com/mojang/minecraft/particle/WaterDropParticle
 	METHOD <init> (Lcom/mojang/minecraft/class_7;FFF)V
 		ARG 1 level
 		ARG 2 x
