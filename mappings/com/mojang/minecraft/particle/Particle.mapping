@@ -30,4 +30,4 @@ CLASS com/mojang/minecraft/class_24 com/mojang/minecraft/particle/Particle
 	METHOD method_472 scale (F)Lcom/mojang/minecraft/class_24;
 		ARG 1 size
 	METHOD method_473 setPower (F)Lcom/mojang/minecraft/class_24;
-		ARG 1 speed
+		ARG 1 power

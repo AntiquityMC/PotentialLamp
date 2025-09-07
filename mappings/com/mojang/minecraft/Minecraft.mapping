@@ -53,7 +53,7 @@ CLASS com/mojang/minecraft/Minecraft
 	METHOD method_116 pause ()V
 	METHOD method_160 generateNewLevel (I)V
 		ARG 1 size
-	METHOD method_162 openScreen (Lcom/mojang/minecraft/class_39;)V
+	METHOD method_162 setScreen (Lcom/mojang/minecraft/class_39;)V
 		ARG 1 screen
 	METHOD method_345 setLevel (Lcom/mojang/minecraft/class_7;)V
 		ARG 1 level

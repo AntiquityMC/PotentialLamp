@@ -23,3 +23,6 @@ CLASS com/mojang/minecraft/class_39 com/mojang/minecraft/gui/Screen
 		ARG 3 height
 	METHOD method_175 tick ()V
 	METHOD method_323 close ()V
+	METHOD method_324 processInput ()V
+	METHOD method_325 processMouseInput ()V
+	METHOD method_326 processKeyboardInput ()V
