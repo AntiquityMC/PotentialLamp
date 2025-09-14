@@ -23,5 +23,5 @@ CLASS com/mojang/minecraft/class_42 com/mojang/minecraft/level/LevelIO
 		ARG 1 host
 		ARG 2 user
 		ARG 3 id
-	METHOD method_408 (Ljava/io/InputStream;)[B
+	METHOD method_408 readCompressedArray (Ljava/io/InputStream;)[B
 		ARG 0 in
